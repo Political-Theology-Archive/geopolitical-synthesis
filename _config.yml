@@ -9,8 +9,7 @@ author:
   location: "Mandi Bahauddin, Punjab, Pakistan"
 lang: en
 timezone: Asia/Karachi
-plugins:
-  - jekyll-sitemap
+plugins: []
 sass:
   style: compressed
 exclude:
