@@ -1,0 +1,21 @@
+title: "Political Theology Archive"
+tagline: "Digital Scriptorium — Civilizational Synthesis Research"
+description: "Scholarly archive documenting the Sassanid-Syriac-Toledo transmission chain and deconstructing the Clash of Civilizations thesis through primary source analysis, critical book reviews, and original research."
+url: "https://political-theology-archive.github.io"
+baseurl: "/geopolitical-synthesis"
+author:
+  name: "Saad Khizar Bosal"
+  title: "Research Architect — Political Theology Archive"
+  location: "Mandi Bahauddin, Punjab, Pakistan"
+lang: en
+timezone: Asia/Karachi
+plugins:
+  - jekyll-sitemap
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - vendor/
