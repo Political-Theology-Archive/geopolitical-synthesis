@@ -98,14 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pta-nav-inner {
-  max-width: var(--wide-w);
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 28px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 16px;
 }
 
 .pta-nav-logo {
@@ -139,8 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-link {
   position: relative;
-  padding: 6px 9px;
-  font-size: 0.79rem;
+  padding: 5px 7px;
+  font-size: 0.77rem;
   font-weight: 300;
   letter-spacing: 0.03em;
   color: var(--text-mid);
@@ -152,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   bottom: 2px;
-  left: 9px;
-  right: 9px;
+  left: 7px;
+  right: 7px;
   height: 1px;
   background: var(--gold);
   transform: scaleX(0);
@@ -185,15 +185,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav zones */
 .pta-nav-zone {
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-dim);
-  padding: 0 6px;
+  padding: 0 4px;
   pointer-events: none;
   user-select: none;
   border-left: 1px solid var(--border-mid);
-  margin-left: 4px;
+  margin-left: 2px;
   line-height: 1;
   align-self: center;
 }
