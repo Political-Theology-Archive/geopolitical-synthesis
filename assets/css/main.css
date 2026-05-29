@@ -1104,6 +1104,295 @@ h1, h2, h3, h4, h5, h6 {
 .pta-page-wrap { min-height: 100vh; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
+/* ═══════════════════════════════════════════════════════════════════
+   EVIDENCE UNITS — Image Strategy: Ancient × Modern × Erasure
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Base Evidence Unit — parchment-toned container with scan lines */
+.pta-eu {
+  position: relative;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(135deg,
+    rgba(196, 154, 53, 0.04) 0%,
+    rgba(14, 14, 19, 0.97) 40%,
+    rgba(196, 154, 53, 0.02) 100%
+  );
+  padding: 32px 36px;
+  margin: 32px 0;
+}
+
+/* Horizontal scan-line texture (simulates aged parchment / microfilm) */
+.pta-eu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(196, 154, 53, 0.018) 3px,
+    rgba(196, 154, 53, 0.018) 4px
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Geopolitical map grid overlay (right side — modern anchor) */
+.pta-eu::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 45%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, var(--bg) 0%, transparent 30%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      rgba(77, 146, 170, 0.06) 28px,
+      rgba(77, 146, 170, 0.06) 29px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 28px,
+      rgba(77, 146, 170, 0.06) 28px,
+      rgba(77, 146, 170, 0.06) 29px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pta-eu > * { position: relative; z-index: 1; }
+
+.pta-eu-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+
+/* ── GLITCH ERASURE EFFECT ── */
+/* Applied to text that represents the "erased" history */
+.pta-glitch {
+  position: relative;
+  display: inline-block;
+  color: var(--text);
+}
+
+.pta-glitch::before,
+.pta-glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.pta-glitch::before {
+  color: var(--teal);
+  animation: glitch-a 3.4s infinite steps(1);
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translateX(-2px);
+}
+
+.pta-glitch::after {
+  color: var(--crimson);
+  animation: glitch-b 3.4s infinite steps(1);
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translateX(2px);
+}
+
+@keyframes glitch-a {
+  0%, 90%, 100% { transform: translateX(-2px) skewX(0deg); opacity: 0; }
+  92%            { transform: translateX(-3px) skewX(-1deg); opacity: 0.7; }
+  94%            { transform: translateX(2px) skewX(1deg); opacity: 0.5; }
+  96%            { transform: translateX(-1px) skewX(0deg); opacity: 0.7; }
+}
+
+@keyframes glitch-b {
+  0%, 90%, 100% { transform: translateX(2px) skewX(0deg); opacity: 0; }
+  93%            { transform: translateX(3px) skewX(1deg); opacity: 0.7; }
+  95%            { transform: translateX(-2px) skewX(-1deg); opacity: 0.5; }
+  97%            { transform: translateX(1px) skewX(0deg); opacity: 0.7; }
+}
+
+/* ── THE CHAIN LINK — Ancient Source → Modern Claim ── */
+.pta-chain-link {
+  display: grid;
+  grid-template-columns: 1fr 48px 1fr;
+  align-items: center;
+  gap: 0;
+  margin: 36px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.pta-chain-ancient {
+  background: linear-gradient(135deg,
+    rgba(196, 154, 53, 0.08) 0%,
+    rgba(196, 154, 53, 0.03) 100%
+  );
+  border: 1px solid rgba(196, 154, 53, 0.22);
+  border-right: none;
+  padding: 24px 28px;
+  border-radius: var(--radius) 0 0 var(--radius);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Parchment scan lines on ancient side */
+.pta-chain-ancient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent, transparent 3px,
+    rgba(196, 154, 53, 0.025) 3px, rgba(196, 154, 53, 0.025) 4px
+  );
+  pointer-events: none;
+}
+
+.pta-chain-ancient > * { position: relative; z-index: 1; }
+
+.pta-chain-modern {
+  background: linear-gradient(135deg,
+    rgba(77, 146, 170, 0.08) 0%,
+    rgba(77, 146, 170, 0.03) 100%
+  );
+  border: 1px solid rgba(77, 146, 170, 0.22);
+  border-left: none;
+  padding: 24px 28px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Map grid on modern side */
+.pta-chain-modern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg, transparent, transparent 20px,
+      rgba(77, 146, 170, 0.06) 20px, rgba(77, 146, 170, 0.06) 21px
+    ),
+    repeating-linear-gradient(
+      90deg, transparent, transparent 20px,
+      rgba(77, 146, 170, 0.06) 20px, rgba(77, 146, 170, 0.06) 21px
+    );
+  pointer-events: none;
+}
+
+.pta-chain-modern > * { position: relative; z-index: 1; }
+
+/* The connector node */
+.pta-chain-node-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-mid);
+  border-top: 1px solid var(--border-mid);
+  border-bottom: 1px solid var(--border-mid);
+  height: 100%;
+  gap: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.pta-chain-node-connector::before {
+  content: '⟶';
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.pta-chain-node-connector::after {
+  content: attr(data-centuries);
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+.pta-chain-era {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.pta-chain-claim {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.pta-chain-text {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.pta-chain-source {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+  letter-spacing: 0.08em;
+}
+
+/* Mobile: stack chain link vertically */
+@media (max-width: 640px) {
+  .pta-chain-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .pta-chain-ancient {
+    border: 1px solid rgba(196, 154, 53, 0.22);
+    border-radius: var(--radius) var(--radius) 0 0;
+    border-bottom: none;
+  }
+  .pta-chain-modern {
+    border: 1px solid rgba(77, 146, 170, 0.22);
+    border-radius: 0 0 var(--radius) var(--radius);
+    border-top: none;
+  }
+  .pta-chain-node-connector {
+    flex-direction: row;
+    height: 36px;
+    border: 1px solid var(--border-mid);
+    border-top: none;
+    border-bottom: none;
+    padding: 0 12px;
+    writing-mode: horizontal-tb;
+  }
+  .pta-chain-node-connector::after {
+    writing-mode: horizontal-tb;
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .pta-bento {
