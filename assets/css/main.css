@@ -183,6 +183,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-reviews::after { display: none; }
 
+/* Nav zones */
+.pta-nav-zone {
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 0 6px;
+  pointer-events: none;
+  user-select: none;
+  border-left: 1px solid var(--border-mid);
+  margin-left: 4px;
+  line-height: 1;
+  align-self: center;
+}
+.pta-nav-sep {
+  width: 1px;
+  height: 18px;
+  background: var(--border-mid);
+  margin: 0 4px;
+}
+
 /* Mobile toggle */
 .pta-nav-toggle {
   display: none;
