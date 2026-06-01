@@ -1,56 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ══ HOMEPAGE ══ -->
   <url>
     <loc>https://alvidscriptorium.com/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- ══ ZONE A — ROOTS ══ -->
   <url>
     <loc>https://alvidscriptorium.com/sassanid/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alvidscriptorium.com/syriac-pipeline/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alvidscriptorium.com/toledo/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alvidscriptorium.com/huntington/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alvidscriptorium.com/silk-road/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alvidscriptorium.com/ishraqi/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══ ZONE B — PIPELINE ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/syriac-pipeline/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/toledo/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══ ZONE C — FRAMEWORK ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/huntington/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://alvidscriptorium.com/sibling-thesis/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alvidscriptorium.com/silk-road/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══ ARCHIVE SECTIONS ══ -->
+  <url>
     <loc>https://alvidscriptorium.com/critical-reviews/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,12 +70,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- ══ RESEARCH INDEX ══ -->
   <url>
     <loc>https://alvidscriptorium.com/research/</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- ══ WP-01 — TRANSMISSION CHAIN ══ -->
   <url>
     <loc>https://alvidscriptorium.com/research/transmission-chain/</loc>
     <lastmod>2026-05-30</lastmod>
@@ -73,11 +87,51 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://alvidscriptorium.com/research/ibn-rushd-averroes/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/syriac-christian-scholars/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/islamic-astronomy-copernicus/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-02 — SAQIFA ══ -->
+  <url>
     <loc>https://alvidscriptorium.com/research/saqifa-structural-isolation/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/ghadir-khumm/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/fatima-fadakiyya/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/thursday-calamity/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-03 — AGAINST HUNTINGTON ══ -->
   <url>
     <loc>https://alvidscriptorium.com/research/against-huntington/</loc>
     <lastmod>2026-05-30</lastmod>
@@ -85,11 +139,39 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://alvidscriptorium.com/research/war-on-terror-huntington/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/said-orientalism/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-04 — SADIQ EXTRACTION ══ -->
+  <url>
     <loc>https://alvidscriptorium.com/research/sadiq-extraction/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/jabir-ibn-hayyan/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/abbasid-extraction-mechanism/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-05 — HAQ AND BATIL ══ -->
   <url>
     <loc>https://alvidscriptorium.com/research/haq-batil/</loc>
     <lastmod>2026-05-30</lastmod>
@@ -97,15 +179,190 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://alvidscriptorium.com/research/nahj-balagha-admixture/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/al-mizan-haq-batil/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/zahir-batin-ontology/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-06 — INDUS THESIS ══ -->
+  <url>
     <loc>https://alvidscriptorium.com/research/indus-thesis/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://alvidscriptorium.com/research/sealed-room/</loc>
+    <loc>https://alvidscriptorium.com/research/iqbal-persian-iran/</loc>
     <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/pakistan-sufi-shrines/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/ibn-khaldun-asabiyyah/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/wilayat-al-faqih-imami/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-07 — SEALED ROOM ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/sealed-room/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/ibn-taymiyyah-anti-alid/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/muhammad-ibn-abd-al-wahhab/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/barelvi-deobandi-split/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/deoband-1867-pakistan/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-08 — IMAM MAHDI FRAMEWORK ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/imam-mahdi-justice-framework/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/mizan-raja-sadra/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/fadak-prophetic-house-restoration/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/313-ajam-mahdi/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/taboot-prophetic-sciences/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-09 — PUNIC CONTINUITY ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/baal-carthage-roman-continuity/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/carthage-tophet-baal-hammon/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/roman-punic-religious-absorption/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/bohemian-grove-elite-ritual-pattern/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ WP-10 — IBLIS LIMITING PRINCIPLE ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/iblis-limiting-principle/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/pre-adamic-jinn-cosmology/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/carus-ishraq-adversary/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/iqbal-iblis-javid-nama/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ STANDALONE RESEARCH PAPERS ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/khawarij-historical-modern/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/third-temple-movement/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/safavid-knowledge-civilization/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>

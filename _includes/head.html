@@ -2,8 +2,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ page.description | default: site.description | escape }}">
 <meta name="author" content="{{ site.author.name }}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="google-site-verification" content="F355fdOSXs_r5IkNNLpVqAs9YquWoswkuMRtT2l6zuc">
+
+<!-- AI Crawler hints -->
+<meta name="revisit-after" content="7 days">
+<meta name="classification" content="Academic Research, Islamic Intellectual History, Civilizational Studies">
+<meta name="category" content="Scholarly Archive">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://alvidscriptorium.com/sitemap.xml">
 
 <!-- Open Graph -->
 <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
