@@ -3,6 +3,7 @@
 <meta name="description" content="{{ page.description | default: site.description | escape }}">
 <meta name="author" content="{{ site.author.name }}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Al-Vid Scriptorium, SCRA, geopolitical synthesis, Islamic intellectual history, civilizational studies, Sassanid legacy, Gondishapur, Syriac translation movement, Toledo school, Khorasan, Ahl al-Bayt, Imam Ali, Huntington thesis, civilizational clash, Sacred Civilization Research Archive, Saad Khizar Bosal{% endif %}">
 <meta name="google-site-verification" content="F355fdOSXs_r5IkNNLpVqAs9YquWoswkuMRtT2l6zuc">
 
 <!-- AI Crawler hints -->
@@ -14,11 +15,25 @@
 <link rel="sitemap" type="application/xml" title="Sitemap" href="https://alvidscriptorium.com/sitemap.xml">
 
 <!-- Open Graph -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="{% if page.url == '/' or page.url == '' %}website{% else %}article{% endif %}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
 <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
-<meta property="og:type" content="article">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="https://dargah-ghazikot.alvidscriptorium.com/assets/images/og-default.png">
+<meta property="og:image:secure_url" content="https://dargah-ghazikot.alvidscriptorium.com/assets/images/og-default.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Al-Vid Scriptorium — Sacred Civilization Research Archive — NODE-02">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+<meta name="twitter:image" content="https://dargah-ghazikot.alvidscriptorium.com/assets/images/og-default.png">
+<meta name="twitter:image:alt" content="Al-Vid Scriptorium — SCRA NODE-02">
 
 <!-- Canonical -->
 <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -33,19 +48,65 @@
 <!-- Stylesheet -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-<!-- Schema.org — Site-wide -->
+<!-- ══ SCHEMA.ORG — SITE-WIDE @GRAPH ══ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "{{ site.title }}",
-  "description": "{{ site.description | escape }}",
-  "url": "{{ site.url }}{{ site.baseurl }}/",
-  "author": {
-    "@type": "Person",
-    "name": "{{ site.author.name }}",
-    "jobTitle": "{{ site.author.title }}"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description | escape }}",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "{{ site.url }}/#author" }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#author",
+      "name": "{{ site.author.name }}",
+      "jobTitle": "{{ site.author.title }}",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Sacred Civilization Research Archive",
+        "url": "https://dargah-ghazikot.alvidscriptorium.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mandi Bahauddin",
+        "addressRegion": "Punjab",
+        "addressCountry": "PK"
+      },
+      "sameAs": ["https://alvidscriptorium.com/", "https://dargah-ghazikot.alvidscriptorium.com/"]
+    }
+  ]
 }
 </script>
+
+{% if page.title and page.url != '/' %}
+<!-- ══ SCHEMA.ORG — PER-PAGE SCHOLARLY ARTICLE ══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "{{ page.url | absolute_url }}#doc",
+  "name": "{{ page.title }}",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.description | default: site.description | escape }}",
+  "url": "{{ page.url | absolute_url }}",
+  "inLanguage": "en",
+  "author": { "@id": "{{ site.url }}/#author" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sacred Civilization Research Archive",
+    "url": "https://alvidscriptorium.com"
+  },
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "genre": ["Islamic Intellectual History", "Geopolitical Analysis", "Civilizational Studies", "Source Criticism"],
+  "isAccessibleForFree": true,
+  "dateModified": "{{ page.last_modified_at | default: '2026-06-02' }}"
+}
+</script>
+{% endif %}
 
