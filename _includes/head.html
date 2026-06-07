@@ -94,53 +94,5 @@
 }
 </script>
 
-{% if page.title and page.url != '/' %}
-<!-- ══ SCHEMA.ORG — BREADCRUMB ══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Al-Vid Scriptorium",
-      "item": "{{ site.url }}/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "{{ page.title }}",
-      "item": "{{ page.url | absolute_url }}"
-    }
-  ]
-}
-</script>
-{% endif %}
-
-{% if page.title and page.url != '/' %}
-<!-- ══ SCHEMA.ORG — PER-PAGE SCHOLARLY ARTICLE ══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
-  "@id": "{{ page.url | absolute_url }}#doc",
-  "name": "{{ page.title }}",
-  "headline": "{{ page.title }}",
-  "description": "{{ page.description | default: site.description | escape }}",
-  "url": "{{ page.url | absolute_url }}",
-  "inLanguage": "en",
-  "author": { "@id": "{{ site.url }}/#author" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Sacred Civilization Research Archive",
-    "url": "https://alvidscriptorium.com"
-  },
-  "isPartOf": { "@id": "{{ site.url }}/#website" },
-  "genre": ["Islamic Intellectual History", "Geopolitical Analysis", "Civilizational Studies", "Source Criticism"],
-  "isAccessibleForFree": true,
-  "dateModified": "{{ page.last_modified_at | default: '2026-06-02' }}"
-}
-</script>
-{% endif %}
+<!-- Per-page ScholarlyArticle and BreadcrumbList are handled inline by each page with richer data (citations, Wikipedia sameAs, about entities, 3-level breadcrumb). Layout-level duplicates removed to avoid schema conflicts. -->
 
