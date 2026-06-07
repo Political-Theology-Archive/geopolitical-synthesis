@@ -9,20 +9,32 @@
     </button>
     <ul class="pta-nav-links" id="navLinks" role="list">
 
-      <li class="pta-nav-zone mono">I · Criterion</li>
-      <li><a href="{{ '/research/furqan-criterion/' | relative_url }}" class="pta-nav-link">Furqan</a></li>
-      <li><a href="{{ '/research/al-mizan-haq-batil/' | relative_url }}" class="pta-nav-link">Al-Mizan</a></li>
+      <li class="pta-nav-dropdown">
+        <button class="pta-nav-zone-btn mono" aria-haspopup="true" aria-expanded="false">I · Criterion <span class="pta-caret">▾</span></button>
+        <ul class="pta-nav-sub" role="list">
+          <li><a href="{{ '/research/furqan-criterion/' | relative_url }}" class="pta-nav-link">Furqan Criterion</a></li>
+          <li><a href="{{ '/research/al-mizan-haq-batil/' | relative_url }}" class="pta-nav-link">Al-Mizan</a></li>
+        </ul>
+      </li>
 
-      <li class="pta-nav-zone mono">II · Captures</li>
-      <li><a href="{{ '/research/caliphate-capture-chain/' | relative_url }}" class="pta-nav-link">Caliphate Chain</a></li>
-      <li><a href="{{ '/research/ba-alist-capture/' | relative_url }}" class="pta-nav-link">Ba'alist</a></li>
-      <li><a href="{{ '/research/british-double-constitution/' | relative_url }}" class="pta-nav-link">British Double</a></li>
+      <li class="pta-nav-dropdown">
+        <button class="pta-nav-zone-btn mono" aria-haspopup="true" aria-expanded="false">II · Captures <span class="pta-caret">▾</span></button>
+        <ul class="pta-nav-sub" role="list">
+          <li><a href="{{ '/research/caliphate-capture-chain/' | relative_url }}" class="pta-nav-link">Caliphate Chain</a></li>
+          <li><a href="{{ '/research/ba-alist-capture/' | relative_url }}" class="pta-nav-link">Ba'alist</a></li>
+          <li><a href="{{ '/research/british-double-constitution/' | relative_url }}" class="pta-nav-link">British Double</a></li>
+        </ul>
+      </li>
 
-      <li class="pta-nav-zone mono">III · Theaters</li>
-      <li><a href="{{ '/khorasan/' | relative_url }}" class="pta-nav-link">Khorasan</a></li>
-      <li><a href="{{ '/syriac-pipeline/' | relative_url }}" class="pta-nav-link">Syriac–Toledo</a></li>
-      <li><a href="{{ '/sassanid/' | relative_url }}" class="pta-nav-link">Sassanid</a></li>
-      <li><a href="{{ '/closure/' | relative_url }}" class="pta-nav-link">Closure</a></li>
+      <li class="pta-nav-dropdown">
+        <button class="pta-nav-zone-btn mono" aria-haspopup="true" aria-expanded="false">III · Theaters <span class="pta-caret">▾</span></button>
+        <ul class="pta-nav-sub" role="list">
+          <li><a href="{{ '/khorasan/' | relative_url }}" class="pta-nav-link">Khorasan</a></li>
+          <li><a href="{{ '/syriac-pipeline/' | relative_url }}" class="pta-nav-link">Syriac–Toledo</a></li>
+          <li><a href="{{ '/sassanid/' | relative_url }}" class="pta-nav-link">Sassanid</a></li>
+          <li><a href="{{ '/closure/' | relative_url }}" class="pta-nav-link">Closure</a></li>
+        </ul>
+      </li>
 
       <li class="pta-nav-sep"></li>
       <li><a href="{{ '/research/' | relative_url }}" class="pta-nav-link">Research</a></li>

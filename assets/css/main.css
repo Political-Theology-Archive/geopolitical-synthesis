@@ -118,10 +118,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-logo-name {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: var(--text);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   line-height: 1;
 }
 
@@ -139,10 +139,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-link {
   position: relative;
-  padding: 5px 4px;
-  font-size: 0.67rem;
+  padding: 5px 8px;
+  font-size: 0.75rem;
   font-weight: 300;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: var(--text-mid);
   transition: color 0.25s ease;
   white-space: nowrap;
@@ -183,7 +183,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-reviews::after { display: none; }
 
-/* Nav zones */
+/* Nav dropdown */
+.pta-nav-dropdown {
+  position: relative;
+  list-style: none;
+}
+.pta-nav-zone-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 5px 6px;
+  border-left: 1px solid var(--border-mid);
+  margin-left: 2px;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.pta-nav-zone-btn:hover { color: var(--text); }
+.pta-caret { font-size: 0.5rem; opacity: 0.6; }
+.pta-nav-sub {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 160px;
+  background: rgba(14,14,19,0.97);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 0;
+  list-style: none;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.pta-nav-dropdown:hover .pta-nav-sub,
+.pta-nav-dropdown:focus-within .pta-nav-sub {
+  display: flex;
+  flex-direction: column;
+}
+.pta-nav-sub .pta-nav-link {
+  padding: 7px 14px;
+  font-size: 0.75rem;
+  display: block;
+  width: 100%;
+}
+
+/* Nav zones (legacy, unused on desktop) */
 .pta-nav-zone {
   font-size: 0.54rem;
   letter-spacing: 0.12em;
