@@ -377,4 +377,194 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- ══ IRAN-1979 — TOP-LEVEL PAGE ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/iran-1979/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══ FURQAN CRITERION SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/furqan-criterion/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/al-mizan-haq-batil/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ══ CONSTITUTIONAL / PAKISTAN SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/british-double-constitution/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/against-duplicity-thesis/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/walayah-pakistan-doctrine/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/jinnah-suppression/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/munir-doctrine/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/caliphate-abolition-1924/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ IRAN-PAKISTAN CONVERGENCE SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/iran-pakistan-walayah-convergence/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/jund-al-mahdi-pakistan/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ══ ZAINAB / KHUTBA SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/zainab-khutba-kufa-political-theology/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/khutba-shiqshiqiyya/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/khutba-al-gharra/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/zainab-theophanic-station/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ METAPHYSICS / PHILOSOPHY SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/noor-before-river/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/ghayba-theology/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/haydar-amuli/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/ibn-arabi-fusus/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/mughal-synthesis/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/fadakiyya-constitutional-brief/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ SUFI / INDUS SERIES ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/indus-reception-jogi-malang/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/reed-complaint/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/undivided-river/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/veiled-light/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/sufi-court-problem/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/shah-wali-allah/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ GEOPOLITICS / CONTEMPORARY ══ -->
+  <url>
+    <loc>https://alvidscriptorium.com/research/against-huntington/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/gaza-israel-baalist/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>
