@@ -100,12 +100,12 @@ h1, h2, h3, h4, h5, h6 {
 .pta-nav-inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 28px;
+  padding: 0 20px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
 }
 
 .pta-nav-logo {
@@ -139,10 +139,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .pta-nav-link {
   position: relative;
-  padding: 5px 7px;
-  font-size: 0.77rem;
+  padding: 5px 5px;
+  font-size: 0.72rem;
   font-weight: 300;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--text-mid);
   transition: color 0.25s ease;
   white-space: nowrap;
@@ -185,15 +185,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav zones */
 .pta-nav-zone {
-  font-size: 0.56rem;
-  letter-spacing: 0.16em;
+  font-size: 0.54rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-dim);
-  padding: 0 4px;
+  padding: 0 3px;
   pointer-events: none;
   user-select: none;
   border-left: 1px solid var(--border-mid);
-  margin-left: 2px;
+  margin-left: 1px;
   line-height: 1;
   align-self: center;
 }
