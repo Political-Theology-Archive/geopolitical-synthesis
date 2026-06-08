@@ -135,6 +135,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 2px;
+  overflow: hidden;
+}
+
+/* Ensure hamburger never shows on true desktop */
+@media (min-width: 1281px) {
+  .pta-nav-toggle { display: none !important; }
+  .pta-nav-links  { display: flex !important; }
 }
 
 .pta-nav-link {
@@ -1433,7 +1440,7 @@ h1, h2, h3, h4, h5, h6 {
   .pta-eeat-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   :root { --nav-h: 60px; }
 
   /* FIX 6 — prevent any element from causing horizontal scroll */
@@ -1457,6 +1464,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 24px 20px;
     border-bottom: 1px solid var(--border);
     gap: 4px;
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
   }
   .pta-nav-links.is-open { display: flex; }
   .pta-nav-link { padding: 12px 8px; font-size: 0.95rem; }
