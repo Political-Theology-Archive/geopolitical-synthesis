@@ -225,10 +225,11 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 
 *These are recommendations for you to evaluate. Each has a Priority rating. None of these will be actioned unless you explicitly instruct it.*
 
-### REC-01 — Create Ba'alist Capture Instance V Paper [Priority: HIGH]
-**What**: Standalone paper on British-Wahhabi Double Constitution (1915–1917) — the Sykes-Picot theological dimension, Sharif Husayn's abandonment, Wahhabi-British alliance, destruction of the Ottoman Caliphate from outside and inside simultaneously.
-**Why**: The Ba'alist Capture enumeration (I through VI) is the corpus's most powerful structural claim. It is currently incomplete: Instance V has no paper. A reader cannot follow the chain.
-**Suggested WP number**: WP-10 (if a gap exists) or WP-60
+### ✅ REC-01 — Ba'alist Capture Instance V Paper [COMPLETED 2026-06-08]
+**What was done**: WP-17 (British Double Constitution) rebuilt from imperial-historical paper into the complete Instance V theological analysis.
+**New title**: "The British-Wahhabi Double Constitution: Ba'alist Capture Instance V and the Colonial-Theological Restructuring of the Post-Ottoman Islamic World"
+**Added**: Full six-instance chain table (I–VI); six Ba'alist Capture features applied to Instance V; Sharif Husayn zahir-batin displacement analysis; Jannatul Baqi demolition as physical destruction of Imami chain nodes; Instance V → Instance VI petrodollar channel documented; arc nav updated (WP-07 → WP-17 → WP-42).
+**Commit**: see changelog.md
 
 ### REC-02 — Add Sanctuary III Depth: Mughal Paper [Priority: HIGH]
 **What**: A paper on the Mughal Empire as the Indus walayah tradition's political expression — specifically Akbar's Din-i-Ilahi, Dara Shikoh's Majma al-Bahrain, and the Aurangzeb rupture as a Mode I → Kharijite collapse.
@@ -275,6 +276,22 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 **Recommendation acted on this session**: None from this file (file is new). All 5 session papers were from the pre-existing priority queue.
 
 **Open question for review**: The corpus now has 53 papers. Is the argument complete at the level of its four-Sanctuary architecture? Or are the Sanctuary III gaps (Mughal, deeper Ottoman, deeper Safavid) a structural weakness that needs to be closed before the corpus can be said to be making its full argument?
+
+### Entry 002 — 2026-06-08 (REC-01 Action)
+
+**Papers count**: 53 (unchanged — WP-17 rebuilt, not new)
+
+**Action taken**: REC-01 executed. WP-17 rebuilt from imperial-historical paper into Ba'alist Capture Instance V paper. The Ba'alist Capture chain (Instances I–VI) is now fully documented with a paper for each instance's structural analysis.
+
+**Lens affected**: Lens 2 (Ba'alist Capture) — the six-instance enumeration is now complete with dedicated papers at each instance. Previously Instance V existed only as a geopolitical paper without the capture-mechanism lens applied.
+
+**Architectural shift**: The Sanctuary III / Ottoman Terminus section gains depth: WP-17 now connects explicitly to WP-07 (Instance IV, Ibn Taymiyyah), WP-42 (Instance V completion, 1924 Abolition), and WP-27 (Instance VI, Pakistan). The chain is now readable as continuous narrative across the corpus.
+
+**New cross-reference made explicit**: The petrodollar channel (Instance V → Instance VI) is now documented in the paper body. A reader of WP-27 who follows the Instance VI framing backward to Instance V will now find the complete argument.
+
+**Recommendation actioned**: REC-01 ✅
+
+**Next recommendation available for action**: REC-02 (Mughal paper), REC-03 (series labels), REC-04 (cross-lens catalog index), REC-05 (Chishtī architecture paper), REC-06 (Mode II Safavid), REC-07 (sub-studies integration).
 
 ---
 
