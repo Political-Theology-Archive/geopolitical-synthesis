@@ -47,6 +47,11 @@
   --wide-w: 1200px;
 }
 
+/* ── ANCHOR OFFSET — compensate for fixed nav + hadith strip ── */
+[id] {
+  scroll-margin-top: calc(var(--nav-total) + 20px);
+}
+
 /* ── HADITH STRIP ── */
 .pta-hadith-strip {
   position: fixed;
