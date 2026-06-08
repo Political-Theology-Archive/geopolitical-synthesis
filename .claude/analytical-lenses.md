@@ -306,4 +306,22 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 
 ---
 
+### Entry 004 — 2026-06-08 (User Insight: Indus-Persian Revolutionary Circuit)
+
+**Papers count**: 53 → 54 (WP-60 new)
+
+**Origin**: User insight — Shariati used Iqbal to prepare Iranian masses for 1979; pre-colonial Hind-Persia had deep mutual intellectual connections; the circuit is bidirectional; 1979 should not be read as an isolated Iranian event.
+
+**Action taken**: WP-60 built — "The Indus-Persian Revolutionary Circuit: Iqbal, Ali Shariati, and the Return Current That Made 1979." Hinge paper between Sanctuary III (Iranian Laboratory) and Sanctuary IV (Contemporary Pakistan). Placed in catalog in Iranian Laboratory section with explicit forward arrows to WP-45 and WP-59.
+
+**New lens dimension identified**: Lens 3 (Imami Transmission Genealogy) has always been documented as unidirectional (westward-to-eastward: Iran → Indus). WP-60 completes the circuit by documenting the return arc (Indus → Iran via Shariati). The transmission is now confirmed as fully bidirectional — an ongoing civilizational exchange, not a one-time transfer.
+
+**WP-45 transformation**: The Iran-Pakistan walāyah convergence is now not merely genealogical (shared ancestor: Imam al-Ṣādiq) but historical (shared production of a specific political event: 1979). This significantly deepens WP-45's claim.
+
+**New connection established**: Dara Shikoh (WP-36) → Iqbal (WP-59) → Shariati (WP-60) → 1979 Revolution → Khamenei's walāyah (WP-45). This is now a fully documented four-century intellectual lineage.
+
+**Architectural significance**: WP-60 is the first paper to explicitly bridge Sanctuary III and Sanctuary IV as a **hinge** paper. Previously the corpus jumped from Sanctuary III (territorial seminaries, historical) to Sanctuary IV (contemporary Pakistan) without a paper that showed how the historical tradition became the contemporary political event. WP-60 fills that structural gap.
+
+**Sitemap priority**: Set at 0.84 (higher than standard 0.82) reflecting the paper's hinge status in the corpus architecture.
+
 *To add a new audit entry: append to Section VI with the session date, paper count change, lens emphasis, architectural shift, and any recommendation actioned.*
