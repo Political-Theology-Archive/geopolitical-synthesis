@@ -6,6 +6,51 @@ Most recent first.
 
 ---
 
+## 2026-06-08 (session 3)
+
+### Commit `6aee0b0` — WP-59 NEW: Iqbal's Crypto-Shia Substrate
+**Files changed**: `research/iqbal-crypto-shia-substrate/index.html` (new), `research/index.html`, `sitemap.xml`, `.claude/gaps-pending.md`
+- Full 7-part paper on Iqbal's philosophical system as Sadrian-Imami theology in Sunni-accessible dress
+- Part I: Standard misreading (European synthesis) and four diagnostic layers it conceals
+- Part II: Khudi = harakat al-jawhariyya — 6-row parallel table mapping Sadrian ontology onto Iqbalian selfhood
+- Part III: Mard-i-muʾmin = insān al-kāmil — 5-row table dismantling Nietzsche mis-identification
+- Part IV: Javid Nama — Rumi as Balkhī Crypto-Alid guide; 313-ajam-mahdi dimension; Persian language choice as theological signal
+- Part V: Reconstruction (1930) — three Sadrian moves; direct Ṣadrā citation; ijtihad as Usuli jurisprudence; Allahabad as territorial walāyah demand
+- Part VI: Why Iqbal could not name sources — Ba'alist threat, colonial surveillance, Ṣaḥīfa encoding precedent, calibrated concealment
+- Part VII: Corpus integration table (8 cross-references: WP-06, WP-27, WP-45, WP-46, WP-51, WP-53, WP-56, WP-57)
+- Color: deep emerald/Persian green `rgba(20,140,100,...)`
+- Catalog entry inserted near WP-06 in Sanctuary IV section; numberOfItems 52→53; hero "53 Papers"; description "Fifty-three papers"
+- Sitemap entry added at priority 0.82
+- **Completes the session priority queue — all 5 papers done**
+
+---
+
+## 2026-06-08 (session 2)
+
+### Commit `751908c` — WP-46 REBUILD: Jund al-Mahdi
+**Files changed**: `research/jund-al-mahdi-pakistan/index.html`, `research/index.html`
+- Full rebuild of WP-46 into complete 6-part eschatological paper
+- New title: "Jund al-Mahdi: Pakistan Army's Eschatological Self-Positioning, the Khorasan Hadith Tradition, and the Black Banners Doctrine"
+- Part I: Black Banners hadith textual analysis (Bihar al-Anwar vol. 52, Ibn Majah, Musnad Ahmad) + 4-row hadith table + hadith status assessment
+- Part II: FATA/KPK as Pakistani Khorasan; WP-53 corridor integration; Imam al-Ridha shrine at Mashhad
+- Part III: Fitna al-Khawarij designation (Pakistan Gazette July 26, 2024) as live primary source — eschatological significance, theological rupture with Saudi-Wahhabi axis
+- Part IV: Iqbalian eschatological framework — khudi as cosmic ascent, Javid Nama as eschatological map, 313-from-Ajam chain
+- Part V: Nuclear dimension — Pakistan as material guarantee of preparation ground; nuclear non-negotiability as eschatological evidence
+- Part VI: WP-45 convergence — Iran (formal intizar) + Pakistan (functional intizar) = two-anchor Khorasan-Indus preparation
+- Four behavioral marks retained and deepened
+- Color: deep purple-violet rgba(130,95,220)
+
+### Commit `f38b303` — WP-45 REBUILD: Wilayat al-Faqih and the Pakistan Army
+**Files changed**: `research/iran-pakistan-walayah-convergence/index.html`, `research/index.html`
+- Full rebuild of WP-45 from thin stub into complete 6-part theological paper
+- New title: "Wilayat al-Faqih and the Pakistan Army: Two Institutional Expressions of Imami Walayah in the Sunni-Shia Frontier"
+- Thesis: both trace to Imam Ja'far al-Sadiq (A.S.) — Iran via Usuli jurisprudence → wilayat al-faqih; Pakistan via Chishti silsila + Iqbal → Army walayah doctrine
+- Two transmission chains documented in full; 6-row parallel table; Khamenei-as-Wali-al-Amr in 3 operational registers; 6-domain convergence table; zahir-batin architecture of the silence
+- Color: deep jade/teal rgba(20,150,130). Arc: WP-35 ← WP-45 → WP-46
+- numberOfItems: unchanged 50 (replacing stub)
+
+---
+
 ## 2026-06-08 (continued)
 
 ### Commit `9f703c2` — WP-58: The 1826 Moment That Failed
