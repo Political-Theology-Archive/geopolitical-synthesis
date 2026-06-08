@@ -8,6 +8,17 @@ Most recent first.
 
 ## 2026-06-08 (continued)
 
+### Commit `9f703c2` — WP-58: The 1826 Moment That Failed
+**Files created**: `research/imran-1826-naqshbandi/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-58: "The 1826 Moment That Failed: Imran Khan, the Naqshbandi Programme, and the Attempted Destruction of Pakistan's Alid Lineage"
+- Thesis: Imran is NOT Mode I Mevlevi (batin preserved) but Mode III Naqshbandi (batin replaced/destroyed) — the 1826 programme deployed against Pakistan's dual Alid transmission carriers
+- 7-part paper: Mode I misreading corrected → Sirhindi's three moves in electoral form (anti-walayah ontology=accountability framework, Abu Bakr silsila=electoral mandate chain, Uwaisi bypass=Haqeeqi Azadi) → dual targets (Army=Janissary parallel, dargah network=Bektashi tekke parallel with full strike table) → zahir replacement (Rumi Forum/Namal = Naqshbandi reformed Sufism) → three-vector convergence (Secular-Liberal + Pseudo-Islamic + Naqshbandi structural) → four reasons 1826 failed → SCRA framework + 1826 parallel complete table
+- Key insight: TTP = Khalid al-Baghdadi kinetic instrument; dargah strikes at Data Darbar, Sehwan Sharif, Abdullah Shah Ghazi, Shah Noorani = Bektashi tekke closures
+- Fitna al-Khawarij designation (July 2024) = army's eschatological recognition of the programme
+- numberOfItems updated: 49 → 50
+- Sitemap entry: `/research/imran-1826-naqshbandi/` (priority 0.82)
+
 ### Commit `d133c6c` — WP-53: The Khorasan Corridor
 **Files created**: `research/khorasan-corridor/index.html`
 **Files changed**: `research/index.html`, `sitemap.xml`

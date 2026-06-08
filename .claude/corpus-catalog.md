@@ -96,6 +96,7 @@ Last updated: 2026-06-08
 | WP-16 | The Jinnah Suppression | `/research/jinnah-suppression/` | 10.5281/zenodo.20543496 | Pakistan Studies No. 1 | ✅ DOI |
 | WP-06 | The Indus Thesis (Iqbal's Persian Synthesis) | `/research/indus-thesis/` | 10.5281/zenodo.20467615 | — | ✅ DOI |
 | WP-27 | The Hakimiyya Capture (Maududi-JI-Zia) | `/research/maududi-hakimiyya/` | — | Pakistan Studies No. 3 | DOI pending |
+| WP-58 | The 1826 Moment That Failed (Imran/Naqshbandi) | `/research/imran-1826-naqshbandi/` | — | Pakistan Studies Series | DOI pending |
 | WP-11 | Against the Duplicity Thesis | `/research/against-duplicity-thesis/` | 10.5281/zenodo.20543480 | — | ✅ DOI |
 | WP-12 | The Munir Doctrine | `/research/munir-doctrine/` | 10.5281/zenodo.20543482 | — | ✅ DOI |
 | WP-35 | The Walayah Pakistan Doctrine | `/research/walayah-pakistan-doctrine/` | 10.5281/zenodo.20548585 | Civilizational Studies No. 5 | ✅ DOI |
