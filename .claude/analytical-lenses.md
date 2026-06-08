@@ -1,7 +1,7 @@
 # Analytical Lenses — SCRA Audit System
 ## Living document: trajectory tracking, alignment audits, drift detection
 
-Last updated: 2026-06-08 (initial build + Audit #1)
+Last updated: 2026-06-09 (Architecture Reconstruction — Four-Movement Logic)
 
 ---
 
@@ -587,3 +587,43 @@ Research | Critical Reviews | About
 **Homepage now updated**: 55 → 56 papers (WP-62 added). Homepage index.html also updated earlier from 34 → 55 in same session.
 
 **Remaining open recommendations**: REC-D (Iran formal intizār), REC-05 (Chishtī Silsila), REC-03 (series labels WP-56/57), REC-04 (cross-lens index), REC-07 (sub-studies integration).
+
+---
+
+### Entry 007 — 2026-06-09 (Architecture Reconstruction — Four-Movement Logic)
+
+**Trigger**: User instruction: "reconstruct whole logic, according evolution" — after Option C declared-position corpus identity was adopted and site audit confirmed the four-movement argument had fully crystallised.
+
+**Core insight documented**: The site evolved from a zone-geography model (The Theaters, The Captures, Roots & Channel) to a four-movement argument model. The 56-paper corpus now makes a sequential argument — not just an archive of linked topics. The architecture must reflect the argument sequence, not the topic geography.
+
+**Four-Movement Architecture finalised**:
+- **Movement I — The Instrument**: Zahir-batin ontology, Furqan Criterion, Ba'alist Capture mechanism — the analytical tools the corpus uses
+- **Movement II — The Suppression**: Six Ba'alist Capture instances from 657 CE to 1977 — the thing being documented
+- **Movement III — The Survival**: Mode I/II analysis, encoding mechanisms, Khorasan-Indus corridor — how Stream I survived despite suppression
+- **Movement IV — The Reassertion**: 1979, Iran geopolitics, Carthage Configuration — Stream I acting as sovereign in the present moment
+
+**Four Sanctuaries mapping** (Movement ↔ Sanctuary confirmed):
+- M1 = Al-Mabda' (Origin / Instrument)
+- M2 = Al-Masir (The Path / Suppression)
+- M3 = Al-Manzil (The Station / Survival)
+- M4 = Al-Ma'ad (The Return / Reassertion)
+
+**Files created/modified** (committed 56beac6):
+1. `_includes/nav.html` — Four movement zones in nav; `/the-argument/` spine entry added
+2. `the-argument/index.html` — NEW reading spine at `/the-argument/`; all WPs listed with color-coded movement grids; movement claim statements; reading sequence
+3. `closure/index.html` — Rebuilt as Movement II gateway: "The Suppression — Six Ba'alist Captures"
+4. `khorasan/index.html` — Rebuilt as Movement III gateway: "The Survival — Stream I outlasted every Capture"
+5. `iran-1979/index.html` — Rebuilt as Movement IV gateway: "The Reassertion — Stream I acts as sovereign"
+
+**Zone page eyebrow updates** (committed after, same session):
+- `/sassanid/` eyebrow: "III · المسالك — The Theaters" → "Movement III · The Survival · Avestan Ground"
+- `/ishraqi/` eyebrow: "Origins · III · Theaters" → "Movement III · The Survival · Ishraqi Light"
+- `/syriac-pipeline/` eyebrow: "III · المسالك — The Theaters" → "Movement III · The Survival · Syriac Channel"
+
+**Still to update** (low priority):
+- `/toledo/` — zone page eyebrow not yet updated (Toledo lives under Syriac Channel in the narrative)
+- `/huntington/` — not yet integrated into four-movement structure
+
+**Corpus identity**: Now fully Option C — declared-position scholarly corpus. Methodological Transparency section in About page. Hero paragraph declares position. JSON-LD updated. The Furqan Criterion is not neutral; this corpus declares it is not neutral.
+
+**Reading path now clear**: `/the-argument/` → M1 gateway → WPs → M2 gateway → WPs → M3 gateway → WPs → M4 gateway → WPs → full argument complete.
