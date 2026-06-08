@@ -80,6 +80,7 @@ Last updated: 2026-06-08
 | WP | Title | Permalink | DOI | Series | Status |
 |----|-------|-----------|-----|--------|--------|
 | WP-25 | The Sufi Court Problem | `/research/sufi-court-problem/` | 10.5281/zenodo.20543519 | Civilizational Studies No. 3 | ✅ DOI |
+| WP-52 | The Illuminated Lodge (Mevlevi/Bektashi/1826) | `/research/ottoman-sufi-theology/` | — | Civilizational Studies | DOI pending |
 | WP-17 | The British Double Constitution (1915+1917) | `/research/british-double-constitution/` | 10.5281/zenodo.20543498 | Imperial Studies No. 1 | ✅ DOI |
 | WP-42 | The 1924 Abolition | `/research/caliphate-abolition-1924/` | — | Imperial Studies No. 2 | DOI pending |
 

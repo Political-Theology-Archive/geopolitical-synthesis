@@ -6,6 +6,26 @@ Most recent first.
 
 ---
 
+## 2026-06-08 (continued)
+
+### Commit `d425f05` — WP-52: The Illuminated Lodge
+**Files created**: `research/ottoman-sufi-theology/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-52: "The Illuminated Lodge: Mevlevi Theology, Bektashi Doctrine, and the 1826 Vaka-i Hayriye as Ottoman Ba'alist Capture"
+- 6-part paper: Mevlevi theological system (Masnavi as theology, Chelebi hereditary succession as walayah, Sema seven-station ceremony) → Bektashi explicit Alid doctrine (14 Infallibles, teberru, Twelve Services, Janissary connection) → Naqshbandi counter-architecture (Sirhindi three moves, Khalid al-Baghdadi Ottoman penetration) → 1826 Vaka-i Hayriye (simultaneous Janissary abolition + Bektashi closure) → SCRA framework → Comparison table (three orders, three theological registers)
+- Sanctuary III companion to WP-25 (The Sufi Court Problem)
+- Arc navigation: WP-25 ← WP-52 → WP-42
+- Catalog entry added after WP-25, before WP-17 in Ottoman Terminus section
+- numberOfItems updated: 47 → 48
+- Sitemap entry: `/research/ottoman-sufi-theology/` (priority 0.82)
+
+### Commit `2276a49` — .claude/ Project Memory System
+**Files created**: `CLAUDE.md`, `.claude/project-overview.md`, `.claude/intellectual-framework.md`, `.claude/permanent-rules.md`, `.claude/pakistan-framework.md`, `.claude/site-architecture.md`, `.claude/corpus-catalog.md`, `.claude/audit-report.md`, `.claude/changelog.md`, `.claude/gaps-pending.md`
+- 10 files, 1,163 insertions
+- Complete project memory system for persistent Claude session context
+
+---
+
 ## 2026-06-08
 
 ### Commit `69a1b03` — Audit Fix: 5 Pipeline Issues

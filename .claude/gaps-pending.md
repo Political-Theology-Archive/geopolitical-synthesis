@@ -11,7 +11,7 @@ Last updated: 2026-06-08
 
 | Gap | Proposed WP | Why Critical | Arc Position |
 |-----|-------------|-------------|--------------|
-| Ottoman Sufi theology depth | WP-52 | WP-25 covers the *problem* but not the actual Mevlevi/Bektashi doctrinal content | Sanctuary II → Sanctuary III bridge |
+| Ottoman Sufi theology depth | WP-52 → **BUILT ✅ 2026-06-08** | WP-25 covers the *problem* but not the actual Mevlevi/Bektashi doctrinal content | Sanctuary II → Sanctuary III bridge |
 | Khorasan philosophical corridor | WP-53 | The Isfahan-Khorasan-Indus transmission route needs its own paper | Between Safavid (WP-31) and Indus (WP-13) |
 | ISI as civilizational institution | WP-54 | Incomplete without Pakistan's intelligence architecture in civilizational frame | Pakistan Laboratory arc |
 | Sixth Ba'alist Instance explicit enumeration | WP-55 | Currently implied in WP-27 but needs standalone treatment | Contemporary Reckoning |
@@ -90,7 +90,7 @@ WP-44 and the Third Temple standalone study address this but from different angl
 
 Priority order for next work after current session:
 
-1. **Build WP-52: Ottoman Sufi Theology Depth** — Mevlevi doctrinal content (Rumi's theology, the *Chelebi* succession, the girding ceremony), Bektashi doctrine (14 Infallibles, *teberru*), the 1826 Vaka-i Hayriye. This is the biggest Sanctuary III gap.
+1. ~~**Build WP-52: Ottoman Sufi Theology Depth**~~ → **DONE 2026-06-08** (`d425f05`)
 
 2. **Build WP-53: The Khorasan Corridor** — The philosophical pipeline from Isfahan (Mulla Sadra) through Khorasan (Malamatiyya) to the Indus (Chishti silsila). This links WP-31 (Safavid) to WP-13 (Indus) with the transmission chain they need.
 
