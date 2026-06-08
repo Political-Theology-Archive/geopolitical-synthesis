@@ -514,6 +514,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
+  <url>
+    <loc>https://alvidscriptorium.com/research/standing-complaint/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
   <!-- ══ SUFI / INDUS SERIES ══ -->
   <url>
