@@ -545,3 +545,45 @@ Research | Critical Reviews | About
 **Evidence standard achieved**: First SCRA paper built primarily on court-documented forensic evidence (trial records, sentencing materials, unsealed depositions) rather than scholarly monographs. This establishes a new evidence tier in the corpus: primary legal record alongside theological and historical source work.
 
 **REC status update**: REC-05 (Chishtī Silsila paper), REC-06 (Mode II success case: Safavid), and REC-07 (sub-studies integration) remain pending. No new urgent recommendations arising from WP-61 — the Present-Day arc is now structurally complete. The next priority should be the Mode II gap (REC-06) to complete the Mode Analysis typology.
+
+### Entry 006 — 2026-06-08 (Comprehensive Audit #2 + Nav Restructure + WP-62)
+
+**Papers count**: 55 → 56 (WP-62 new)
+
+**Audit #2 findings** (full analysis in Section VII):
+- Homepage paper count was critically stale (34 → 55, now fixed to 56)
+- Nav "III · Theaters" zone was architecturally incoherent — mixed 5 incompatible concepts
+- Syriac-Toledo and Sassanid read as same frame (user-identified, structurally confirmed)
+- No Islamic positive assertion visible anywhere in nav (no Living Tradition zone)
+- Ishraqi corridor page was orphaned (no nav entry)
+- Closure was in wrong zone (Theaters; belongs with Captures)
+
+**Actions taken (three separate commits):**
+
+1. **Homepage fixed**: "34 papers" → "55 papers"; JSON-LD and description updated
+
+2. **Nav restructured**:
+   - NEW "II · The Living Tradition": Ishraqi Light (rescued from orphan), Khorasan Corridor, Iran 1979
+   - "III · Captures" absorbs Closure (logical fit)
+   - NEW "IV · Roots & Channel": "Avestan Ground" (renamed Sassanid), "Syriac Channel" (renamed Syriac-Toledo)
+   - Syriac and Sassanid now in distinct named zone with distinct labels — cannot be read as same frame
+
+3. **WP-62 built**: Mode II and Its Fate — The Safavid State as Direct Batin Sovereignty
+
+**WP-62 lens coverage**:
+- **Lens 5 (Mode Analysis)**: PRIMARY — Mode II defined systematically for the first time; Mode I/Mode II parallel table (7 dimensions); Mode II's constitutive vulnerability (external conquest, not internal capture); survival theorem (transmission evacuation)
+- **Lens 3 (Imami Transmission Genealogy)**: Usuli chain from Muḥaqqiq al-Karakī → Bihbahānī → Anṣārī → Khomeini — 460-year unbroken chain with 1722 interruption explicitly mapped
+- **Lens 1 (Zahir-Batin)**: Mode II as the configuration in which batin IS zahir; Mode I as batin encoded in toleratable zahir
+- **Lens 4 (Eschatological)**: Nāʾib al-Imām doctrine as institutional Ghayba management; 1979 as Mode II intizār expression
+- **Lens 7 (Crypto-Shia)**: The contrast is explicit — Mode II does NOT use crypto-Shia encoding (no need); this clarifies Lens 7's domain (Mode I conditions only)
+
+**Architectural significance**: Mode Analysis lens (Lens 5) is now complete:
+- Mode I documented: WP-36 (Mughal) + WP-52 (Ottoman) + WP-57 (Musharraf) — three Mode I failure cases
+- Mode II documented: WP-62 (Safavid) — one Mode II success case with its own failure mode and survival mechanism
+- The typology is now generalisable: it has both modes, both failure types, both survival mechanisms
+
+**REC-C COMPLETED**: ✅ Mode II paper built. REC-06 (same as REC-C) closed.
+
+**Homepage now updated**: 55 → 56 papers (WP-62 added). Homepage index.html also updated earlier from 34 → 55 in same session.
+
+**Remaining open recommendations**: REC-D (Iran formal intizār), REC-05 (Chishtī Silsila), REC-03 (series labels WP-56/57), REC-04 (cross-lens index), REC-07 (sub-studies integration).
