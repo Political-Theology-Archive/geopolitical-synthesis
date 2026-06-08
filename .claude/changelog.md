@@ -8,6 +8,17 @@ Most recent first.
 
 ## 2026-06-08 (continued)
 
+### Commit `d133c6c` — WP-53: The Khorasan Corridor
+**Files created**: `research/khorasan-corridor/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-53: "The Khorasan Corridor: The Isfahan-Khorasan-Indus Philosophical Pipeline and the Transmission of Alid Metaphysics to the Subcontinent"
+- 7-part paper: Isfahan node (Mulla Sadra / al-Hikmah al-Muta'aliyah / Four Journeys) → Khorasan geographic field (8 cities, Imam al-Ridha shrine in Mashhad as Alid axis) → Malamatiyya of Nishapur (doctrine of batin concealment, comparison table with other SCRA transmission strategies) → Ibrahim ibn Adham of Balkh (Chishti silsila pivot, Imam al-Sadiq connection) → Chishti silsila (Muin al-Din Chishti, Baba Farid at Pakpattan/Indus) → Three transmission routes synthesis → SCRA framework + arc position
+- Sanctuary III corridor paper linking WP-31 (Safavid/Iranian Lab) → WP-13 (Indus Seminary)
+- Arc navigation: WP-31 ← WP-53 → WP-13
+- Catalog entry added after WP-31, before Ottoman Terminus section header
+- numberOfItems updated: 48 → 49
+- Sitemap entry: `/research/khorasan-corridor/` (priority 0.82)
+
 ### Commit `d425f05` — WP-52: The Illuminated Lodge
 **Files created**: `research/ottoman-sufi-theology/index.html`
 **Files changed**: `research/index.html`, `sitemap.xml`

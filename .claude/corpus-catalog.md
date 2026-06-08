@@ -74,6 +74,7 @@ Last updated: 2026-06-08
 | WP | Title | Permalink | DOI | Series | Status |
 |----|-------|-----------|-----|--------|--------|
 | WP-31 | The Safavid Experiment | `/research/safavid-experiment/` | 10.5281/zenodo.20549764 | Civilizational Studies No. 4 | ✅ DOI |
+| WP-53 | The Khorasan Corridor (Isfahan-Khorasan-Indus) | `/research/khorasan-corridor/` | — | Civilizational Studies | DOI pending |
 
 ### Theater: The Ottoman Terminus
 
