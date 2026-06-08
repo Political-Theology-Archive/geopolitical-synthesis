@@ -1,0 +1,482 @@
+---
+layout: page
+last_modified_at: 2026-06-09
+title: "The Argument — How the Corpus Proves Its Thesis · Alvid Scriptorium"
+description: "The reading spine of the SCRA corpus: how 56 working papers across four movements prove a single thesis — that the Imami walāyah tradition is authentic and living, Ba'alist Capture is structurally documented, Stream I has not been defeated, and the contemporary Iran-Pakistan-Gaza confrontation is the thesis made geopolitical."
+permalink: /the-argument/
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The Argument — How the SCRA Corpus Proves Its Thesis",
+      "description": "Reading guide and argument spine for the Sacred Civilization Research Archive. Four movements, 56 working papers, one thesis.",
+      "author": {"@type": "Person", "name": "Saad Khizar Bosal", "identifier": "https://orcid.org/0009-0004-9944-7378"},
+      "publisher": {"@type": "Organization", "name": "Alvid Scriptorium"},
+      "datePublished": "2026-06-09",
+      "url": "https://alvidscriptorium.com/the-argument/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alvidscriptorium.com/"},
+        {"@type": "ListItem", "position": 2, "name": "The Argument", "item": "https://alvidscriptorium.com/the-argument/"}
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --arg-gold: rgba(200,160,50,1);
+    --arg-gold-soft: rgba(200,160,50,0.15);
+    --arg-border: rgba(200,160,50,0.3);
+    --arg-dark: rgba(6,6,14,1);
+    --arg-text: rgba(220,215,200,1);
+    --arg-faint: rgba(170,160,140,0.7);
+    --m1: rgba(130,100,220,0.9);
+    --m2: rgba(200,70,70,0.9);
+    --m3: rgba(40,170,140,0.9);
+    --m4: rgba(200,130,40,0.9);
+  }
+  body { background: var(--arg-dark); color: var(--arg-text); font-family: 'Georgia', serif; }
+  .arg-header {
+    background: linear-gradient(135deg, rgba(30,25,8,0.97) 0%, rgba(6,6,14,0.99) 100%);
+    border: 1px solid var(--arg-border);
+    border-left: 4px solid var(--arg-gold);
+    padding: 2.2rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+  }
+  .arg-header .eye {
+    font-size: 0.76rem; letter-spacing: 0.18em; color: var(--arg-gold);
+    text-transform: uppercase; margin-bottom: 0.5rem; font-family: monospace;
+    display: block;
+  }
+  .arg-header h1 { font-size: 1.55rem; color: #fff; margin: 0 0 0.8rem; font-weight: normal; line-height: 1.35; }
+  .arg-header p { font-size: 0.95rem; line-height: 1.75; color: var(--arg-faint); margin: 0; }
+  p { line-height: 1.8; margin: 0.85rem 0; font-size: 0.96rem; }
+  .thesis-block {
+    background: linear-gradient(135deg, rgba(200,160,50,0.1) 0%, rgba(6,6,14,0.6) 100%);
+    border: 1px solid var(--arg-border);
+    border-left: 3px solid var(--arg-gold);
+    padding: 1.4rem 1.8rem;
+    margin: 1.8rem 0;
+    font-size: 1.04rem;
+    line-height: 1.78;
+    border-radius: 3px;
+  }
+  .movement {
+    margin: 2.8rem 0;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .movement-header {
+    padding: 1.2rem 1.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .movement-num {
+    font-size: 2.4rem;
+    font-family: 'Georgia', serif;
+    opacity: 0.2;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .movement-title-block h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 0 0 0.3rem;
+    letter-spacing: 0.03em;
+  }
+  .movement-title-block .claim {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    opacity: 0.75;
+  }
+  .movement-body {
+    padding: 0 1.8rem 1.4rem;
+  }
+  .movement-body p {
+    font-size: 0.93rem;
+    line-height: 1.75;
+    opacity: 0.85;
+    margin: 0 0 1rem;
+  }
+  .wp-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 8px;
+    margin: 1rem 0;
+  }
+  .wp-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+  .wp-item .wp-num {
+    font-family: monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+  .wp-item a { text-decoration: none; }
+  .wp-item a:hover { text-decoration: underline; }
+  .zone-links {
+    margin: 1rem 0 0;
+    padding: 0.8rem 1rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 3px;
+    font-size: 0.83rem;
+    color: var(--arg-faint);
+  }
+  .zone-links a { margin-right: 1rem; font-size: 0.82rem; }
+  /* Movement color themes */
+  .m1 .movement-header { background: rgba(130,100,220,0.08); border-bottom: 1px solid rgba(130,100,220,0.15); }
+  .m1 .movement-title-block h2 { color: var(--m1); }
+  .m1 .wp-item a { color: rgba(160,130,240,0.9); }
+  .m1 .zone-links a { color: rgba(130,100,220,0.75); }
+
+  .m2 .movement-header { background: rgba(200,70,70,0.08); border-bottom: 1px solid rgba(200,70,70,0.15); }
+  .m2 .movement-title-block h2 { color: var(--m2); }
+  .m2 .wp-item a { color: rgba(220,100,100,0.9); }
+  .m2 .zone-links a { color: rgba(200,70,70,0.75); }
+
+  .m3 .movement-header { background: rgba(40,170,140,0.08); border-bottom: 1px solid rgba(40,170,140,0.15); }
+  .m3 .movement-title-block h2 { color: var(--m3); }
+  .m3 .wp-item a { color: rgba(60,200,165,0.9); }
+  .m3 .zone-links a { color: rgba(40,170,140,0.75); }
+
+  .m4 .movement-header { background: rgba(200,130,40,0.08); border-bottom: 1px solid rgba(200,130,40,0.15); }
+  .m4 .movement-title-block h2 { color: var(--m4); }
+  .m4 .wp-item a { color: rgba(220,155,60,0.9); }
+  .m4 .zone-links a { color: rgba(200,130,40,0.75); }
+
+  .connector {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.1);
+    margin: 0.5rem 0;
+  }
+  .reading-note {
+    background: rgba(200,160,50,0.06);
+    border: 1px solid rgba(200,160,50,0.15);
+    padding: 1rem 1.4rem;
+    border-radius: 3px;
+    font-size: 0.88rem;
+    line-height: 1.72;
+    color: var(--arg-faint);
+    margin: 2rem 0;
+  }
+  a { color: rgba(160,140,100,0.9); }
+  a:hover { color: var(--arg-gold); }
+</style>
+
+<div class="arg-header">
+  <span class="eye">Reading Spine · Alvid Scriptorium · 56 Working Papers · One Argument</span>
+  <h1>The Argument<br><span style="font-size:0.72em;color:rgba(200,160,50,0.7);">How this corpus proves its thesis — from first principles to the present moment</span></h1>
+  <p>This page is the reading guide. It maps how 56 working papers across four movements form a single continuous argument. Read the movements in sequence: each one is the necessary premise of the next. The thesis is declared, not neutral. The evidence is primary-source verified.</p>
+</div>
+
+<div class="thesis-block">
+  <strong>The Thesis:</strong> The Prophetic Household's walāyah transmission is authentic and structurally verifiable. It has been subjected, fourteen times over, to a structurally isomorphic mechanism of institutional usurpation — the Ba'alist Capture — that seizes the <em>ẓāhir</em> symbols of Islamic legitimacy while surgically severing the <em>bāṭin</em> transmission chain. That transmission survived every Capture through documented mechanisms: Mode II sovereignty, Mode I encoding, Usuli evacuation, Chishtī silsila, philosophical encoding. Stream I has not been defeated. The contemporary Iran-Pakistan-Axis confrontation against the Ba'alist configuration is the thesis made geopolitical.
+</div>
+
+<div class="reading-note">
+  <strong>How to use this page:</strong> Each movement below states its claim, lists its working papers with one-line summaries, and names the zone pages that provide narrative context. A reader entering from any direction — through the nav, through a search engine, through a citation — can orient themselves here and find the correct entry point into the corpus.
+  <br><br>
+  <strong>Position:</strong> This corpus applies the Furqan Criterion — the Quranic faculty that discriminates Haq from Batil — as its primary analytical instrument. That instrument is not neutral. It has a direction. This corpus argues FOR the walāyah tradition. The evidence is independently verifiable. The position is declared.
+</div>
+
+---
+
+<!-- MOVEMENT I -->
+<div class="movement m1">
+  <div class="movement-header">
+    <div class="movement-num">I</div>
+    <div class="movement-title-block">
+      <h2>The Instrument — Why the Argument Is Possible</h2>
+      <div class="claim">The zahir-batin dialectic is real. The Furqan Criterion is derivable from the Quran. Ba'alist Capture is a named structural mechanism, not a metaphor. Without this movement, everything else is just history. With it, history becomes legible as a structured contest between authentic transmission and its institutional usurpation.</div>
+    </div>
+  </div>
+  <div class="movement-body">
+    <p>Movement I establishes the analytical instruments the entire corpus uses. It answers: why is this framework valid? Why is the zahir-batin distinction not mere mysticism? Why is Ba'alist Capture a scholarly category rather than a sectarian slogan? Why does the Furqan Criterion produce verifiable discriminations rather than circular arguments?</p>
+    <p>These papers constitute the corpus's Sanctuary I — Al-Mabda' (The Ontological Ground). Read them first. Without them, the later movements lack their premise.</p>
+    <div class="wp-list">
+      <div class="wp-item">
+        <span class="wp-num">WP-05</span>
+        <a href="{{ '/research/haq-batil/' | relative_url }}">Haq and Batil — Quranic Ontology of the Ba'alist Capture Mechanism</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Seven structural attributes of Batil from five Quranic verses. The foam that perishes; the water that remains.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-24</span>
+        <a href="{{ '/research/furqan-criterion/' | relative_url }}">The Furqan Criterion</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Quranic faculty of discernment as the primary analytical instrument. Three stations of application: ontological, historical, contemporary.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-09</span>
+        <a href="{{ '/research/baal-carthage-roman-continuity/' | relative_url }}">Punic Continuity — Baal-Carthage-Roman-Continuity</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Carthage Model: Tophet function, Damascus Compact, structural isomorphism across three millennia.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-10</span>
+        <a href="{{ '/research/iblis-limiting-principle/' | relative_url }}">The Iblis Limiting Principle</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Pre-Adamic cosmology grounds the Ba'alist Capture framework. Iblis as the cosmological precedent for institutional usurpation.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-38</span>
+        <a href="{{ '/research/ibn-arabi-fusus/' | relative_url }}">Ibn Arabi 57:3 — Zahir-Batin Ontology</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The zahir-batin dialectic systematically documented through Ibn Arabi's Fusus al-Hikam.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-08</span>
+        <a href="{{ '/research/imam-mahdi-justice-framework/' | relative_url }}">The Imam Mahdi Framework — Cosmic Justice</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The eschatological telos of the corpus: the walāyah chain's final institutional expression.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-04</span>
+        <a href="{{ '/research/sadiq-extraction/' | relative_url }}">School of Imam al-Ṣādiq — The Abbasid Extraction</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">How the state took the knowledge and sealed the custodian. The source node of the transmission chain.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-03</span>
+        <a href="{{ '/research/against-huntington/' | relative_url }}">Against the Clash — Deconstructing Huntington</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The dominant academic framework demolished. Mulla Sadra's ontology provides the deepest available demolition.</span>
+      </div>
+    </div>
+    <div class="zone-links">
+      Zone pages:
+      <a href="{{ '/huntington/' | relative_url }}">Deconstructing Huntington ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="connector">↓</div>
+
+<!-- MOVEMENT II -->
+<div class="movement m2">
+  <div class="movement-header">
+    <div class="movement-num">II</div>
+    <div class="movement-title-block">
+      <h2>The Suppression — Six Instances, One Pattern</h2>
+      <div class="claim">The Ba'alist Capture Mechanism is not a single historical event. It is a structurally isomorphic pattern documented six times across fourteen centuries. Each instance performs the same six structural features. The isomorphism is the proof — coincidence cannot explain this level of structural repetition.</div>
+    </div>
+  </div>
+  <div class="movement-body">
+    <p>Movement II constitutes the corpus's Sanctuary II — Al-Masīr (The Historical Documentation). It is the empirical spine of the argument: the six-instance chain from Saqifa (657 CE) to Pakistan's Ba'alist Capture (1977 CE). Each instance is documented with primary sources. The chain is continuous — each instance feeds the next.</p>
+    <div class="wp-list">
+      <div class="wp-item">
+        <span class="wp-num">WP-02</span>
+        <a href="{{ '/research/saqifa-structural-isolation/' | relative_url }}">Saqifa — Ba'alist Capture Instance I</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The structural isolation of the Prophetic House at Saqifa Banu Sa'ida. Capture Instance I established.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-11</span>
+        <a href="{{ '/research/caliphate-capture-chain/' | relative_url }}">Caliphate Capture Chain — Instances II & III</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Umayyad consolidation and Abbasid extraction: knowledge appropriated, custodians sealed.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-07</span>
+        <a href="{{ '/research/sealed-room/' | relative_url }}">The Sealed Room — Ibn Taymiyyah, Instance IV</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Ibn Taymiyyah's jurisprudential architecture of closure. The 14th-century walling-off of the batin transmission.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-17</span>
+        <a href="{{ '/research/british-double-constitution/' | relative_url }}">British-Wahhabi Double Constitution — Instance V</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Darin Agreement + Balfour Declaration as coordinated Ba'alist restructuring. Jannatul Baqi demolition as physical chain severance.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-27</span>
+        <a href="{{ '/research/ba-alist-capture/' | relative_url }}">Pakistan Ba'alist Capture — Instance VI</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Three vectors: Secular-Liberal, Pseudo-Islamic (Maududi-JI-Deobandi), Naqshbandi Structural. 1977 as the founding capture event.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-42</span>
+        <a href="{{ '/research/caliphate-abolition-1924/' | relative_url }}">Caliphate Abolition 1924 — Instance V completion</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Ottoman caliphate's abolition as the final structural act of Instance V. The zahir symbol detached from any remaining batin function.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-56</span>
+        <a href="{{ '/research/nawaz-damascus-compact/' | relative_url }}">Nawaz Damascus Compact</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Damascus Compact typology: merchant dynasty + Kharijite network + external patron. Pakistan's current Ba'alist formation.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-14</span>
+        <a href="{{ '/research/khawarij-historical-modern/' | relative_url }}">Khawarij Pattern — Historical to Modern</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Kharijite theological vector as the pseudo-Islamic arm of every Ba'alist Capture instance.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-18</span>
+        <a href="{{ '/research/maududi-hakimiyya/' | relative_url }}">Maududi's Hakimiyya</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">How Maududi's lā ḥukm illā lillāh became the theological instrument of Instance VI's pseudo-Islamic vector.</span>
+      </div>
+    </div>
+    <div class="zone-links">
+      Zone pages:
+      <a href="{{ '/closure/' | relative_url }}">Closure Architecture ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="connector">↓</div>
+
+<!-- MOVEMENT III -->
+<div class="movement m3">
+  <div class="movement-header">
+    <div class="movement-num">III</div>
+    <div class="movement-title-block">
+      <h2>The Survival — How Stream I Outlasted Every Capture</h2>
+      <div class="claim">The walāyah transmission did not disappear after any of the six Captures. It survived through three documented mechanisms: Mode II sovereign expression (Safavid), Mode I cultural-aesthetic encoding (Mughal, Ottoman, Musharraf), and Crypto-Shia philosophical encoding (Rumi, Iqbal, Ṣaḥīfa al-Sajjādiyya). The survival is provable — not asserted.</div>
+    </div>
+  </div>
+  <div class="movement-body">
+    <p>Movement III constitutes the corpus's Sanctuary III — Al-Manzil (The Territorial Expressions). It covers the three civilizational theaters where the walāyah tradition built institutional forms after the Captures: Safavid Iran (Mode II), Mughal India (Mode I), and the Ottoman-Anatolian complex (Mode I). It also covers the philosophical and devotional encoding channels through which the batin survived when direct expression was impossible. The Indus-Persian Revolutionary Circuit shows the transmission as bidirectional.</p>
+    <div class="wp-list">
+      <div class="wp-item">
+        <span class="wp-num">WP-31</span>
+        <a href="{{ '/research/safavid-experiment/' | relative_url }}">The Safavid Experiment — Shia State Formation</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The only sustained pre-modern institutionalization of the batin tradition at state level. Isfahan School. Al-Karaki's Nāʾib al-Imām.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-62</span>
+        <a href="{{ '/research/safavid-mode-two/' | relative_url }}">Mode II and Its Fate — Safavid as Direct Batin Sovereignty</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Mode II fully defined. 220-year structural logic. Survival theorem: transmission evacuation to Karbala/Najaf. 1979 as Mode II revival.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-36</span>
+        <a href="{{ '/research/mughal-synthesis/' | relative_url }}">The Mughal Synthesis — Mode I and Its Collapse</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Akbar's Din-e-Ilahi as Mode I shelter. Dara Shikoh as Mode I carrier. Aurangzeb's Ba'alist constitutional gesture as Mode I collapse.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-52</span>
+        <a href="{{ '/research/ottoman-sufi-theology/' | relative_url }}">Ottoman Sufi Theology — Mode I</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Mevlevi-Ottoman compromise as Mode I. 1826 Janissary abolition as Mode I collapse. Atatürk secularism as downstream.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-59</span>
+        <a href="{{ '/research/iqbal-crypto-shia-substrate/' | relative_url }}">Iqbal's Crypto-Shia Substrate — Khudi and Ṣadrā</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Iqbal's khudi = harakat al-jawhariyya. Chishtī silsila transmission chain. Dara Shikoh → Iqbal: 365-year philosophical continuity.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-51</span>
+        <a href="{{ '/research/sajjadiyya-transmission/' | relative_url }}">Ṣaḥīfa al-Sajjādiyya — Devotional Encoding</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Imami batin encoded in du'a form. The Chain of Gold transmission from Imam Zayn al-Ābidīn (A.S.) as Crypto-Shia survival mechanism.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-60</span>
+        <a href="{{ '/research/indus-persian-revolutionary-circuit/' | relative_url }}">Indus-Persian Revolutionary Circuit</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The return current: Shariati used Iqbal to prepare Iranian masses for 1979. Four-century bidirectional Indus-Persian circuit documented.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-53</span>
+        <a href="{{ '/research/khorasan-corridor/' | relative_url }}">Khorasan-Indus Corridor — The Preservation Route</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The eastern survival channel: dargah network, Chishtī silsila, Malang tradition. Stream I's territorial backbone.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-01</span>
+        <a href="{{ '/research/transmission-chain/' | relative_url }}">Sassanid-Syriac-Toledo — Stream II</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The westward ẓāhir sciences transfer. Parallel to Stream I but carrying knowledge without the batin chain. Toledo as terminus and erasure point.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-20</span>
+        <a href="{{ '/research/reed-complaint/' | relative_url }}">Reed's Complaint — Rumi's Mathnawi as Crypto-Shia</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Mathnawi as batin-encoded literary transmission. Rumi's Masnavi as Imami theological content in Sufi-aesthetic zahir.</span>
+      </div>
+    </div>
+    <div class="zone-links">
+      Zone pages:
+      <a href="{{ '/sassanid/' | relative_url }}">Avestan Ground ↗</a>
+      <a href="{{ '/ishraqi/' | relative_url }}">Ishraqi Light ↗</a>
+      <a href="{{ '/syriac-pipeline/' | relative_url }}">Syriac Channel ↗</a>
+      <a href="{{ '/khorasan/' | relative_url }}">Khorasan Corridor ↗</a>
+      <a href="{{ '/toledo/' | relative_url }}">Toledo Terminus ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="connector">↓</div>
+
+<!-- MOVEMENT IV -->
+<div class="movement m4">
+  <div class="movement-header">
+    <div class="movement-num">IV</div>
+    <div class="movement-title-block">
+      <h2>The Reassertion — The Thesis Made Geopolitical</h2>
+      <div class="claim">Stream I is not only alive — it is acting as a sovereign military, theological, and political force. 1979 was Mode II's revival. The Iran-Pakistan walāyah alignment is the Imami transmission's contemporary institutional expression. Operations True Promise I and II are the first direct sovereign military assertions of that tradition. The Ba'alist configuration's contemporary form — Epstein compliance network, Arch of Baal, Carthage Model — is documentable through court records.</div>
+    </div>
+  </div>
+  <div class="movement-body">
+    <p>Movement IV is Sanctuary IV — Al-Ma'ād (The Contemporary Consequence). The thesis closes here: everything documented in Movements I–III arrives in the present moment as living institutional and military reality. A reader who has followed the argument to this point understands why the Iran-Israel confrontation is not a bilateral territorial dispute but the visible surface of a fourteen-century structural contest.</p>
+    <div class="wp-list">
+      <div class="wp-item">
+        <span class="wp-num">WP-45</span>
+        <a href="{{ '/research/iran-pakistan-walayah-convergence/' | relative_url }}">Iran-Pakistan Walāyah Convergence</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Two branches from one source: Imam al-Ṣādiq → Usuli school (Iran) and Imam al-Ṣādiq → Chishtī silsila (Pakistan). The genealogy is verifiable.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-46</span>
+        <a href="{{ '/research/jund-al-mahdi-pakistan/' | relative_url }}">Jund al-Mahdi — Pakistan Army's Eschatological Positioning</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Fitna al-Khawarij designation as live primary source. Black Banners from Khorasan hadith tradition. Nuclear dimension.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-44</span>
+        <a href="{{ '/research/gaza-israel-baalist/' | relative_url }}">Gaza-Israel — Ba'alist Territorial Theology</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Operations True Promise I and II. Axis of Resistance as Stream I defense. Pakistan's civilizational non-recognition as Furqan Criterion verdict.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-61</span>
+        <a href="{{ '/research/carthage-configuration/' | relative_url }}">The Carthage Configuration — Ba'alist Dark State</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Epstein network as functional Tophet (court-documented). Arch of Palmyra as Ba'alist self-announcement. True Promise I & II forensic analysis. Pakistan's dual-layer position.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-57</span>
+        <a href="{{ '/research/musharraf-enlightened-moderation/' | relative_url }}">Musharraf's Enlightened Moderation — Mode I Collapse</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">Pakistan's Mode I under post-9/11 conditions. How external Ba'alist pressure collapses Mode I from within.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-58</span>
+        <a href="{{ '/research/imran-1826-naqshbandi/' | relative_url }}">Imran Khan — The Naqshbandi Structural Vector</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The attempted Mode II transition. Naqshbandi structural pressure as Ba'alist Capture vector. The 1826 Ottoman structural parallel.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-62</span>
+        <a href="{{ '/research/safavid-mode-two/' | relative_url }}">Mode II and Its Fate — 1979 as Revival</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The Islamic Republic as Mode II's second instantiation. Axis of Resistance as distributed Mode II. The survival theorem reaches 1979.</span>
+      </div>
+      <div class="wp-item">
+        <span class="wp-num">WP-50</span>
+        <a href="{{ '/research/indus-reception-jogi-malang/' | relative_url }}">Indus Reception — Jogi-Malang Synthesis</a><br>
+        <span style="font-size:0.78rem;opacity:0.6;">The primordial Indus ascetic substrate as reception ground for Karbala transmission. Dargah-Waqf as governance model.</span>
+      </div>
+    </div>
+    <div class="zone-links">
+      Zone pages:
+      <a href="{{ '/iran-1979/' | relative_url }}">1979 Revolution ↗</a>
+    </div>
+  </div>
+</div>
+
+---
+
+<div style="margin:2.5rem 0;padding:1.2rem 1.6rem;background:rgba(200,160,50,0.06);border:1px solid rgba(200,160,50,0.15);border-radius:3px;font-size:0.88rem;line-height:1.75;color:var(--arg-faint);">
+  <strong style="color:var(--arg-gold);">The complete corpus</strong> — all 56 working papers organized by Sanctuary — is in the
+  <a href="{{ '/research/' | relative_url }}" style="color:var(--arg-gold);">Research Portal</a>.
+  The four movements above are entry paths, not substitutes for the full papers.
+  Each working paper carries full primary source citations, methodology statements, and cross-references.
+  <br><br>
+  <strong style="color:var(--arg-gold);">Position declared:</strong> This corpus argues FOR the walāyah tradition. The Furqan Criterion discriminates; it does not observe neutrally. The evidence is independently verifiable regardless of the position. See the
+  <a href="{{ '/about/' | relative_url }}" style="color:var(--arg-gold);">About page</a>
+  for the full methodological transparency statement.
+</div>
