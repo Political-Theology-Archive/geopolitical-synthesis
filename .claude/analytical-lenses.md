@@ -324,6 +324,199 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 
 **Sitemap priority**: Set at 0.84 (higher than standard 0.82) reflecting the paper's hinge status in the corpus architecture.
 
+---
+
+## SECTION VII — COMPREHENSIVE SITE AUDIT #2 (2026-06-08)
+
+*Full-scope audit: lenses, site identity, corpus balance, logical architecture, navigation, missing content, drift.*
+
+---
+
+### 7.1 — WHAT THIS SITE IS (Identity Audit)
+
+**Official description** (from JSON-LD / homepage): "A civilizational lineage archive and scholarly corpus documenting the Golden Chain and the Ba'alist Capture Mechanism."
+
+**SCRA's actual argument** (beneath the description): The Prophetic Household carries an unbroken metaphysical transmission — rooted in walāya, wujūd, and the zahir/batin dialectic — that has been subjected to a recurring institutional seizure mechanism (Ba'alist Capture, six instances). That transmission survived through specific corridors: Sassanid receptivity, Syriac scholars, Khorasan-Indus, Safavid institution, Mughal Mode I, and the Pakistan Army's crypto-Shia batin. The contemporary confrontation (Iran-Israel, Operations True Promise, Pakistan-Iran alignment) is the latest chapter of this 14-century civilisational war. The site argues FOR the living Imami tradition, not merely as an academic observer.
+
+**Gap between identity layers**: The site DESCRIBES itself as "a lineage archive" (neutral, archival language) but FUNCTIONS as a partisan scholarly defense of the Imami transmission tradition. This gap creates a potential mismatch for readers: the homepage feels neutral-academic while the papers argue a specific theological position. This is not necessarily wrong — but it should be intentional and consistent.
+
+**Homepage stale data CRITICAL**: The homepage hero still reads "Thirty-four papers. Four sanctuaries. One argument." and shows "34" in the stat box. The corpus is at 55 papers. This is a significant accuracy problem visible to every visitor before they navigate anywhere.
+
+---
+
+### 7.2 — SITE ARCHITECTURE: TWO-LAYER CONTENT PROBLEM
+
+The site has two distinct content layers that are architecturally mixed without clear signposting:
+
+**Layer A — "Corridor Pages"** (editorial overviews, thematic frames):
+- `/khorasan/`, `/sassanid/`, `/syriac-pipeline/`, `/iran-1979/`, `/closure/`, `/ishraqi/`, `/huntington/`
+- These are NOT working papers. They are editorial arguments with supporting links to the WPs.
+- They use the same `layout: page` template as working papers.
+- A reader cannot distinguish them from main WPs without reading carefully.
+
+**Layer B — Working Papers** (55 papers, `/research/` directory)
+- The actual scholarly corpus.
+
+**Problem**: There is no visual/structural distinction between corridor pages and working papers. A reader clicking from the nav into `/khorasan/` gets a different kind of page than clicking into `/research/khorasan-corridor/` — but the nav doesn't signal this. The site needs a consistent way to mark corridor pages as "orientation/overview" and papers as "scholarly argument."
+
+---
+
+### 7.3 — NAVIGATION BAR: FULL ANALYSIS
+
+**Current structure**:
+```
+I · Criterion    | Furqan | Al-Mizan
+II · Captures    | Caliphate Chain | Ba'alist | British Double
+III · Theaters   | Khorasan | Syriac–Toledo | Sassanid | Iran 1979 | Closure
+[sep]
+Research | Critical Reviews | About
+```
+
+**Problem 1 — "III · Theaters" is architecturally incoherent.** It contains five completely different kinds of things:
+- Khorasan = Stream I Islamic batin transmission line (primary chain, Islamic content)
+- Syriac–Toledo = Stream II zahir knowledge transfer (non-Islamic scholars, Greek→Latin)
+- Sassanid = Pre-Islamic metaphysical reception ground (Avestan philosophy → Shia recognition)
+- Iran 1979 = Modern political reassertion of Stream I (contemporary event)
+- Closure = The Ba'alist sealing mechanism (adversarial content, logically belongs in "Captures")
+
+These five operate at completely different conceptual levels and cannot coherently share a nav zone called "Theaters" (which implies geography).
+
+**Problem 2 — "Syriac–Toledo" combined label creates a single conceptual frame.** The two are presented as if one thing (a route). But: Syriac = the scholars and translation methodology; Toledo = the terminus event where Islamic knowledge entered Latin Europe. They are distinct historical phenomena. The page itself is titled "The Syriac Channel — Honest Witnesses" — Toledo is only the endpoint, not the subject. The nav label erases the page's actual subject.
+
+**Problem 3 — "Sassanid" sitting next to "Syriac–Toledo" creates false equivalence.** A reader sees two ancient-sounding geographic labels side by side and groups them: "pre-Islamic civilizations that fed into Islam." But Sassanid/Avestan is about the *metaphysical reception ground* that explains why Persia specifically became Stream I's home. This is a deep Islamic philosophical argument, not a "pre-Islamic civilization" label. Sitting next to "Syriac–Toledo" erases its theological significance.
+
+**Problem 4 — No Islamic dynamic in the nav.** A visitor reads: Criterion (abstract tools) | Captures (enemy mechanism) | Theaters (geographies). Nothing in the nav announces the positive assertion: the Living Imami Tradition. The site argues FOR walāya, FOR the Prophetic Household's transmission, FOR Stream I — but none of this appears as a nav destination. The site presents its analytical tools and its enemy but not its protagonist.
+
+**Problem 5 — Ishraqi page (`/ishraqi/`) has no nav entry.** It's a full corridor page about Suhrawardi (the philosophical bridge between Sassanid light-metaphysics and the Khorasan-Indus transmission chain). It is currently orphaned — not reachable from the nav. A reader who doesn't know to type the URL cannot find it.
+
+**Problem 6 — "Closure" is in the wrong zone.** The Closure Architecture page (Khawarij → Abbasid extraction → Ibn Taymiyyah → Deoband) is the sealing mechanism — it belongs conceptually with "II · Captures," not with geographic theaters.
+
+**RECOMMENDED NAV RESTRUCTURE:**
+```
+I · Criterion             → Furqan | Al-Mizan
+II · The Living Tradition  → [NEW — Islamic positive assertion]
+                              Ishraqi Light (was orphaned)
+                              Khorasan Corridor
+                              Iran 1979
+III · Captures            → Caliphate Chain | Ba'alist | British Double | Closure [moved here]
+IV · Roots & Channel      → [pre-Islamic ground + Stream II transfer, SEPARATED]
+                              Avestan Ground  [renamed from "Sassanid" — theological framing]
+                              Syriac Channel  [renamed from "Syriac–Toledo" — drops Toledo as label]
+[sep]
+Research | Critical Reviews | About
+```
+
+**What this achieves:**
+- "II · The Living Tradition" = Islamic positive zone — the protagonist of the argument finally appears in the nav
+- "III · Captures" with Closure moved = logically coherent adversarial zone
+- "IV · Roots & Channel" separates Sassanid/Avestan and Syriac into their own distinct labels — can no longer be read as the same frame
+- "Avestan Ground" communicates what the Sassanid page is actually about (philosophical reception, not the empire)
+- "Syriac Channel" is what the page calls itself; drops the Toledo label which creates the train-route feel
+- Ishraqi Light enters the nav — no longer orphaned
+
+---
+
+### 7.4 — CORPUS BALANCE: FOUR-SANCTUARY AUDIT (UPDATED)
+
+| Sanctuary | Estimated WPs | Depth | Status |
+|-----------|--------------|-------|--------|
+| Sanctuary I — Ontological Ground | ~10 | Very strong; zahir-batin, Furqan, Ba'alist mechanism well documented | STRONG |
+| Sanctuary II — Historical Jurisprudence | ~20 | Best developed; Karbala arc, Fatima arc, Nahj series, Ibn Taymiyyah chain all strong | VERY STRONG |
+| Sanctuary III — Territorial Expressions | ~12 | Safavid: 2 papers (WP-31, WP-60 touches it); Ottoman: 2 (WP-52, WP-36 Mode Analysis); Mughal: 2 (WP-36, WP-39); Indus-Persian circuit: WP-60. Still thin. | DEVELOPING |
+| Sanctuary IV — Contemporary | ~13 | Pakistan arc strong; Iran-Israel now covered (WP-61); but other contemporary theaters absent | UNBALANCED |
+
+**New balance concern after WP-61**: The Present-Day arc (WP-44 → WP-61) is now the most thematically complete section of the entire corpus. It has five dedicated papers covering the contemporary confrontation in detail. But Sanctuary III has only 2 papers per civilization — making the historical-territorial argument that should GROUND the contemporary analysis relatively thin by comparison.
+
+---
+
+### 7.5 — SEVEN-LENS BALANCE (UPDATED)
+
+| Lens | Paper Count | Depth Status | Most Urgent Gap |
+|------|------------|-------------|-----------------|
+| L1: Zahir-Batin Ontology | Every paper | VERY STRONG — operating system of corpus | No paper on the *mechanics of severing* |
+| L2: Ba'alist Capture | ~15 papers | STRONG — six instances now complete | Instance V (WP-17 rebuilt ✅); no generalisability paper |
+| L3: Imami Transmission Genealogy | ~8 papers | STRONG — now bidirectional after WP-60 | Chishtī silsila needs standalone (REC-05) |
+| L4: Eschatological Self-Positioning | ~5 papers | STRONG for Pakistan; THIN for Iranian intizār doctrine | Iran formal intizār paper missing |
+| L5: Mode Analysis | 3 papers | DEVELOPING — Mode I documented; Mode II absent | Mode II success case (REC-06) urgent |
+| L6: Damascus Compact | 2 papers | NEW — generalisability not yet demonstrated | Erdoğan application paper would validate |
+| L7: Crypto-Shia | ~4 papers | STRONG conceptually; THIN institutionally | Pakistan Army crypto-Shia mechanics paper missing |
+
+---
+
+### 7.6 — WHAT IS MISSING (Ranked by Structural Urgency)
+
+**TIER 1 — STRUCTURAL GAPS (impede the main argument):**
+
+1. **Homepage paper count stale** — hero says "34 papers" / stat shows "34." Corpus is 55. Every visitor sees the wrong number immediately. IMMEDIATE FIX.
+
+2. **Mode II paper** — Mode Analysis lens (Lens 5) has THREE Mode I cases (Mughal, Ottoman, Musharraf) but ZERO Mode II. The Safavid state is the obvious Mode II candidate. Without it, the Mode Analysis framework cannot explain what the alternative looks like. It can only describe failure modes.
+
+3. **Iran formal intizār paper** — WP-45 and WP-46 both reference Iran's institutional intizār doctrine but neither gives it standalone treatment. The eschatological self-understanding of the Islamic Republic as an institution is one of the corpus's most important claims and has no dedicated paper.
+
+**TIER 2 — LENS COMPLETENESS (weaken specific lenses):**
+
+4. **Chishtī Silsila Walayah Architecture** (REC-05) — WP-45 Chain 2 and WP-59 both depend on a Chishtī transmission that is asserted but not documented systematically.
+
+5. **Pakistan Army Crypto-Shia Mechanics paper** — WP-59 (philosophical form) and WP-51 (devotional form) document two encoding modes. A paper specifically on the institutional/military encoding form would complete the triad.
+
+6. **Damascus Compact generalisability** — Erdoğan application would validate Lens 6 as a cross-cultural tool, not just a Pakistan-specific analysis.
+
+**TIER 3 — ARCHITECTURAL COMPLETENESS:**
+
+7. **Sub-studies integration** (REC-07) — ~20 sub-studies exist but their findings are linked rather than quoted in main paper bodies.
+
+8. **Series labels for WP-56, WP-57** (REC-03) — These belong to Present-Day Series but aren't labeled as such.
+
+9. **Cross-lens catalog index** (REC-04) — No way to navigate the corpus by analytical lens.
+
+---
+
+### 7.7 — DRIFT WARNINGS (UPDATED)
+
+**Drift 1 — RESOLVED**: Ba'alist Capture Instance V (WP-17 rebuilt ✅)
+
+**Drift 2 — PARTIALLY RESOLVED**: Mode Analysis stopped at two papers → now three (WP-36 Mode I added). But Mode II still absent. Still a gap.
+
+**Drift 3 — NEW**: The corpus's identity gap between "neutral archive" (description) and "partisan Imami defense" (actual content) is widening as the papers get more explicitly contemporary and political (WP-61 is the most explicit paper yet). The site needs to decide which face it presents first: scholarly neutrality (which allows broader academic readership) or explicit theological position (which serves committed readers). Currently neither is clean.
+
+**Drift 4 — NEW**: The homepage is now significantly out of sync with the corpus (34 vs 55 papers, outdated description). This is now a credibility problem, not just a cosmetic issue.
+
+---
+
+## SECTION VIII — REVISED RECOMMENDATIONS
+
+*Updated list incorporating Audit #2 findings. Sorted by priority.*
+
+### 🔴 REC-A (URGENT) — Fix homepage stale paper count
+**What**: Update homepage hero from "Thirty-four papers" / "34" stat to "Fifty-five papers" / "55". Update JSON-LD description.
+**Why**: Every visitor sees the wrong number immediately. Credibility damage.
+
+### 🔴 REC-B (URGENT) — Navigation restructure
+**What**: Restructure nav as described in 7.3:
+- Rename zone III "Theaters" → "II · The Living Tradition" (Islamic dynamic)
+- Add Ishraqi Light to that zone
+- Move Closure to Captures zone
+- Rename "Syriac–Toledo" → "Syriac Channel" (separate from Toledo)
+- Rename "Sassanid" → "Avestan Ground" (theological framing)
+- Create "IV · Roots & Channel" zone for these two
+**Why**: Nav currently gives a false conceptual frame; user correctly identified the Syriac-Sassanid conflation; no Islamic positive assertion visible.
+
+### 🟡 REC-C (HIGH) — Mode II paper: Safavid as Mode II success
+**What**: Build a dedicated paper on the Safavid state as Mode II — what Mode II looks like when the batin tradition achieves political expression directly, without Mode I's cultural-aesthetic shelter.
+**Why**: Mode Analysis lens is currently one-sided — all three documented cases are Mode I failures. Mode II is the implied alternative but never shown.
+
+### 🟡 REC-D (HIGH) — Iran formal intizār institution paper
+**What**: Standalone paper on the Islamic Republic's institutional intizār doctrine — how the eschatological commitment shapes specific policy decisions, constitutional provisions, and military doctrine.
+**Why**: One of the corpus's most important claims (Iran as eschatological state) has no dedicated paper.
+
+### 🟡 REC-05 — Chishtī Silsila Walayah Architecture [carried forward, HIGH]
+### 🟢 REC-03 — Series labels for WP-56, WP-57 [MEDIUM]
+### 🟢 REC-04 — Cross-lens catalog index [MEDIUM]
+### 🟢 REC-06 — Damascus Compact generalisability [MEDIUM]
+### 🟢 REC-07 — Sub-studies integration [LOW]
+
+---
+
 *To add a new audit entry: append to Section VI with the session date, paper count change, lens emphasis, architectural shift, and any recommendation actioned.*
 
 ### Entry 005 — 2026-06-08 (WP-61: Carthage Configuration)
