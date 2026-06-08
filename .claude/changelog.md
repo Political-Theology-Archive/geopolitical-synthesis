@@ -1,0 +1,99 @@
+# Changelog — Build Record
+## geopolitical-synthesis-site + sacredcivilization-site
+
+Chronological record of every significant build, fix, and change.
+Most recent first.
+
+---
+
+## 2026-06-08
+
+### Commit `69a1b03` — Audit Fix: 5 Pipeline Issues
+**Files changed**: `research/index.html`, `sitemap.xml`, 15 research page `index.html` files
+- Fix 1: Converted 14 `<span>` catalog titles → `<a href>` anchor links (WP-11 through WP-26)
+- Fix 2: Added 6 missing sitemap entries (ba-alist-capture, karbala-constitution, caliphate-capture-chain, mihna-mutazila, safavid-experiment, triadic-theory-dynamic-islam)
+- Fix 3: Updated `numberOfItems` 34 → 47 in JSON-LD and hero text
+- Fix 4: Removed duplicate `/research/al-mizan-haq-batil/` sitemap entry
+- Fix 5: Fixed author attribution in 15 pages — `"Alvid Scriptorium Research Division"` → `"Saad Khizar Bosal"` + ORCID
+
+### Commit `1b999fa` — WP-51: The Wounded Tongue (Sahifa al-Sajjadiyya)
+**Files created**: `research/sajjadiyya-transmission/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-51: "The Wounded Tongue: Imam Zayn al-Abidin's Sahifa al-Sajjadiyya as Post-Karbala Batin Transmission Architecture"
+- 8-part paper: Post-Karbala suppression → du'a as encryption → 5 close readings (Du'a 20, 47, 48, 28, Risalat al-Huquq) → walayah theology → Sufi pre-formation → cross-sectarian attestation → zahir-batin framework → arc position
+- Arc navigation: Shia Political Theology Series No. 3 (after WP-47, before WP-48)
+- Catalog entry added after WP-47, before WP-48 in Sanctuary II
+- Sitemap entry added: `/research/sajjadiyya-transmission/` (priority 0.82)
+- Series: SCRA Shia Political Theology Series No. 3
+
+### Commit `24dc2d6` — WP-27: The Hakimiyya Capture
+**Files created**: `research/maududi-hakimiyya/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-27: "The Hakimiyya Capture: Maududi, Jamaat-e-Islami, and the Khawarij Constitutional Formula in Pakistan (1941–1988)"
+- SCRA Framework Clarification box: Bhutto = pro-Ahl al-Bayt; 1973 Constitution = Iqbalian; Ba'alist Capture = two vectors
+- 6 parts: Khawarij formula → Iqbal vs Maududi comparison → JI four phases → Zia-JI alliance (5 pillars) → Seven-criterion Khawarij table → Fitna al-Khawarij designation
+- Pakistan Studies Arc navigation added
+- Catalog entry added between WP-06 and WP-11 in Pakistan Laboratory section
+- Sitemap entry added: `/research/maududi-hakimiyya/` (priority 0.82)
+- Series: SCRA Pakistan Studies Series No. 3
+
+### Commit `99a0ca6` — WP-23: The Nahjian Constitution
+**Files created**: `research/nahjian-constitution/index.html`
+**Files changed**: `research/index.html`, `sitemap.xml`
+- Built WP-23: "The Nahjian Constitution: Imam Ali ibn Abi Talib (A.S.)'s Ahd al-Ashtar"
+- Five Pillars of Nahjian Governance documented
+- Anti-capture architecture table (5 Ba'alist Capture Types vs Nahjian provisions)
+- SCRA Framework Clarification box (Bhutto/1973 Constitution framing)
+- Munir Doctrine assessment: Pillars I, II, V achieved; III, IV incomplete
+- Foundational Jurisprudence arc navigation
+- DOI: 10.5281/zenodo.20543517 (shared with WP-24 — needs separate deposit)
+- WP-23 catalog title converted from `<span>` to `<a href>`
+
+### Commit `6b7f058` — WP-15: The Standing Complaint
+**Files created**: `research/standing-complaint/index.html`
+**Files changed**: `research/index.html` (Research Page link added), `sitemap.xml`
+- Built WP-15: "The Standing Complaint: Fatima al-Zahra (A.S.)'s Khutba Fadakiyya..."
+- Five movements documented (Ta'sis, Istidlal, Ihtijaj, Kashf, Istishhad)
+- Six Usul al-Fiqh contributions
+- Bukhari cross-confessional datum: Book 57 H.62 + Book 64 H.3711
+- Hasan al-Basri → al-Ghazali transmission chain
+- DOI: 10.5281/zenodo.20543494
+
+---
+
+## Pre-2026-06-08 Session (sacredcivilization-site)
+
+### Commit `fd52ffd` + `6283d6f` — SCRA Label Removal (sacredcivilization-site)
+**Files changed**: `shifts/index.html`, `linguistics/index.html`, `working-papers/index.html`
+- Removed all SCRA-2026 labels from inner pages
+- Wing I: `SCRA-2026 · WING I` → `AKADEMIYA DARGAH GHAZI KOT · KULLIYYAT I`
+- Wing II: `SCRA-2026 · WING II` → `AKADEMIYA DARGAH GHAZI KOT · KULLIYYAT II`
+- Working Papers: `SCRA Working Papers` → `Working Papers`
+- WP-15 Research Page link added to working-papers catalog card
+
+---
+
+## Earlier Builds (pre-session summary)
+
+Major papers built before current session context:
+- WP-35 (Walayah Pakistan Doctrine) — DOI 10.5281/zenodo.20548585
+- WP-36 (Mughal Synthesis) — DOI 10.5281/zenodo.20548865
+- WP-37 (Ghayba Theology) — DOI 10.5281/zenodo.20549069
+- WP-38 (Ibn Arabi Fusus) — no DOI
+- WP-39 (Shah Wali Allah) — DOI 10.5281/zenodo.20548986
+- WP-31 (Safavid Experiment) — DOI 10.5281/zenodo.20549764
+- WP-47, WP-48, WP-49, WP-50 — no DOIs pending Zenodo
+- All early WPs (01-22) — most have DOIs
+
+---
+
+## Build Template Reference
+
+When building a new WP:
+1. Assign next WP number (currently: WP-52 would be next)
+2. Create directory: `research/[slug]/`
+3. Build HTML with: front matter → JSON-LD → styles → hero → content → verdict → nav
+4. Add catalog entry to `research/index.html`
+5. Add sitemap entry to `sitemap.xml`
+6. Update `numberOfItems` in `research/index.html`
+7. Commit all three files together: `git add research/[slug]/index.html research/index.html sitemap.xml`
