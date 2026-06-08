@@ -231,10 +231,9 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 **Added**: Full six-instance chain table (I–VI); six Ba'alist Capture features applied to Instance V; Sharif Husayn zahir-batin displacement analysis; Jannatul Baqi demolition as physical destruction of Imami chain nodes; Instance V → Instance VI petrodollar channel documented; arc nav updated (WP-07 → WP-17 → WP-42).
 **Commit**: see changelog.md
 
-### REC-02 — Add Sanctuary III Depth: Mughal Paper [Priority: HIGH]
-**What**: A paper on the Mughal Empire as the Indus walayah tradition's political expression — specifically Akbar's Din-i-Ilahi, Dara Shikoh's Majma al-Bahrain, and the Aurangzeb rupture as a Mode I → Kharijite collapse.
-**Why**: Without a Mughal paper, the Indus Thesis (WP-06) has no pre-modern political precedent on the subcontinent. The gap between the Chishtī silsila (theological) and the Pakistan Army (institutional) has no political bridge.
-**Suggested WP number**: WP-32 or a new slot
+### ✅ REC-02 — Sanctuary III Depth: Mughal Mode I Analysis [COMPLETED 2026-06-08]
+**What was done**: WP-36 (Mughal Synthesis) already existed as a strong 11,000-word three-act paper. Added a full Mode Analysis section (Mode I reading of Akbar/Dara Shikoh → Aurangzeb collapse), a five-row parallel table (Mughal / Ottoman / Musharraf), and updated all cross-references to WP-39 (now complete, was "in development"), WP-52, WP-57, WP-59. Arc nav updated to WP-13 ← WP-36 → WP-39. WP-39 "in development" note fixed to live link.
+**Lens served**: Lens 5 (Mode Analysis) now has its earliest and most detailed case (Mughal Mode I) explicitly connected to the Ottoman and Musharraf instances.
 
 ### REC-03 — Add Present-Day Series Labels to WP-56, WP-57 [Priority: MEDIUM]
 **What**: Add "Present-Day Scenario Series No. X" label to WP-56 and WP-57 catalog entries and paper headers.
@@ -291,7 +290,19 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 
 **Recommendation actioned**: REC-01 ✅
 
-**Next recommendation available for action**: REC-02 (Mughal paper), REC-03 (series labels), REC-04 (cross-lens catalog index), REC-05 (Chishtī architecture paper), REC-06 (Mode II Safavid), REC-07 (sub-studies integration).
+### Entry 003 — 2026-06-08 (REC-02 Action)
+
+**Papers count**: 53 (unchanged — WP-36 enhanced, not new)
+
+**Action taken**: REC-02 executed. WP-36 enhanced with full Mode I Analysis section. Mode Analysis lens (Lens 5) now has three explicitly connected cases: Mughal (WP-36) → Ottoman (WP-52) → Musharraf Pakistan (WP-57). The parallel table makes the typology generalisable. WP-39 live link fixed. WP-59 connection established (Iqbal as Dara Shikoh's intellectual heir — Mode I recovery through philosophical encoding).
+
+**Architectural shift**: Sanctuary III / Indus Seminary gains Mode Analysis depth. The Mode Analysis lens now spans three centuries and three geographies (Indus / Ottoman Anatolia / contemporary Pakistan) — making it a genuine comparative analytical tool rather than a two-paper sub-thread.
+
+**New cross-reference established**: WP-36 ↔ WP-59 (Iqbal as Dara Shikoh's heir) is now explicit in both papers. This is one of the most important conceptual links in the corpus — the 365-year continuity from Dara Shikoh's execution to Iqbal's philosophical recovery.
+
+**Recommendations actioned**: REC-01 ✅, REC-02 ✅
+
+**Next recommendation available for action**: REC-03 (series labels for WP-56/57), REC-04 (cross-lens catalog index), REC-05 (Chishtī architecture paper), REC-06 (Mode II Safavid), REC-07 (sub-studies integration).
 
 ---
 
