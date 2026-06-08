@@ -325,3 +325,30 @@ The complete SCRA argument is: zahir-batin ontology → Ba'alist Capture → Ima
 **Sitemap priority**: Set at 0.84 (higher than standard 0.82) reflecting the paper's hinge status in the corpus architecture.
 
 *To add a new audit entry: append to Section VI with the session date, paper count change, lens emphasis, architectural shift, and any recommendation actioned.*
+
+### Entry 005 — 2026-06-08 (WP-61: Carthage Configuration)
+
+**Papers count**: 54 → 55 (WP-61 new)
+
+**Origin**: User synthesis directive — bring together: recent Iran-Israel war scenario, burning of Baal statue (Arch of Palmyra installations), Epstein scandal as dark state evidence, Carthage model, whom Iran is fighting, Pakistani tactical support. Scholarly and evidence-based.
+
+**Action taken**: WP-61 built — "The Carthage Configuration: Ba'alist Dark State Architecture, the Epstein Compliance Network, and Iran's Existential War Against the Tophet System." Placed in Present-Day Scenario Series alongside WP-44/45/46. Catalog updated to reflect four-paper Present-Day Series. Sitemap priority: 0.86 (highest of all research papers — synthesises the entire corpus in contemporary application).
+
+**Lens coverage in WP-61**:
+- **Lens 1 (Zahir-Batin)**: The Arch of Palmyra as Ba'alist public zahir announcement; Epstein network as batin compliance mechanism invisible behind social zahir of philanthropy/academia
+- **Lens 2 (Ba'alist Capture)**: Five Tophet elements mapped to Epstein network; Damascus Compact reconstituted in contemporary four-vector form
+- **Lens 3 (Imami Transmission Genealogy)**: True Promise operations as institutional military expression of Imami sovereign resistance
+- **Lens 4 (Eschatological Self-Positioning)**: Implicit — Iran's self-understanding as Estekbār resistance; Pakistan's walāyah batin calculation
+- **Lens 5 (Mode Analysis)**: Not primary; Pakistan Army's dual-layer zahir-batin foreign policy reading applies Mode logic
+- **Lens 6 (Damascus Compact Typology)**: Core lens — full contemporary instantiation documented
+- **Lens 7 (Crypto-Shia Methodology)**: Pakistan's batin alignment; Army's institutional walāyah under Sunni-professional zahir
+
+**New corpus capability**: WP-61 is the first paper to directly apply the Carthage Model (WP-09 Punic Continuity) to a contemporary forensic object (Epstein court records). Previously the Carthage Model was a historical-theoretical framework. WP-61 makes it operational as a diagnostic tool for present-day power structure analysis.
+
+**Architectural significance**: The corpus now has a complete Present-Day arc: WP-44 (the territorial confrontation in Gaza) → WP-45 (the Pakistan-Iran convergence axis) → WP-46 (Pakistan Army's eschatological self-positioning) → WP-60 (the historical circuit making the contemporary alignment legible) → WP-61 (the Ba'alist dark state configuration Iran is actually confronting). The Sanctuary IV argument is now complete as a statement.
+
+**Mandatory structural clarification held**: WP-61 explicitly and repeatedly distinguishes the Ba'alist configuration from Judaism, the Jewish people, and Israel as civilization. The clarification is built into the architecture of the paper — not merely a footnote disclaimer.
+
+**Evidence standard achieved**: First SCRA paper built primarily on court-documented forensic evidence (trial records, sentencing materials, unsealed depositions) rather than scholarly monographs. This establishes a new evidence tier in the corpus: primary legal record alongside theological and historical source work.
+
+**REC status update**: REC-05 (Chishtī Silsila paper), REC-06 (Mode II success case: Safavid), and REC-07 (sub-studies integration) remain pending. No new urgent recommendations arising from WP-61 — the Present-Day arc is now structurally complete. The next priority should be the Mode II gap (REC-06) to complete the Mode Analysis typology.
