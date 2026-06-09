@@ -1608,18 +1608,15 @@ h1, h2, h3, h4, h5, h6 {
   .pta-evidence { padding: 20px 20px; }
   .pta-hero-thesis { padding-left: 16px; }
 
-  /* Hadith strip: allow ayah to wrap across 2 lines on phones */
-  :root { --verse-h: 72px; }
-  .pta-hadith-strip { height: auto; min-height: var(--verse-h); padding: 6px 16px; }
-  .pta-hadith-arabic { font-size: 0.72rem; white-space: normal; word-break: break-word; }
+  /* Hadith strip: short Ghadir text, hide reference line */
+  .pta-hadith-arabic { font-size: 0.82rem; }
   .pta-hadith-english { display: none; }
 }
 
 @media (max-width: 360px) {
   /* Ultra-small phones */
-  :root { --verse-h: 68px; }
-  .pta-hadith-strip { height: auto; min-height: var(--verse-h); padding: 5px 12px; }
-  .pta-hadith-arabic { font-size: 0.62rem; white-space: normal; }
+  :root { --verse-h: 42px; }
+  .pta-hadith-arabic { font-size: 0.7rem; }
   .pta-hadith-english { display: none; }
 
   /* Nav text truncation */
