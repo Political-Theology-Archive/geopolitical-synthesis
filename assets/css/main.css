@@ -1511,14 +1511,28 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(14, 14, 19, 0.97);
     backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 24px 20px;
+    padding: 16px 20px 24px;
     border-bottom: 1px solid var(--border);
-    gap: 4px;
-    max-height: calc(100vh - var(--nav-h));
+    gap: 0;
+    max-height: calc(100vh - var(--nav-total));
     overflow-y: auto;
   }
   .pta-nav-links.is-open { display: flex; }
-  .pta-nav-link { padding: 12px 8px; font-size: 0.95rem; }
+  .pta-nav-link { padding: 12px 8px; font-size: 0.95rem; border-bottom: 1px solid var(--border); }
+  .pta-nav-link:last-child { border-bottom: none; }
+
+  /* Zone labels: horizontal separators → vertical section headers */
+  .pta-nav-zone {
+    border-left: none;
+    margin-left: 0;
+    padding: 16px 8px 4px;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  .pta-nav-sep { display: none; }
 
   /* FIX 1+2 — hero & page-hero top padding */
   .pta-hero {
@@ -1593,4 +1607,18 @@ h1, h2, h3, h4, h5, h6 {
   .pta-analysis { padding: 20px 20px; }
   .pta-evidence { padding: 20px 20px; }
   .pta-hero-thesis { padding-left: 16px; }
+
+  /* Hadith strip: smaller text on phones */
+  .pta-hadith-arabic { font-size: 0.75rem; }
+  .pta-hadith-english { font-size: 0.52rem; }
+}
+
+@media (max-width: 360px) {
+  /* Ultra-small phones — compress hadith strip further */
+  :root { --verse-h: 42px; }
+  .pta-hadith-arabic { font-size: 0.65rem; }
+  .pta-hadith-english { display: none; }
+
+  /* Nav text truncation */
+  .pta-nav-logo-name { font-size: 0.82rem; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 }
