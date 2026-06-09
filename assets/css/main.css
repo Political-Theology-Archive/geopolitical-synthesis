@@ -1610,7 +1610,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Hadith strip: smaller text on phones */
   .pta-hadith-arabic { font-size: 0.75rem; }
-  .pta-hadith-english { font-size: 0.52rem; }
+  .pta-hadith-english { display: none; }
 }
 
 @media (max-width: 360px) {
