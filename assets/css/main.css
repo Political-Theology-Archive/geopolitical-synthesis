@@ -97,7 +97,7 @@
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 
 body {
   background: var(--bg);
@@ -109,6 +109,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -1608,9 +1609,11 @@ h1, h2, h3, h4, h5, h6 {
   .pta-evidence { padding: 20px 20px; }
   .pta-hero-thesis { padding-left: 16px; }
 
-  /* Hadith strip: short Ghadir text, hide reference line */
-  .pta-hadith-arabic { font-size: 0.82rem; }
-  .pta-hadith-english { display: none; }
+  /* Collapse all inline 2-col grids to single column */
+  [style*="grid-template-columns:1fr 1fr"],
+  [style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media (max-width: 360px) {
