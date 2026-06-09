@@ -41,7 +41,7 @@
   --font-mono:  'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 
   --nav-h: 68px;
-  --verse-h: 52px;
+  --verse-h: 0px;
   --nav-total: calc(var(--nav-h) + var(--verse-h));
   --content-w: 860px;
   --wide-w: 1200px;
@@ -1491,7 +1491,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1280px) {
-  :root { --nav-h: 60px; --verse-h: 46px; --nav-total: calc(var(--nav-h) + var(--verse-h)); }
+  :root { --nav-h: 60px; --verse-h: 0px; --nav-total: calc(var(--nav-h) + var(--verse-h)); }
 
   /* FIX 6 — prevent any element from causing horizontal scroll */
   body { overflow-x: hidden; }
