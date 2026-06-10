@@ -1,0 +1,541 @@
+---
+layout: default
+title: "WP-74: The Mughal-Safavid Transmission"
+---
+
+<style>
+  :root {
+    --wp-primary: rgba(155,95,40,1);
+    --wp-primary-light: rgba(155,95,40,0.10);
+    --wp-primary-mid: rgba(155,95,40,0.32);
+    --wp-primary-border: rgba(155,95,40,0.48);
+    --wp-gold: rgba(210,165,55,1);
+    --wp-gold-light: rgba(210,165,55,0.15);
+  }
+
+  .wp-header {
+    border-left: 5px solid var(--wp-primary);
+    padding: 2rem 2rem 1.5rem 2rem;
+    background: var(--wp-primary-light);
+    margin-bottom: 2.5rem;
+  }
+  .wp-series-tag {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wp-primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .wp-header h1 { font-size: 1.75rem; line-height: 1.25; margin: 0.4rem 0 0.8rem 0; }
+  .wp-header .wp-subtitle { font-size: 1.0rem; font-style: italic; opacity: 0.85; margin-bottom: 0.6rem; }
+  .wp-meta { font-size: 0.82rem; opacity: 0.7; }
+
+  .wp-thesis {
+    border: 1.5px solid var(--wp-primary-border);
+    border-radius: 4px;
+    padding: 1.4rem 1.6rem;
+    background: var(--wp-primary-light);
+    margin: 2rem 0;
+  }
+  .wp-thesis-label {
+    font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--wp-primary); font-weight: 700; margin-bottom: 0.6rem;
+  }
+  .wp-thesis p { margin: 0; font-size: 1.02rem; line-height: 1.65; }
+
+  .wp-part-header {
+    border-bottom: 2px solid var(--wp-primary);
+    padding-bottom: 0.4rem;
+    margin: 2.8rem 0 1.2rem 0;
+    color: var(--wp-primary);
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .wp-emperor {
+    border: 1px solid var(--wp-primary-border);
+    border-left: 4px solid var(--wp-primary);
+    border-radius: 0 3px 3px 0;
+    padding: 1.3rem 1.5rem;
+    margin: 1.4rem 0;
+  }
+  .wp-emperor-label {
+    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.5rem;
+  }
+
+  .wp-primary-source {
+    background: #0a1510;
+    border-left: 4px solid var(--wp-gold);
+    border-radius: 3px;
+    padding: 1.2rem 1.5rem;
+    margin: 1.2rem 0;
+  }
+  .wp-primary-source .source-label {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.5rem;
+    display: block;
+  }
+  .wp-primary-source blockquote {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0;
+    font-style: italic;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.05rem;
+    color: rgba(230,200,140,0.92);
+    line-height: 1.75;
+    border: none;
+  }
+  .wp-primary-source cite {
+    display: block; margin-top: 0.6rem;
+    font-size: 0.77rem; font-style: normal;
+    opacity: 0.65; letter-spacing: 0.05em;
+  }
+
+  .wp-inference {
+    background: rgba(255,200,50,0.07);
+    border-left: 3px solid rgba(255,200,50,0.45);
+    padding: 0.9rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .wp-inference-label {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: rgba(255,200,50,0.75); font-weight: 700; margin-bottom: 0.4rem;
+  }
+
+  .wp-table {
+    width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.87rem;
+  }
+  .wp-table th {
+    background: var(--wp-primary-mid); color: #fff;
+    padding: 0.6rem 0.8rem; text-align: left;
+    font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .wp-table td {
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    vertical-align: top; line-height: 1.45;
+  }
+  .wp-table tr:nth-child(even) td { background: rgba(255,255,255,0.03); }
+
+  .wp-verdict {
+    background: var(--wp-primary-light);
+    border: 1.5px solid var(--wp-primary-border);
+    border-radius: 3px;
+    padding: 1.3rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .wp-verdict-label {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--wp-primary); font-weight: 700; margin-bottom: 0.5rem;
+  }
+
+  .wp-gap-note {
+    background: rgba(255,255,255,0.04);
+    border-left: 3px solid rgba(255,255,255,0.18);
+    padding: 0.65rem 1rem;
+    font-size: 0.84rem; font-style: italic; opacity: 0.75;
+    margin: 0.8rem 0;
+  }
+
+  .wp-silsila {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 2.1;
+    padding: 1rem 1.4rem;
+    background: rgba(0,0,0,0.22);
+    border-radius: 3px;
+    margin: 1rem 0;
+    color: rgba(220,185,120,0.88);
+  }
+  .wp-silsila .node { color: var(--wp-gold); font-weight: 600; }
+  .wp-silsila .arrow { opacity: 0.45; }
+
+  .wp-painting {
+    background: var(--wp-gold-light);
+    border: 1px solid rgba(210,165,55,0.4);
+    border-radius: 3px;
+    padding: 1rem 1.3rem;
+    margin: 1.2rem 0;
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+  .wp-painting-label {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.4rem;
+  }
+
+  .wp-nav {
+    display: flex; justify-content: space-between;
+    margin: 3rem 0 1rem 0; font-size: 0.88rem; opacity: 0.7;
+  }
+  .wp-nav a { color: var(--wp-primary); text-decoration: none; }
+  .wp-nav a:hover { text-decoration: underline; }
+
+  .wp-bib { font-size: 0.84rem; line-height: 1.65; }
+  .wp-bib h4 {
+    font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--wp-primary); margin: 1.2rem 0 0.4rem 0;
+    border-bottom: 1px solid var(--wp-primary-border); padding-bottom: 0.2rem;
+  }
+  .wp-bib li { margin: 0.3rem 0; }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+
+<div class="wp-header">
+  <div class="wp-series-tag">SCRA Working Paper 74 · Sacred Geography Series · Sanctuary II × III × IV · Mughal Studies · Pakistan Studies · Khorasan Studies</div>
+  <h1>The Mughal-Safavid Transmission</h1>
+  <div class="wp-subtitle">How Humayun's Persian Exile, Jahangir's Spring, and Dara Shikoh's Execution Built the Sacred Infrastructure of the Khorasan-Hind Corridor</div>
+  <div class="wp-meta">2026-06-10 &nbsp;·&nbsp; Sacred Civilization Research Archive &nbsp;·&nbsp; alvidscriptorium.com</div>
+</div>
+
+<div class="wp-thesis">
+  <div class="wp-thesis-label">Thesis</div>
+  <p>The Mughal dynasty was the institutional transmitter of Safavid-Persian walāya Islam into the Indian subcontinent. Through Humayun's enforced adoption of Shia practice at the court of Shah Tahmasp I, through Akbar's sacred-kingship synthesis at the Khorasan-Hind crossing point, through Jahangir's personal Sufi devotionalism and documented patronage of the spring he called "Baba Hasan Abdal," and through Dara Shikoh's Qadiri walāya intellectual project — the Mughals established the sacred institutional infrastructure of the Khorasan-Hind corridor as imperial policy. When Aurangzeb executed Dara Shikoh in 1659 and elevated the Naqshbandi-Sirhindi programme to court dominance, he executed the identical theological capture that would repeat in the Ottoman 1826 Vaka-i Hayriye (WP-52) and again in the 2018–2022 Imran Khan formation (WP-58). The Pakistan Army's geographic home in Rawalpindi-Pothohar sits on the terrain that the Mughals established as the walāya-grounded threshold between Khorasan and Hind — terrain whose sacred infrastructure they built stone by stone, spring by spring, coin by coin.</p>
+</div>
+
+<div class="wp-part-header">Part I — The Theological Geography: Why Mughal History Is SCRA's Business</div>
+
+<p>The SCRA corpus has established a claim about the Pakistan Army's geographic position: GHQ Rawalpindi sits at the Khorasan-Hind threshold (WP-71), on the Pothohar Plateau that carries the highest concentration of Alid Sayyid genealogies and Chishti-Qadiri sacred nodes in the subcontinent (WP-64), within the eschatological preparation ground designated in the hadith corpus (WP-70). This is a claim about geography. But geography alone does not produce the density of sacred infrastructure that the Pothohar-Hassan Abdal corridor carries. Sacred infrastructure requires institutional patronage — someone had to build the gardens, establish the shrines, invest the resources, and create the conditions under which walāya transmission could take institutional form at this specific location.</p>
+
+<p>That institutional patron was the Mughal Empire. This paper documents the chain of transmission from Humayun's Persian exile to Dara Shikoh's execution — the arc within which the Mughals established, elaborated, and then nearly destroyed the walāya-grounded sacred infrastructure of the Khorasan-Hind corridor. Understanding this arc requires first understanding how Humayun's exile transformed the Mughal dynasty's theological character.</p>
+
+<div class="wp-part-header">Part II — Humayun and Shah Tahmasp I: The Safavid Initiation of the Mughal Court</div>
+
+<div class="wp-emperor">
+  <div class="wp-emperor-label">Humayun (r. 1530–1540, restored 1555–1556)</div>
+  <p>Nasir ud-Din Muhammad Humayun, second Mughal emperor. Defeated by Sher Shah Suri at Kanauj (1540 CE), driven from India, wandered through Sindh and Persia for fifteen years before returning with Safavid military support to reclaim Delhi (1555 CE). His Persian exile is the theological hinge of Mughal history.</p>
+</div>
+
+<h3>II.1 — The Court of Shah Tahmasp I: The Conditions of Return</h3>
+
+<p>Humayun arrived at the court of Shah Tahmasp I of Safavid Persia at Soltaniyeh in 1544. The Shah received him with considerable ceremony — he gifted Humayun an illustrated manuscript of Sa'di's <em>Gulistan</em> dated to Abu Sa'id Mirza (Humayun's great-great-grandfather), signaling dynastic recognition across generations. The gift was also a declaration: the Safavid Shah positioned himself as the continuator of a shared Timurid civilizational heritage.</p>
+
+<p>Tahmasp's conditions for military assistance were threefold:</p>
+
+<ol>
+  <li><strong>Formal adoption of Twelver Shia practice</strong> — historical consensus, documented in Mughal and British historiographical synthesis, holds this was a requirement. Mountstuart Elphinstone's <em>History of India</em> states: "the agreement must have contained a profession of the Shia religion, and a promise to introduce it into India, as well as an engagement to cede the frontier province or kingdom of Candahar."</li>
+  <li><strong>Cession of Kandahar</strong> to Tahmasp's infant son Morad Mirza — executed upon Humayun's first conquest.</li>
+  <li><strong>Adoption of Persian court protocol and practice.</strong></li>
+</ol>
+
+<div class="wp-gap-note">Source caution: No surviving Persian or Mughal treaty text with explicit conversion language has been identified. The Shia practice clause rests on secondary historiographical consensus drawing on circumstantial evidence from both Mughal and Safavid accounts. This is "historical consensus," not a documented primary source clause.</div>
+
+<p>Tahmasp provided 12,000 horsemen under Bairam Khan. Humayun returned to India in 1545, conquered Kandahar (duly ceded to the young Safavid prince), recaptured Delhi in 1555, and died in 1556 — leaving the transformed court to Akbar. Humayun appears to have reverted to Sunni practice after returning to India; he did not force conversion on his subjects. What he did carry permanently was the Persian cultural formation itself.</p>
+
+<h3>II.2 — The Persian Artists Who Built Mughal Visual Culture</h3>
+
+<p>The cultural transmission from Humayun's exile was permanent and structurally transformative. He recruited two master painters from Shah Tahmasp's declining Tabriz atelier:</p>
+
+<table class="wp-table">
+  <tr><th>Artist</th><th>Background</th><th>Contribution to Mughal Culture</th></tr>
+  <tr><td><strong>Mir Sayyid Ali</strong> (c. 1510–1572)</td><td>Son of Safavid court painter Mir Musawwir; trained under Bihzad — the supreme master of Persian miniature painting</td><td>Came to Humayun's service; contributed to the <em>Hamzanama</em> project under Akbar; first generation of the Mughal-Safavid synthesis</td></tr>
+  <tr><td><strong>Abd al-Samad</strong> "Shirin Qalam" (Sweet Pen) (active mid-16th c.)</td><td>Trained under Shah Tahmasp at Tabriz</td><td>Founded the Mughal <em>kitabkhana</em> (library-atelier); trained first generation of Indian artists in Safavid miniature style; established the Nigar Khana (painting workshop) that Humayun instituted upon returning to India</td></tr>
+</table>
+
+<p>Together they established the hybrid Indo-Persian Mughal painting school — the most distinctive visual production of Islamic civilization in South Asia. Every Mughal miniature painting, from Akbar's great illustrated manuscripts to Jahangir's court portraits, descends from the atelier these two Safavid-trained masters established at Humayun's command.</p>
+
+<p>Beyond painting, Humayun absorbed from Persia: Safavid court protocol, Persian administrative vocabulary, charbagh garden design (the fourfold garden form that structures every Mughal royal garden), astronomical and astrological practices, and the Persian literary culture that made the Mughal court the most intellectually sophisticated Persian-language court in the world outside Persia itself.</p>
+
+<div class="wp-inference">
+  <div class="wp-inference-label">SCRA Structural Note — The Safavid Initiation</div>
+  Humayun's exile was an enforced Safavid initiation of the Mughal dynasty. The Safavid court was, in WP-63's analysis, Mode II — direct batin sovereignty, state theology IS walāya theology. Humayun absorbed this framework across fifteen years of immersion in its court culture, its artists, its architectural forms, and (according to historical consensus) its Shia practice. What entered India with Humayun's return in 1545 was not merely a military force and an emperor restored — it was the first penetration of Mode II's walāya-sovereignty framework into the Mughal institutional structure.
+</div>
+
+<div class="wp-part-header">Part III — Akbar and the Khorasan-Hind Infrastructure</div>
+
+<div class="wp-emperor">
+  <div class="wp-emperor-label">Akbar (r. 1556–1605) — the Builder</div>
+  <p>Jalal ud-Din Muhammad Akbar. Third Mughal emperor. Greatest administrator of the Mughal dynasty. Constructed the twin infrastructure — military (Attock Fort) and sacred (Hassan Abdal garden) — that defined the Khorasan-Hind threshold as a zone of imperial sacred geography.</p>
+</div>
+
+<h3>III.1 — Attock Fort (1581–1583): The Military Threshold</h3>
+
+<p>Akbar commissioned Attock Fort in 1581 CE under the supervision of Khawaja Shamsuddin, positioned at Attock Khurd on the Indus River. The strategic logic: control the Indus crossing at the point where the Kabul River (coming from Afghanistan/Khorasan) meets the Indus gorge — the narrow point through which every army, merchant caravan, Sufi traveler, and pilgrimage party moving between Khorasan and Hind had to pass. Akbar posted Raja Man Singh to command the fort and guard the northwest frontier.</p>
+
+<p>Attock Fort is thus the military instantiation of the Khorasan-Hind threshold. Its location is not arbitrary — it is the geographic pinch-point that WP-71 identifies as the structural explanation for Hassan Abdal's five-civilization sacred concentration 20km to the east. The fort controlled the crossing; Hassan Abdal was the first major waystation for those who had crossed.</p>
+
+<h3>III.2 — The Hassan Abdal Wah Garden: The Sacred Waystation</h3>
+
+<p>Under Akbar's authority, the spring at Hassan Abdal received its first formal Mughal imperial garden development. Raja Man Singh constructed the initial garden structure:</p>
+<ul>
+  <li>Two-terrace design</li>
+  <li>Upper terrace: large tank fed by the spring</li>
+  <li>Water channel descending to lower terrace</li>
+  <li>Baradari (twelve-door pleasure pavilion)</li>
+</ul>
+
+<div class="wp-gap-note">Attribution precision: The garden is often described as "Akbar's charbagh" but the primary builder was Raja Man Singh acting under Akbar's commission. The attribution to Akbar's direct design requires qualification; it was an imperial project under his authority, constructed by his appointed general.</div>
+
+<p>Abu'l Fazl's <em>Ain-i-Akbari</em> mentions Hassan Abdal in the imperial administrative record: "Shams al-Din built himself a vault there in which Hakim Abu'l Fath lies buried," and records Akbar's visit to the town on return from Kashmir. The Ain-i-Akbari treats it topographically — a waystation on the imperial route — which itself documents its function as a managed node on the Mughal sacred-imperial geography of the northwest.</p>
+
+<h3>III.3 — Akbar's Sacred Kingship — Moin's Millennial Sovereign Thesis</h3>
+
+<p>The scholarly framework for understanding Akbar's construction of the Khorasan-Hind sacred infrastructure is provided by A. Azfar Moin's <em>The Millennial Sovereign: Sacred Kingship and Sainthood in Islam</em> (Columbia University Press, 2012). Moin demonstrates that 16th-century Mughal and Safavid rulers embodied a shared mode of "saintly/messianic" kingship — a pattern he traces to post-Mongol social reconstruction in which Sufi orders and shrines became the organizing infrastructure of Muslim political life, creating a condition where "the institution of kingship became locked in a mimetic embrace with the institution of sainthood."</p>
+
+<p>The mechanism: Muslim sovereigns modeled themselves on Sufi saints, deploying the charismatic authority of <em>wilāya</em> (sainthood) as the primary legitimating idiom for imperial power — rather than sharia compliance or jihad. At the Islamic millennium (1000 AH / 1591–92 CE), Akbar explicitly deployed messianic symbolism, styling himself as the most sacred figure of the new Islamic millennium. Moin's framework establishes this as a <strong>shared Mughal-Safavid pattern rooted in the same Timurid cultural substrate</strong> — both dynasties are variants of one political theology.</p>
+
+<div class="wp-inference">
+  <div class="wp-inference-label">SCRA Application of Moin's Thesis</div>
+  The Mughal construction of sacred infrastructure at the Khorasan-Hind threshold (Attock Fort + Hassan Abdal garden) was not incidental imperialism. It was the expression of a walāya-sovereignty framework in which the sacred geography of the Khorasan-Hind crossing point was understood as requiring imperial cultivation. Akbar built at Hassan Abdal because the site carried the <em>batin</em> gravity of the Khorasan-Hind axis — the same gravity that the hadith corpus (WP-70) designates, that the five-civilization sacred concentration (WP-71) embodies, and that the Pakistan Army's geographic positioning (WP-64) inherits.
+</div>
+
+<div class="wp-part-header">Part IV — The Saint Behind the Name: Baba Hasan Abdal</div>
+
+<p>The town of Hassan Abdal takes its name from a saint. Before the Mughals built their garden and before Guru Nanak's Panja Sahib tradition was established, there was a figure whose presence at this spring gave the site its sacred character. Understanding this figure — or, more precisely, understanding the layers of tradition around him — is necessary for grasping the full sacred depth of the site.</p>
+
+<h3>IV.1 — The Identity Question</h3>
+
+<p>Traditional Muslim sources largely identify <strong>Baba Hasan Abdal</strong> with <strong>Wali Qandhari</strong> — the same figure seen through different narrative frames. The convergent tradition:</p>
+
+<ul>
+  <li>Born c. 1476 CE in Kandahar, in the Timurid Empire (modern Afghanistan)</li>
+  <li>Came to the spring at what is now Hassan Abdal c. 1498 CE</li>
+  <li>Established a <em>dera</em> (devotional community center) on the hilltop above the spring</li>
+  <li>Preached to local people; practiced Sufi devotionalism</li>
+  <li>Died c. 1529 CE; tradition places his burial near Kandahar, Afghanistan</li>
+</ul>
+
+<p>The Sikh tradition knows this figure as <strong>Wali Qandhari</strong> (the Wali from Kandahar) — the saint whose control of the hilltop spring figures in the Guru Nanak-Panja Sahib narrative (WP-71). Note the directional resonance: a Sufi saint from Kandahar — deep Khorasan territory — established himself at the first major spring east of the Attock-Indus crossing. His trajectory enacts in a single life the Khorasan-to-Hind movement that the entire SCRA corpus documents as the eschatological axis.</p>
+
+<div class="wp-gap-note">Source caution: No documentation of the saint's Sayyid status (descent from Prophet Muhammad through Imam Ali) has been found in accessible sources. No specific Sufi order is documented for him in available records. The Attock/Campbellpur District Gazetteer (British Raj era) likely contains more precise local documentation — a physical copy at Punjab Archives Lahore or the British Library is the recommended next source. SCRA presents his Sayyid status as an open research question, not an established fact.</div>
+
+<h3>IV.2 — "Abdal": The Cosmological Station Embedded in the Place-Name</h3>
+
+<p>The word "Abdal" is not merely a name component. In classical Sufi cosmological literature — Ali Hujwiri's <em>Kashf al-Mahjub</em> (11th century, composed in Lahore, the corpus of the very tradition Baba Hasan Abdal belongs to), Ibn Arabi, and the mainstream Sufi cosmological tradition — <strong>abdal</strong> designates a specific class of hidden saints who spiritually maintain the world:</p>
+
+<table class="wp-table">
+  <tr><th>Station</th><th>Number</th><th>Function</th></tr>
+  <tr><td>Qutb (Pole/Axis)</td><td>1</td><td>The supreme wali; axis of the spiritual world; traditionally identified with Abd al-Qadir Gilani of Baghdad</td></tr>
+  <tr><td>Nuqaba'</td><td>3</td><td>Deputies of the Qutb</td></tr>
+  <tr><td>Awtad (Pegs)</td><td>4</td><td>Spiritual anchors of the world's four directions</td></tr>
+  <tr><td>Abrar</td><td>7</td><td>The righteous</td></tr>
+  <tr><td><strong>Abdal (Substitutes)</strong></td><td><strong>40</strong></td><td><strong>Hidden saints who "administer spiritual life" — their identity known only to God; when one dies, God "substitutes" another in his place</strong></td></tr>
+  <tr><td>Akhyar (The Good)</td><td>300</td><td>Outer circle of the hierarchy</td></tr>
+</table>
+
+<p>The place-name "Hasan Abdal" therefore embeds in the geography of the Khorasan-Hind crossing point the Sufi cosmological designation for a hidden saint of the 40 who spiritually maintain the world. The spring where five civilizations have venerated the sacred (WP-71) is named, in its Islamic layer, after a figure recognized by the tradition as belonging to the highest class of spiritual administration. <strong>The Khorasan-Hind threshold bears a name that means "the hidden saint who maintains the world."</strong></p>
+
+<h3>IV.3 — Primary Source Evidence: Jahangir's "Baba"</h3>
+
+<p>The most significant primary source evidence for the saint's recognized status comes from the Mughal emperor himself. When Jahangir visited the site in 1607 CE and recorded it in the <em>Tuzuk-i-Jahangiri</em>, he called it:</p>
+
+<div class="wp-primary-source">
+  <span class="source-label">Primary Source — Tuzuk-i-Jahangiri (Jahangirnama)</span>
+  <blockquote>"On Wednesday the 12th the camp was at <strong>Baba Hasan Abdal</strong>."</blockquote>
+  <cite>Tuzuk-i-Jahangiri. Trans. Alexander Rogers, ed. Henry Beveridge. Royal Asiatic Society, 1909–14. Internet Archive: archive.org/details/tuzukijahangirio00jahauoft</cite>
+</div>
+
+<p>The honorific <strong>"Baba"</strong> — reverently used across the Sufi devotional traditions of Punjab and Khorasan for a recognized saint and elder — establishes that by 1607 CE, the Mughal emperor himself understood this site as consecrated by and named after a saint deserving of that title. This is not a later pious tradition layered onto a secular place-name. The most important early Mughal emperor to visit the site recorded it as a saint's place.</p>
+
+<div class="wp-part-header">Part V — Jahangir at the Spring: The Tuzuk-i-Jahangiri as Primary Source</div>
+
+<div class="wp-emperor">
+  <div class="wp-emperor-label">Jahangir (r. 1605–1627) — the Devotee</div>
+  <p>Nur ud-Din Muhammad Salim Jahangir. Fourth Mughal emperor. The most explicitly Sufi-devotional ruler in Mughal history after Humayun. His memoir, the Tuzuk-i-Jahangiri, is a primary source of singular value for the SCRA Khorasan-Hind sacred geography because he visited, described, and invested in Hassan Abdal in person.</p>
+</div>
+
+<h3>V.1 — The 1607 Visit: Full Documentation</h3>
+
+<p>Jahangir visited Hassan Abdal in 1607 CE while pursuing his rebellious son Khusrau. He stayed three days. His memoir records:</p>
+
+<div class="wp-primary-source">
+  <span class="source-label">Primary Source — Tuzuk-i-Jahangiri on Hassan Abdal Spring</span>
+  <blockquote>"On Wednesday the 12th the camp was at Baba Hasan Abdal. Two miles (one kos) east of this station there was a waterfall over which the stream rushes with great force. The celebrated place at this station is <strong>a spring which flows from the foot of a little hill, exceedingly clear, sweet and nice</strong>..."</blockquote>
+  <cite>Tuzuk-i-Jahangiri. Trans. Rogers/Beveridge, 1909–14.</cite>
+</div>
+
+<p>The account continues with an act that is quintessentially Jahangiri in its fusion of aesthetic sensibility and spiritual munificence: he fished in the spring's basin using a <em>bhanwar jal</em> (Indian casting net), caught twelve fish, placed <strong>pearls in their noses</strong>, and released them back into the water. This gesture — adorning wild fish with imperial jewels and releasing them — is a deliberate act of sacred abundance: the emperor returns beauty to the saint's spring, enriched. It is documented in the Tuzuk as a personal act, not a ceremonial requirement.</p>
+
+<h3>V.2 — Jahangir's Financial Patronage of the Garden</h3>
+
+<p>After the visit, Jahangir funded two rounds of garden expansion from Lahore:</p>
+
+<table class="wp-table">
+  <tr><th>Disbursement</th><th>Amount</th><th>Date</th><th>Purpose</th></tr>
+  <tr><td>First payment</td><td><strong>4,000 rupees</strong></td><td>17 Ramadan 1018 AH</td><td>Initial garden expansion</td></tr>
+  <tr><td>Second payment</td><td><strong>5,000 rupees</strong></td><td>Shawwal 1018 AH</td><td>Bathhouse, central canal, fountains</td></tr>
+</table>
+
+<p>The funded construction: a large bathhouse south of the baradari; a central canal; fountains. The baradari commissioned by Jahangir was decorated with frescoes — Safavid-Persian aesthetic sensibility applied to the Pothohar landscape. Total imperial investment: 9,000 rupees dispatched personally by the emperor from the Lahore treasury to elaborate a garden at a saint's spring on the Khorasan-Hind axis.</p>
+
+<h3>V.3 — Jahangir's Sufi Identity: "Jahangir Preferring a Sufi Shaykh to Kings"</h3>
+
+<p>Jahangir's Sufi devotion was genuine, publicly performed, and visually documented. From age fourteen he wore single-pearl earrings symbolizing devotion to the Chishti lineage. He resided near the Dargah of Mu'in al-Din Chishti at Ajmer from 1613 to 1616 — three years of continuous proximity to the most significant Chishti sacred node in South Asia. He made regular shrine visits throughout his reign, documented throughout the Tuzuk.</p>
+
+<div class="wp-painting">
+  <div class="wp-painting-label">Primary Source — Visual Evidence</div>
+  <p>The painting <em>"Jahangir Preferring a Sufi Shaykh to Kings"</em> (c. 1615, by court artist Bichitr) depicts Jahangir standing on a globe, handing an open book to a Sufi shaykh — while an Ottoman sultan and King James I of England stand in subordinate positions at the lower register, waiting. Above Jahangir, cherubs hold a clock (time / worldly temporality) and an arc (divine presence). The structural message is programmatic: <strong>wilāya (sainthood/spiritual authority) outranks both Ottoman Islamic sovereignty and Western Christian kingship.</strong> This painting is the Mughal court's formal visual statement of the walāya-over-worldly-sovereignty principle — the thesis of Moin's <em>Millennial Sovereign</em> expressed in paint at the moment of its fullest imperial articulation. Held in the Smithsonian Freer Gallery. Smithsonian reference documented.</p>
+</div>
+
+<p>Jahangir's three-day stay at "Baba Hasan Abdal," his pearl-adorned fish released into the saint's spring, his 9,000 rupees disbursed for the garden's elaboration — these are not incidental acts of an emperor passing through. They are the acts of a ruler who understood the Khorasan-Hind threshold as a node of sacred authority requiring imperial cultivation, performed in the mode of the walāya-sovereign that Moin's thesis documents as the Mughal-Safavid imperial type.</p>
+
+<div class="wp-part-header">Part VI — Dara Shikoh: The Safavid-Sufi Synthesis and Its Destruction</div>
+
+<div class="wp-emperor">
+  <div class="wp-emperor-label">Dara Shikoh (1615–1659) — the Synthesist</div>
+  <p>Muhammad Dara Shikoh. Eldest son of Shah Jahan; Mughal Crown Prince. Qadiri Sufi, philosopher, translator. Executed by his brother Aurangzeb on 30 August 1659 on charges of apostasy and heresy. His execution is the Mughal court's 1659 Naqshbandi capture moment — structurally identical to the Ottoman 1826 Vaka-i Hayriye and the 2018–2022 Imran formation.</p>
+</div>
+
+<h3>VI.1 — The Qadiri Silsila and Mian Mir of Lahore</h3>
+
+<p>Dara Shikoh's spiritual formation centered on the Qadiri order in Lahore. His principal murshid was <strong>Mian Mir of Lahore</strong> (c. 1550 – 22 August 1635) — the founder of the Mian Khel branch of the Qadiri order, resident in the Dharampura neighborhood of Lahore. The Qadiri silsila traces through Abd al-Qadir Gilani of Baghdad (d. 1166 CE), himself the apex of the classical Sufi saint hierarchy (the <em>qutb</em> of his era).</p>
+
+<p>Dara's discipleship was intimate and personally demonstrated: <strong>he read Mian Mir's funeral oration at his master's death in 1635</strong> — an act recorded in contemporary sources that documents the depth of the student-teacher relationship. After Mian Mir's death, Dara came under the guidance of <strong>Mullah Shah Badakhshi</strong>, Mian Mir's spiritual successor in the Qadiri chain.</p>
+
+<div class="wp-silsila">
+  <span class="node">Prophet Muhammad (S.A.W.A.)</span><br>
+  <span class="arrow">&nbsp;&nbsp;&darr;</span><br>
+  <span class="node">Imam Ali ibn Abi Talib (A.S.)</span><br>
+  <span class="arrow">&nbsp;&nbsp;&darr; [chain of early masters]</span><br>
+  <span class="node">Abd al-Qadir Gilani, Baghdad (d. 1166 CE) — Qutb of his era</span><br>
+  <span class="arrow">&nbsp;&nbsp;&darr; [Qadiri silsila chain]</span><br>
+  <span class="node">Mian Mir of Lahore (c. 1550–1635) — Mian Khel branch</span><br>
+  <span class="arrow">&nbsp;&nbsp;&darr;</span><br>
+  <span class="node">Mullah Shah Badakhshi</span><br>
+  <span class="arrow">&nbsp;&nbsp;&darr;</span><br>
+  <span class="node">Dara Shikoh (1615–1659) — Mughal Crown Prince</span>
+</div>
+
+<p>The Qadiri silsila's first node after the Prophet is Imam Ali ibn Abi Talib — identical to the Chishti silsila (WP-73). The walāya chain grounding Dara's intellectual project ran to the Ahl al-Bayt.</p>
+
+<h3>VI.2 — The Four Works: The Sufi-Safavid Synthesis in Text</h3>
+
+<table class="wp-table">
+  <tr><th>Work</th><th>Date</th><th>Thesis</th><th>SCRA Significance</th></tr>
+  <tr>
+    <td><strong>Safinat al-Awliya</strong> (Ship of Saints)</td>
+    <td>1640 CE</td>
+    <td>400+ biographies of Sufi saints across all orders. Includes biographies of the four Rightly Guided Caliphs AND the <strong>twelve Shia Imams</strong> AND the four madhhab founders</td>
+    <td>Demonstrates Dara's formation as simultaneously Sunni-Sufi AND Shia-inclusive, rooted in walāya not fiqh — the catholic Islamic stance that his Qadiri silsila's Alid roots produce</td>
+  </tr>
+  <tr>
+    <td><strong>Majma' al-Bahrain</strong> (Confluence of the Two Seas)</td>
+    <td>1654–55 CE</td>
+    <td>Systematic comparison of ~50 Sufi Islamic terms with Upanishadic/Vedantic equivalents. Thesis: divine essence (<em>dhat</em>) = <em>Brahman</em>; soul's journey (<em>ruh</em>) = <em>atman</em>. Argues semantic-doctrinal equivalence</td>
+    <td>The Safavid-Mughal synthesis reaching its intellectual apex: walāya theology as universal spiritual grammar, cross-traditional</td>
+  </tr>
+  <tr>
+    <td><strong>Sirr-i-Akbar</strong> (The Greatest Mystery)</td>
+    <td>1657 CE</td>
+    <td>Persian translation + commentary on 52 Upanishads. Claim: Quranic <em>Kitab al-Maknun</em> (Hidden Book, Q.56:78) <em>refers to</em> the Upanishads</td>
+    <td>The apostasy charge: the claim that the Quran's "Hidden Book" is the Upanishads was the specific textual basis for Aurangzeb's heresy prosecution</td>
+  </tr>
+  <tr>
+    <td><strong>Sakinat al-Awliya</strong></td>
+    <td>1642 CE</td>
+    <td>First-person biography of Mian Mir as spiritual master — devotional account in Dara's own words</td>
+    <td>Primary source document of Dara's walāya relationship with his murshid</td>
+  </tr>
+</table>
+
+<p>Dara assembled Sanskrit scholars and pandits from Benares for six months to accomplish the Sirr-i-Akbar translation. This was not casual syncretism — it was a sustained scholarly project of the Mughal Crown Prince, operating with full court resources, to establish the Upanishads as part of the universal sacred library that his Sufi walāya framework opened.</p>
+
+<h3>VI.3 — The Trial and Execution: The Naqshbandi Capture of the Mughal Court</h3>
+
+<p>The succession war following Shah Jahan's illness (1657–1659) was the theological-political conflict that the Mughal court had been building toward since Sirhindi's time. Dara represented Qadiri/Chishti Sufi-pluralist Islam rooted in Persian-Safavid walāya culture. Aurangzeb aligned with the Naqshbandi-Mujaddidi programme institutionalized by Shaykh Ahmad Sirhindi (1564–1624) — the identical programme documented in WP-52 as the anti-walāya theological architecture of the Ottoman 1826 Vaka-i Hayriye.</p>
+
+<p>After military defeat, Dara was paraded through Delhi in chains and tried before a tribunal convened by Aurangzeb. Charges: <strong>apostasy</strong> (<em>ridda</em>) and <strong>heresy</strong> (<em>zandaqa</em>). Specific textual bases:</p>
+<ul>
+  <li>Engagement with Hindu philosophy as doctrinally equivalent to Islamic mysticism</li>
+  <li>Translation of the Upanishads into Persian</li>
+  <li>The claim that the Upanishads constitute the <em>Kitab al-Maknun</em> of Q.56:78</li>
+  <li>Association with Sarmad Kashani and other heterodox figures</li>
+</ul>
+
+<p>The tribunal declared him "a threat to the public peace and an apostate from Islam." He was executed <strong>30 August 1659 CE</strong>. Under Aurangzeb's subsequent reign, the Naqshbandi-Sirhindi family gained "a favored position at the imperial court" — the identical structural outcome as Khalid al-Baghdadi's position after the Ottoman 1826 event (WP-52) and the Tat Khalsa's institutional dominance after the Singh Sabha's victory over Sanatan Sikhs (WP-73).</p>
+
+<div class="wp-verdict">
+  <div class="wp-verdict-label">The Mughal Court's 1659 Moment</div>
+  <p>The 1659 execution of Dara Shikoh is not merely a Mughal succession event. It is the first fully documented instance of the Naqshbandi-Sirhindi programme achieving institutional capture of a major Islamic political formation — 167 years before the Ottoman 1826 and 359 years before the 2018–2022 Pakistan formation. The three structural events — Mughal 1659, Ottoman 1826, Pakistan 2018–2022 — are iterations of the same theological capture: Naqshbandi anti-walāya architecture (Move 1: dissolve walāya ontology; Move 2: substitute the transmission chain; Move 3: bypass the living Imam/institution) achieving institutional dominance by defeating the Chishti/Qadiri walāya formation.</p>
+  <p>In 1659, the Naqshbandi programme succeeded. In 1826, it succeeded. In 2018–2022, it did not succeed — because the Pakistan Army, unlike the Janissary corps and unlike Dara Shikoh, recognized the programme before the simultaneous blow landed and acted institutionally.</p>
+</div>
+
+<div class="wp-part-header">Part VII — The Grand Trunk Road as Imperial Sacred Infrastructure</div>
+
+<p>The Mughal <em>Badshahi Sadak</em> — formalized by Sher Shah Suri as <em>Sadak-e-Azam</em>, the Grand Trunk Road — ran from Bengal through Agra, Delhi, Lahore, across the Pothohar Plateau through Hassan Abdal and Attock Fort, across the Indus, through Peshawar, and up to Kabul through the Khyber Pass. The Mughals invested substantially in this route's infrastructure:</p>
+
+<ul>
+  <li><strong>Attock Fort</strong> (1581–83): Military control of the Indus crossing</li>
+  <li><strong>Hassan Abdal Wah Garden</strong>: Imperial pleasure-garden and sacred waystation at the Khorasan-Hind threshold</li>
+  <li><strong>Sarais (rest-houses)</strong>: Jahangir decreed all sarais be built of burnt brick and stone; broad-leaved trees planted between Lahore and Agra; bridges over water bodies. The entire route from Kabul to Agra was managed as continuous imperial infrastructure.</li>
+  <li><strong>Hassan Abdal Mosque</strong>: Constructed in the Shah Jahan era on the imperial route</li>
+</ul>
+
+<p>The UNESCO Tentative World Heritage nomination for "Sites along the Uttarapath, Badshahi Sadak, Sadak-e-Azam, Grand Trunk Road" recognizes what the Mughals understood: this was not merely a road but a managed sacred corridor, and the nodes along it — Hassan Abdal most prominently at the Khorasan-Hind threshold — carried the sacred gravity of the entire civilizational transmission route.</p>
+
+<div class="wp-part-header">Part VIII — From Mughal Infrastructure to Pakistan Army: The Inheritance</div>
+
+<p>The question this paper has been building toward: how does the Mughal construction of the Khorasan-Hind sacred infrastructure at Hassan Abdal-Attock-Pothohar become the Pakistan Army's civilizational inheritance?</p>
+
+<p>The answer is geographic. The sacred infrastructure the Mughals built does not disappear with the Mughal Empire. It sediments into the landscape — the garden at Hassan Abdal, the fort at Attock, the dargahs of the Pothohar plateau, the shrine network of the GT Road corridor. The British inherited this infrastructure when they took Punjab in 1849 and positioned their northwest frontier military apparatus at Rawalpindi — the city at the northern edge of the Pothohar plateau, 40km southeast of Hassan Abdal. The Pakistan Army inherited it from the British at independence in 1947.</p>
+
+<table class="wp-table">
+  <tr><th>Mughal Construction</th><th>Current Inheritor</th><th>SCRA Paper</th></tr>
+  <tr><td>Attock Fort — control of Khorasan-Hind crossing</td><td>Pakistan Army (active military installation)</td><td>WP-71</td></tr>
+  <tr><td>Hassan Abdal Wah Garden — sacred waystation</td><td>ETPB-administered; Pakistan Army garrison nearby</td><td>WP-71</td></tr>
+  <tr><td>GT Road / Badshahi Sadak — Khorasan-Hind corridor</td><td>NH-5, Pakistan's national highway; Pakistan Army's strategic supply route</td><td>WP-71</td></tr>
+  <tr><td>Pothohar plateau — Mughal administrative and military geography</td><td>GHQ Rawalpindi; PMA Kakul; all major Pakistan Army installations</td><td>WP-64</td></tr>
+  <tr><td>Rawalpindi — Mughal military waystation; British cantonment</td><td>GHQ Pakistan Army — 40km from Hassan Abdal</td><td>WP-64 / WP-71</td></tr>
+  <tr><td>Chishti-Qadiri dargah network on the GT Road</td><td>Living dargah pilgrimage network; Bari Imam 5km from GHQ</td><td>WP-64 / WP-58</td></tr>
+</table>
+
+<div class="wp-inference">
+  <div class="wp-inference-label">SCRA Structural Synthesis — The Threefold Inheritance</div>
+  <p>The Pakistan Army inherits the Khorasan-Hind threshold through three sequential institutional transmissions: (1) Mughal imperial construction — Akbar's Attock Fort and Hassan Abdal garden, Jahangir's documented patronage of "Baba Hasan Abdal's" spring, the entire GT Road sacred infrastructure as imperial policy; (2) British colonial positioning — Rawalpindi cantonment placed at the same strategic logic as Akbar's Attock Fort, managing the northwest frontier from the Pothohar plateau; (3) Pakistani national independence — the army inheriting the Rawalpindi-Pothohar institutional geography from the British Indian Army. What the army holds today is not merely real estate. It is the sediment of five centuries of walāya-grounded institutional construction, beginning with the Safavid-initiated Mughal dynasty's decision to establish their northwest threshold at the spring where Baba Hasan Abdal had settled a century before Akbar built his garden.</p>
+</div>
+
+<div class="wp-part-header">Bibliography</div>
+
+<div class="wp-bib">
+  <h4>Primary Sources</h4>
+  <ul>
+    <li>Tuzuk-i-Jahangiri (Jahangirnama). Trans. Alexander Rogers, ed. Henry Beveridge. Royal Asiatic Society, 1909–14. Internet Archive: <a href="https://archive.org/details/tuzukijahangirio00jahauoft">archive.org/details/tuzukijahangirio00jahauoft</a></li>
+    <li>Ain-i-Akbari. Abu'l Fazl, c. 1590–98. Trans. H. Blochmann and H.S. Jarrett. Asiatic Society of Bengal, 1891.</li>
+    <li>Dara Shikoh. Safinat al-Awliya. Completed 1640 CE. [Lucknow lithograph edition, 1872]</li>
+    <li>Dara Shikoh. Majma' al-Bahrain. 1654–55 CE. Ed. and trans. M. Mahfuz ul-Haq. Bibliotheca Indica, Calcutta, 1929.</li>
+    <li>Dara Shikoh. Sirr-i-Akbar (Persian trans. of 52 Upanishads). 1657 CE. Ed. Tara Chand and S.M. Reza Jalali Naini. Tehran, 1961.</li>
+    <li>Elphinstone, Mountstuart. History of India. London, 1841. [On Humayun's Safavid conditions]</li>
+  </ul>
+  <h4>Critical Scholarship</h4>
+  <ul>
+    <li>Moin, A. Azfar. <em>The Millennial Sovereign: Sacred Kingship and Sainthood in Islam</em>. Columbia University Press, 2012. WorldCat: <a href="https://www.worldcat.org/isbn/9780231160360">9780231160360</a></li>
+    <li>Foltz, Richard C. <em>Mughal India and Central Asia</em>. Oxford University Press, 1998. WorldCat: <a href="https://www.worldcat.org/isbn/9780195779127">9780195779127</a></li>
+    <li>Richards, John F. <em>The Mughal Empire</em>. Cambridge History of India. Cambridge University Press, 1993. WorldCat: <a href="https://www.worldcat.org/isbn/9780521566032">9780521566032</a></li>
+    <li>Schimmel, Annemarie. <em>Islam in the Indian Subcontinent</em>. Brill, 1980. WorldCat: <a href="https://www.worldcat.org/isbn/9789004061170">9789004061170</a></li>
+    <li>Ernst, Carl W. and Lawrence, Bruce B. <em>Sufi Martyrs of Love: The Chishti Order in South Asia and Beyond</em>. Palgrave, 2002. WorldCat: <a href="https://www.worldcat.org/isbn/9781403960443">9781403960443</a></li>
+    <li>Encyclopaedia Iranica. "Dara Shikoh." <a href="https://www.iranicaonline.org/articles/dara-sokoh/">iranicaonline.org/articles/dara-sokoh/</a></li>
+    <li>Hujwiri, Ali. <em>Kashf al-Mahjub</em>. Trans. R.A. Nicholson. Gibb Memorial Series, 1911. [On the Abdal cosmological hierarchy] WorldCat: <a href="https://www.worldcat.org/isbn/9780906094341">9780906094341</a></li>
+    <li>Dawn. "Guru Nanak, Wali Qandhari and other stories about Hasan Abdal." <a href="https://www.dawn.com/news/1370894">dawn.com/news/1370894</a></li>
+  </ul>
+  <h4>Research Gap — Critical</h4>
+  <ul>
+    <li>Attock/Campbellpur District Gazetteer (British Raj era) — physical copy required for Hasan Abdal saint identity, Sayyid status, and silsila documentation. Punjab Archives Lahore or British Library.</li>
+  </ul>
+</div>
+
+<hr style="border-color: var(--wp-primary-border); margin: 2.5rem 0;">
+
+<p style="font-size:0.85rem; opacity:0.65; line-height:1.6">
+  <strong>Cross-references:</strong>
+  <a href="{{ '/research/safavid-mode-two/' | relative_url }}">WP-63 — Mode II (Safavid State)</a> ·
+  <a href="{{ '/research/pothohar-khorasan-axis/' | relative_url }}">WP-64 — Pothohar-Khorasan Axis</a> ·
+  <a href="{{ '/research/khorasan-hind-preparation-ground/' | relative_url }}">WP-70 — Khorasan-Hind</a> ·
+  <a href="{{ '/research/hassan-abdal-crossing-point/' | relative_url }}">WP-71 — Hassan Abdal</a> ·
+  <a href="{{ '/research/balkh-inversion/' | relative_url }}">WP-72 — Balkh Inversion</a> ·
+  <a href="{{ '/research/pakpattan-absorption/' | relative_url }}">WP-73 — Pakpattan Absorption</a> ·
+  <a href="{{ '/research/ottoman-sufi-theology/' | relative_url }}">WP-52 — Ottoman Sufi Theology</a> ·
+  <a href="{{ '/research/imran-1826-naqshbandi/' | relative_url }}">WP-58 — The 1826 Moment That Failed</a>
+</p>
+
+<div class="wp-nav">
+  <a href="{{ '/research/pakpattan-absorption/' | relative_url }}">← WP-73: The Pakpattan Absorption</a>
+  <a href="{{ '/research/' | relative_url }}">↑ Research Archive</a>
+</div>
