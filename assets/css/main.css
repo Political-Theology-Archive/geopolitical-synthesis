@@ -1845,6 +1845,218 @@ h1, h2, h3, h4, h5, h6 {
   /* Ultra-small phones */
   :root { --verse-h: 42px; }
   .pta-hadith-arabic { font-size: 0.7rem; }
+
+/* ═══════════════════════════════════════════════════════════════════
+   THESIS / MANIFESTO FORMAT — 2026-06-12
+   Content type: Theses (T-XX). Replaces Working Paper academic posture.
+   Voice: declaring, not arguing-to-committee.
+   URLs, JSON-LD, cross-references unchanged — only displayed format changes.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── THESIS EYEBROW ──
+   "T-84 · Alvid Scriptorium · 2026"
+   Replaces "WP-84 · Layer III · Working Paper · Deep-State War" */
+.as-eye {
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+/* ── STANDFIRST ──
+   The complete argument stated as fact before the body begins.
+   Not "this paper will..." — the argument itself, declared.
+   3–5 sentences. Opens every Thesis. */
+.as-standfirst {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 300;
+  line-height: 1.78;
+  color: var(--text);
+  max-width: 700px;
+  margin: 8px 0 52px;
+  padding: 26px 30px 26px 28px;
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(135deg, rgba(200,144,64,0.045) 0%, transparent 65%);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.as-standfirst strong {
+  font-weight: 500;
+  color: var(--gold-bright);
+}
+
+.as-standfirst em {
+  font-style: italic;
+  color: var(--text-mid);
+}
+
+/* ── SCRA RULING ──
+   For the Archive's settled positions — stated without hedging.
+   Absorbs .pta-analysis where the content is a verdict, not a question.
+   No box label. No "The SCRA argues that." Just the ruling, set apart
+   between two thin gold rules. */
+.as-ruling {
+  border-top: 1px solid rgba(200,144,64,0.3);
+  border-bottom: 1px solid rgba(200,144,64,0.3);
+  padding: 22px 0 22px 0;
+  margin: 38px 0;
+}
+
+.as-ruling p {
+  font-family: var(--font-serif);
+  font-size: 1.04rem;
+  font-weight: 400;
+  line-height: 1.78;
+  color: var(--text);
+  margin-bottom: 12px !important;
+}
+
+.as-ruling p:last-child { margin-bottom: 0 !important; }
+
+.as-ruling strong {
+  font-weight: 600;
+  color: var(--gold-bright);
+}
+
+.as-ruling em {
+  font-style: italic;
+  color: var(--text-mid);
+}
+
+/* ── DECLARATION ──
+   A single sentence that IS the verdict of its section.
+   Set in Cinzel. Centered between two horizontal gold rules.
+   Use sparingly — one per thesis maximum, at the climactic moment. */
+.as-declaration {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-align: center;
+  padding: 30px 24px;
+  margin: 44px 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.as-declaration::before,
+.as-declaration::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200,144,64,0.32) 25%,
+    rgba(200,144,64,0.32) 75%,
+    transparent 100%
+  );
+}
+
+.as-declaration::before { top: 0; }
+.as-declaration::after  { bottom: 0; }
+
+/* ── THESIS FOOTNOTES ──
+   Primary sources demoted from preamble to document end.
+   The argument leads. The record follows. */
+.as-footnotes {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.as-footnotes-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.as-footnotes ol {
+  list-style: decimal;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.as-footnotes li {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.68;
+  margin-bottom: 7px;
+  font-family: var(--font-sans);
+}
+
+.as-footnotes li em {
+  font-style: italic;
+  color: var(--text-dim);
+}
+
+/* Superscript footnote reference — inline in body text */
+.as-fn {
+  font-size: 0.62rem;
+  vertical-align: super;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+  margin-left: 1px;
+  cursor: default;
+}
+
+/* ── THESIS BODY — OVERRIDE CONTENT-WRAP DEFAULTS ──
+   When .as-thesis-body wraps the content,
+   h2 headings lose the Roman numeral academic look
+   and gain the manifesto declaring style. */
+.as-thesis-body h2 {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 300;
+  margin: 56px 0 16px;
+  padding-bottom: 0;
+  border-bottom: none;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+/* Thin rule below each thesis section heading — replaces border-bottom on h2 */
+.as-thesis-body h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
+  margin-top: 10px;
+}
+
+.as-thesis-body h2:first-child {
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .as-standfirst {
+    font-size: 1.05rem;
+    padding: 18px 18px 18px 16px;
+  }
+  .as-declaration {
+    font-size: 0.95rem;
+    padding: 24px 12px;
+  }
+  .as-thesis-body h2 {
+    font-size: 1.28rem;
+  }
+}
   .pta-hadith-english { display: none; }
 
   /* Nav text truncation */
