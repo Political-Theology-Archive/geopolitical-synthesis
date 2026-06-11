@@ -1,44 +1,71 @@
 /* ═══════════════════════════════════════════════════════════════════
-   POLITICAL THEOLOGY ARCHIVE — DIGITAL SCRIPTORIUM
-   Design System: "Resonant Stark" · Dark Academic · 2026
+   ALVID SCRIPTORIUM — DIGITAL SCRIPTORIUM
+   Design System: "Khorasan-Indus" · Persian-Indus Hybrid · 2026
+   Sacred Civilization × Walāya × Pakistan × Khorasan
    ═══════════════════════════════════════════════════════════════════ */
 
 /* ── DESIGN TOKENS ── */
 :root {
-  --bg:           #0e0e13;
-  --surface:      #14141b;
-  --surface-mid:  #1a1a23;
-  --surface-high: #22222e;
-  --border:       rgba(255, 255, 255, 0.065);
-  --border-mid:   rgba(255, 255, 255, 0.13);
-  --border-gold:  rgba(196, 154, 53, 0.22);
+  /* ─ Backgrounds — deep lapis-night (warm blue-black, not cold grey) */
+  --bg:           #06060f;   /* Deep lapis-night */
+  --surface:      #0c0d1c;   /* Night sky surface */
+  --surface-mid:  #121425;   /* Elevated — manuscript shadow */
+  --surface-high: #191b2e;   /* Highest — manuscript highlight */
 
-  --text:         #ddd8cf;
-  --text-mid:     #8f8fa6;
-  --text-dim:     #53536a;
+  /* ─ Borders */
+  --border:       rgba(255, 255, 255, 0.055);
+  --border-mid:   rgba(255, 255, 255, 0.11);
+  --border-gold:  rgba(210, 160, 64, 0.26);
+  --border-lapis: rgba(50,  100, 210, 0.22);
 
-  --gold:         #c49a35;
-  --gold-bright:  #d4aa48;
-  --gold-dim:     rgba(196, 154, 53, 0.14);
-  --gold-glow:    rgba(196, 154, 53, 0.07);
+  /* ─ Text — warm parchment (not cold blue-white) */
+  --text:         #e8e0d2;   /* Warm parchment */
+  --text-mid:     #9a8e7c;   /* Warm mid — manuscript ink */
+  --text-dim:     #4e4636;   /* Warm dim */
 
-  --teal:         #4d92aa;
-  --teal-dim:     rgba(77, 146, 170, 0.12);
+  /* ─ Gold — Persian manuscript illumination gold (warm amber, not yellow) */
+  --gold:         #c89040;   /* Manuscript gold */
+  --gold-bright:  #dba84e;   /* Illuminated gold */
+  --gold-pale:    #e8c870;   /* Parchment-edge gold */
+  --gold-dim:     rgba(200, 144, 64, 0.14);
+  --gold-glow:    rgba(200, 144, 64, 0.07);
 
-  --crimson:      #7a2323;
-  --crimson-dim:  rgba(122, 35, 35, 0.15);
+  /* ─ Turquoise — Isfahan Safavid tilework (Imam Reza shrine) */
+  --teal:         #1aa89e;   /* Ishrāqī turquoise */
+  --teal-dim:     rgba(26,  168, 158, 0.12);
 
+  /* ─ Walāya Green — Prophetic dome, Alid association */
+  --walaya:       #1a7a4a;
+  --walaya-bright: #22a862;
+  --walaya-dim:   rgba(26,  122,  74, 0.13);
+
+  /* ─ Ochre — Indus Basin / Salt Range / terracotta */
+  --ochre:        #c07830;
+  --ochre-dim:    rgba(192, 120,  48, 0.13);
+
+  /* ─ Crimson — Persian adversarial / Ba'alist designation */
+  --crimson:      #8a1c1c;
+  --crimson-dim:  rgba(138,  28,  28, 0.15);
+
+  /* ─ Lapis — deep blue accent */
+  --lapis:        #1e4a9e;
+  --lapis-dim:    rgba(30,   74, 158, 0.12);
+
+  /* ─ Radii */
   --radius-sm:    8px;
   --radius:       12px;
   --radius-lg:    18px;
 
-  --shadow:       0 4px 24px rgba(0, 0, 0, 0.5);
-  --shadow-lg:    0 12px 48px rgba(0, 0, 0, 0.6);
-  --shadow-gold:  0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(196, 154, 53, 0.18);
+  /* ─ Shadows */
+  --shadow:       0 4px 24px rgba(0, 0, 0, 0.6);
+  --shadow-lg:    0 12px 48px rgba(0, 0, 0, 0.72);
+  --shadow-gold:  0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(200, 144, 64, 0.22);
 
-  --font-serif: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
-  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:  'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  /* ─ Typography */
+  --font-display: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  --font-serif:   'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 
   --nav-h: 68px;
   --verse-h: 52px;
@@ -60,10 +87,11 @@
   right: 0;
   z-index: 99;
   height: var(--verse-h);
-  background: rgba(10, 10, 14, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(196, 154, 53, 0.18);
+  background: rgba(6, 5, 12, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(200, 144, 64, 0.22);
+  border-top: 1px solid rgba(30, 74, 158, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,10 +102,10 @@
 
 .pta-hadith-arabic {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   line-height: 1.3;
-  color: rgba(215, 185, 100, 0.82);
-  letter-spacing: 0.04em;
+  color: rgba(220, 175, 90, 0.9);
+  letter-spacing: 0.05em;
   direction: rtl;
   text-align: center;
 }
@@ -86,7 +114,7 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.6rem;
   line-height: 1.2;
-  color: rgba(180, 160, 110, 0.5);
+  color: rgba(200, 160, 100, 0.52);
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -100,7 +128,25 @@
 html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
+  /* Khorasan-Indus geometric background:
+     Layer 1 — Persian dome radial glow (blue, from top)
+     Layer 2 — Orthogonal manuscript grid (subtle gold lines)
+     Layer 3 — 45° diagonal grid (creates implied star polygon intersections)
+  */
+  background-image:
+    radial-gradient(ellipse 90% 55% at 50% 0%, rgba(30, 74, 180, 0.07) 0%, transparent 55%),
+    linear-gradient(rgba(200, 144, 64, 0.020) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 144, 64, 0.020) 1px, transparent 1px),
+    linear-gradient(45deg,  rgba(200, 144, 64, 0.010) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(200, 144, 64, 0.010) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    60px 60px,
+    60px 60px,
+    30px 30px,
+    30px 30px;
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-sans);
   font-weight: 300;
@@ -142,10 +188,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(14, 14, 19, 0.88);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--border);
+  background: rgba(6, 6, 15, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(200, 144, 64, 0.16);
 }
 
 .pta-nav-inner {
@@ -168,12 +214,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pta-nav-logo-name {
-  font-family: var(--font-serif);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--text);
-  letter-spacing: 0.02em;
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.08em;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .pta-nav-logo-sub {
@@ -286,22 +333,41 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/* Atmospheric glow: Persian dome light from top-right, warm ochre from bottom-left */
+.pta-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 70% at 78% 15%, rgba(30, 74, 158, 0.06) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 45% at 10% 90%, rgba(200, 120, 48, 0.04) 0%, transparent 60%);
+  border-radius: 0;
+}
+
 .pta-hero-label {
   margin-bottom: 24px;
 }
 
 .pta-hero-h1 {
-  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 5vw, 5rem);
   font-weight: 300;
-  line-height: 1.08;
+  line-height: 1.06;
   letter-spacing: -0.02em;
-  max-width: 820px;
-  margin-bottom: 28px;
+  max-width: 860px;
+  margin-bottom: 32px;
+  /* Subtle parchment-to-gold gradient on the title */
+  background: linear-gradient(160deg, var(--text) 0%, rgba(200, 144, 64, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pta-hero-h1 em {
   font-style: italic;
-  color: var(--gold);
+  /* em tags inherit gradient — use filter to brighten the gold portion */
+  filter: brightness(1.25);
 }
 
 .pta-hero-thesis {
@@ -311,7 +377,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 640px;
   line-height: 1.78;
   margin-bottom: 48px;
-  border-left: 2px solid var(--border-gold);
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(180deg, rgba(200,144,64,0.5) 0%, rgba(26,168,158,0.3) 100%) 1;
   padding-left: 24px;
 }
 
@@ -365,9 +432,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pta-bento-section-header h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .pta-bento {
@@ -378,8 +448,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Card base */
 .pta-card {
-  background: var(--surface);
+  background: linear-gradient(160deg, rgba(30, 74, 158, 0.04) 0%, var(--surface) 35%, rgba(200, 120, 48, 0.02) 100%);
   border: 1px solid var(--border);
+  border-top-color: rgba(200, 144, 64, 0.18);
   border-radius: var(--radius);
   padding: 32px;
   position: relative;
@@ -393,11 +464,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text);
 }
 
+/* Gold-turquoise top edge rule on every card — the manuscript folio signature */
 .pta-card::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200, 144, 64, 0.35) 25%,
+    rgba(26, 168, 158, 0.25) 60%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Hover interior glow */
+.pta-card::after {
+  content: '';
+  position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(196, 154, 53, 0.03) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(200, 144, 64, 0.04) 0%, transparent 55%);
   opacity: 0;
   transition: opacity 0.32s ease;
   pointer-events: none;
@@ -406,10 +495,10 @@ h1, h2, h3, h4, h5, h6 {
 .pta-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-gold);
-  border-color: rgba(196, 154, 53, 0.2);
+  border-color: rgba(200, 144, 64, 0.22);
 }
 
-.pta-card:hover::before {
+.pta-card:hover::after {
   opacity: 1;
 }
 
@@ -491,10 +580,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 10px;
 }
 
-/* Golden Chain hero card */
+/* Golden Chain hero card — deepest lapis with warm gold edge */
 .pta-card--chain {
-  background: linear-gradient(145deg, #161620 0%, #0e0e13 100%);
-  border-color: rgba(196, 154, 53, 0.15);
+  background: linear-gradient(145deg, rgba(30, 74, 158, 0.08) 0%, var(--surface) 50%, rgba(200, 120, 48, 0.04) 100%);
+  border-color: rgba(200, 144, 64, 0.22);
+  border-top-color: rgba(200, 144, 64, 0.38);
 }
 
 .pta-chain-title {
@@ -531,9 +621,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-mono);
   font-size: 0.68rem;
   letter-spacing: 0.16em;
-  color: var(--gold);
+  color: var(--gold-bright);
   background: var(--gold-dim);
-  border: 1px solid rgba(196, 154, 53, 0.2);
+  border: 1px solid rgba(200, 144, 64, 0.24);
   border-radius: 4px;
   padding: 4px 10px;
   text-transform: uppercase;
@@ -611,7 +701,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: calc(var(--nav-total) + 64px) 48px 56px;
   max-width: var(--wide-w);
   margin: 0 auto;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200, 144, 64, 0.22) 20%,
+    rgba(26, 168, 158, 0.15) 60%,
+    transparent 100%
+  ) 1;
+  position: relative;
+}
+
+/* Atmospheric glow on interior page heroes */
+.pta-page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 60% at 80% 20%, rgba(30, 74, 158, 0.05) 0%, transparent 65%);
 }
 
 .pta-page-eye {
@@ -627,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
   max-width: 760px;
   margin-bottom: 20px;
+  color: var(--text);
 }
 
 .pta-page-subtitle {
@@ -677,7 +784,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── STATUS NOTICE (sources) ── */
 .pta-sources {
-  background: var(--surface);
+  background: linear-gradient(135deg, rgba(26, 168, 158, 0.04) 0%, var(--surface) 50%);
   border: 1px solid var(--border);
   border-left: 3px solid var(--teal);
   border-radius: var(--radius-sm);
@@ -1017,12 +1124,33 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── MANIFESTO PULL QUOTE ── */
 .pta-pq {
-  background: linear-gradient(180deg, transparent 0%, var(--surface) 100%);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg,
+    rgba(30, 74, 158, 0.04) 0%,
+    var(--surface) 30%,
+    var(--surface) 70%,
+    rgba(200, 120, 48, 0.03) 100%
+  );
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent 0%, rgba(200,144,64,0.22) 30%, rgba(26,168,158,0.15) 70%, transparent 100%) 1;
   padding: 72px 48px;
   margin: 0;
   text-align: center;
+  position: relative;
+}
+
+/* Geometric centermark on pull-quote sections */
+.pta-pq::before {
+  content: '❋';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: rgba(200, 144, 64, 0.4);
+  background: var(--bg);
+  padding: 0 16px;
+  letter-spacing: 4px;
 }
 
 .pta-pq-text {
@@ -1045,13 +1173,42 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* ── DIVIDER ── */
+/* ── DIVIDER — manuscript rule with diamond centermark ── */
 .pta-divider {
   max-width: var(--wide-w);
   margin: 0 auto;
   padding: 0 48px;
+  height: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pta-divider::before {
+  content: '';
+  position: absolute;
+  left: 48px;
+  right: 48px;
   height: 1px;
-  background: var(--border);
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(200, 144, 64, 0.18) 15%,
+    rgba(26, 168, 158, 0.12) 50%,
+    rgba(200, 144, 64, 0.18) 85%,
+    transparent 100%
+  );
+}
+
+.pta-divider::after {
+  content: '◆';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6px;
+  color: rgba(200, 144, 64, 0.32);
+  background: var(--bg);
+  padding: 0 10px;
+  line-height: 1;
 }
 
 /* ── SECTION LABEL ── */
@@ -1087,8 +1244,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── FOOTER ── */
 .pta-footer {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--surface) 0%, rgba(6, 5, 12, 0.98) 100%);
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent 0%, rgba(200,144,64,0.22) 30%, rgba(26,168,158,0.15) 70%, transparent 100%) 1;
   margin-top: 80px;
 }
 
@@ -1189,6 +1347,72 @@ h1, h2, h3, h4, h5, h6 {
 .pta-page-wrap { min-height: 100vh; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
+/* Thematic accent overrides for Pakistan / Walāya / Khorasan sections */
+.pta-accent--walaya  { color: var(--walaya-bright); }
+.pta-accent--ochre   { color: var(--ochre); }
+.pta-accent--lapis   { color: #6688dd; }
+.pta-accent--crimson { color: #c04040; }
+
+.pta-card--walaya {
+  border-top-color: rgba(26, 122, 74, 0.35);
+  background: linear-gradient(160deg, rgba(26, 122, 74, 0.05) 0%, var(--surface) 40%);
+}
+
+.pta-card--ochre {
+  border-top-color: rgba(192, 120, 48, 0.35);
+  background: linear-gradient(160deg, rgba(192, 120, 48, 0.05) 0%, var(--surface) 40%);
+}
+
+.pta-card--lapis {
+  border-top-color: rgba(30, 74, 158, 0.45);
+  background: linear-gradient(160deg, rgba(30, 74, 158, 0.07) 0%, var(--surface) 40%);
+}
+
+/* Khorasan section header — inscriptional label with Cinzel */
+.pta-khorasan-label {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Section background: the walāya green belt (Pakistan Battleground, etc.) */
+.pta-section--pakistan {
+  background: linear-gradient(180deg,
+    rgba(6, 6, 15, 0) 0%,
+    rgba(26, 122, 74, 0.04) 20%,
+    rgba(26, 122, 74, 0.04) 80%,
+    rgba(6, 6, 15, 0) 100%
+  );
+}
+
+/* The 8-point geometric star separator for major transitions */
+.pta-star-sep {
+  text-align: center;
+  margin: 16px 0;
+  position: relative;
+}
+.pta-star-sep::before,
+.pta-star-sep::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 144, 64, 0.2));
+}
+.pta-star-sep::before { right: 54%; }
+.pta-star-sep::after  { left: 54%; transform: scaleX(-1); }
+.pta-star-sep span {
+  display: inline-block;
+  font-size: 9px;
+  color: rgba(200, 144, 64, 0.38);
+  letter-spacing: 6px;
+  line-height: 1;
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    EVIDENCE UNITS — Image Strategy: Ancient × Modern × Erasure
    ═══════════════════════════════════════════════════════════════════ */
@@ -1197,12 +1421,13 @@ h1, h2, h3, h4, h5, h6 {
 .pta-eu {
   position: relative;
   border: 1px solid var(--border-gold);
+  border-top-color: rgba(200, 144, 64, 0.32);
   border-radius: var(--radius);
   overflow: hidden;
-  background: linear-gradient(135deg,
-    rgba(196, 154, 53, 0.04) 0%,
-    rgba(14, 14, 19, 0.97) 40%,
-    rgba(196, 154, 53, 0.02) 100%
+  background: linear-gradient(145deg,
+    rgba(30, 74, 158, 0.05) 0%,
+    rgba(12, 13, 28, 0.97) 40%,
+    rgba(200, 144, 64, 0.03) 100%
   );
   padding: 32px 36px;
   margin: 32px 0;
