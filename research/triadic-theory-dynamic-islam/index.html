@@ -1,238 +1,10 @@
----
-layout: page
+﻿---
+layout: default
 title: "WP-43 · The Triadic Theory of Dynamic Islam"
 permalink: /research/triadic-theory-dynamic-islam/
+wp: "WP-43"
+layer: "VI"
 ---
-<style>
-/* ============================================================
-   WP-43 · TRIADIC THEORY OF DYNAMIC ISLAM · PHILOSOPHICAL INDIGO
-   ============================================================ */
-.rp-thesis-triad {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 14px;
-  margin: 22px 0;
-}
-.rp-thinker {
-  background: rgba(55,45,130,0.07);
-  border: 1px solid rgba(55,45,130,0.28);
-  border-radius: 4px;
-  padding: 14px 12px;
-  text-align: center;
-}
-.rp-thinker-role {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(90,80,185,0.6);
-  margin-bottom: 6px;
-}
-.rp-thinker-name {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: rgba(110,100,210,0.9);
-  margin-bottom: 4px;
-}
-.rp-thinker-dates {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  color: rgba(140,130,195,0.55);
-  margin-bottom: 8px;
-}
-.rp-thinker-function {
-  font-size: 0.82rem;
-  color: rgba(185,178,218,0.78);
-  line-height: 1.55;
-  font-style: italic;
-}
-.rp-doctrine {
-  margin: 16px 0;
-  padding: 14px 16px;
-  background: rgba(55,45,130,0.05);
-  border-left: 3px solid rgba(90,80,185,0.42);
-  border-radius: 0 3px 3px 0;
-}
-.rp-doctrine-term {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(90,80,185,0.58);
-  margin-bottom: 4px;
-}
-.rp-doctrine-arabic {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.08rem;
-  font-style: italic;
-  color: rgba(110,100,210,0.85);
-  margin-bottom: 6px;
-}
-.rp-doctrine-def {
-  font-size: 0.875rem;
-  color: rgba(195,190,225,0.75);
-  line-height: 1.65;
-}
-.rp-axis {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin: 16px 0;
-}
-.rp-axis-cell {
-  padding: 12px 14px;
-  background: rgba(55,45,130,0.06);
-  border: 1px solid rgba(55,45,130,0.22);
-  border-radius: 3px;
-}
-.rp-axis-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(90,80,185,0.55);
-  margin-bottom: 6px;
-}
-.rp-axis-content {
-  font-size: 0.875rem;
-  color: rgba(190,185,222,0.75);
-  line-height: 1.62;
-}
-.rp-qabil {
-  margin: 16px 0;
-  padding: 14px 18px;
-  background: rgba(110,30,30,0.09);
-  border: 1px solid rgba(155,50,50,0.32);
-  border-radius: 4px;
-}
-.rp-habil {
-  margin: 16px 0;
-  padding: 14px 18px;
-  background: rgba(25,80,45,0.09);
-  border: 1px solid rgba(38,115,58,0.32);
-  border-radius: 4px;
-}
-.rp-miskat {
-  margin: 20px 0;
-  padding: 18px 20px;
-  background: rgba(55,45,130,0.09);
-  border: 1px solid rgba(90,80,185,0.38);
-  border-radius: 4px;
-  text-align: center;
-}
-.rp-miskat-title {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.1rem;
-  color: rgba(130,120,225,0.88);
-  margin-bottom: 10px;
-  font-style: italic;
-}
-.rp-miskat-text {
-  font-size: 0.9rem;
-  color: rgba(185,180,218,0.78);
-  line-height: 1.72;
-}
-.rp-biblio {
-  margin: 12px 0;
-  padding: 11px 15px;
-  border-left: 2px solid rgba(90,80,185,0.3);
-  background: rgba(55,45,130,0.04);
-}
-.rp-biblio-title {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 0.97rem;
-  font-style: italic;
-  color: rgba(115,105,210,0.88);
-  margin-bottom: 4px;
-}
-.rp-biblio-meta {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 7.5px;
-  letter-spacing: 0.1em;
-  color: rgba(135,125,188,0.52);
-  line-height: 1.6;
-}
-.rp-verdict {
-  margin: 24px 0 0;
-  padding: 18px 20px;
-  background: rgba(55,45,130,0.1);
-  border: 1px solid rgba(90,80,185,0.42);
-  border-radius: 4px;
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.02rem;
-  font-style: italic;
-  color: rgba(185,180,218,0.88);
-  line-height: 1.82;
-  text-align: center;
-}
-.rp-nav-arc {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 22px 0 0;
-  flex-wrap: wrap;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  color: rgba(140,130,190,0.52);
-}
-.rp-scra-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  margin: 16px 0;
-}
-.rp-scra-link {
-  display: block;
-  padding: 10px 12px;
-  background: rgba(55,45,130,0.06);
-  border: 1px solid rgba(55,45,130,0.2);
-  border-radius: 3px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  color: rgba(110,100,205,0.72);
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.5;
-  transition: background 0.2s;
-}
-.rp-scra-link:hover {
-  background: rgba(55,45,130,0.14);
-  color: rgba(130,120,225,0.88);
-}
-.rp-section-head {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(90,80,185,0.42);
-  margin: 24px 0 10px;
-}
-.rp-subsection-head {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8.5px;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: rgba(90,80,185,0.42);
-  margin: 14px 0 8px;
-}
-@media (max-width: 640px) {
-  .rp-thesis-triad { grid-template-columns: 1fr; }
-  .rp-axis { grid-template-columns: 1fr; }
-  .rp-scra-grid { grid-template-columns: 1fr 1fr; }
-}
-
-/* ── Three-Axis Tags ── */
-.rp-axis-tags{margin:18px 0 22px;padding:11px 16px 10px;border:1px solid rgba(120,100,160,0.15);background:rgba(38,32,60,0.16);display:grid;grid-template-columns:52px 1fr;gap:7px 12px;align-items:start;}
-.rp-axis-label{font-family:'JetBrains Mono',monospace;font-size:7.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(160,150,130,0.45);padding-top:3px;white-space:nowrap;}
-.rp-axis-chips{display:flex;flex-wrap:wrap;gap:5px;}
-.rp-axis-chip{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.12em;text-transform:uppercase;padding:2px 7px;border-radius:1px;line-height:1.85;}
-.rp-axis-1{color:rgba(155,120,240,0.82);border:1px solid rgba(130,95,220,0.28);background:rgba(55,30,120,0.1);}
-.rp-axis-2{color:rgba(190,150,55,0.85);border:1px solid rgba(168,128,52,0.28);background:rgba(60,45,15,0.1);}
-.rp-axis-3{color:rgba(56,178,172,0.82);border:1px solid rgba(56,178,172,0.28);background:rgba(15,60,58,0.1);}
-</style>
 
 <script type="application/ld+json">
 {
@@ -282,16 +54,14 @@ permalink: /research/triadic-theory-dynamic-islam/
 }
 </script>
 
-<div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(90,80,185,0.48);margin-bottom:6px;">
-  Working Paper 43 &nbsp;·&nbsp; SCRA Applied Metaphysics Series No. 1 &nbsp;·&nbsp; Islamic Ontology &nbsp;·&nbsp; Revolutionary Theory
+<div class="pta-page-hero">
+  <span class="as-eye">T-43 · WP-43 · Applied Metaphysics Series No. 1 · Layer VI — Metaphysical Proof · Sacred Civilization Research Archive</span>
+  <h1 class="pta-page-h1">The Triadic Theory of Dynamic Islam</h1>
+  <p class="as-standfirst">Mullā Ṣadrā, ʿAlī Sharīʿatī, and Muḥammad Iqbāl — A Unified Field Theory of Existential Revolution</p>
 </div>
 
-<h1 style="font-family:'Crimson Text',Georgia,serif;font-size:2.05rem;line-height:1.24;color:rgba(125,115,220,0.92);margin:0 0 6px;">
-  The Triadic Theory of Dynamic Islam
-</h1>
-<p style="font-family:'Crimson Text',Georgia,serif;font-size:1.15rem;font-style:italic;color:rgba(115,105,200,0.62);margin:0 0 18px;">
-  Mullā Ṣadrā, ʿAlī Sharīʿatī, and Muḥammad Iqbāl — A Unified Field Theory of Existential Revolution
-</p>
+<div class="pta-content-wrap">
+<div class="as-thesis-body">
 
 <p style="font-size:0.95rem;line-height:1.76;color:rgba(200,195,228,0.82);margin:0 0 18px;">
   Read separately — Ṣadrā as speculative metaphysician, Sharīʿatī as revolutionary sociologist, Iqbāl as
@@ -311,34 +81,25 @@ permalink: /research/triadic-theory-dynamic-islam/
   al-Fārābī, Ibn Sīnā, Ibn al-ʿArabī, Suhrawardī, and the Shīʿī gnosis of the Imams, disciplined into
   philosophical form by the Safavid sage.
 </p>
-  <div class="rp-axis-tags">
-    <span class="rp-axis-label">Register</span>
-    <div class="rp-axis-chips"><span class="rp-axis-chip rp-axis-1">ONTOLOGICAL</span><span class="rp-axis-chip rp-axis-1">CIVILIZATIONAL</span></div>
-    <span class="rp-axis-label">Theater</span>
-    <div class="rp-axis-chips"><span class="rp-axis-chip rp-axis-2">SAFAVID-IRAN</span><span class="rp-axis-chip rp-axis-2">INDUS-BASIN</span></div>
-    <span class="rp-axis-label">Stratum</span>
-    <div class="rp-axis-chips"><span class="rp-axis-chip rp-axis-3">EARLY MODERN · 15th–18th c.</span><span class="rp-axis-chip rp-axis-3">MODERN · 19th–20th c.</span></div>
-  </div>
-
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      THE TRIADIC ARCHITECTONIC
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Triadic Architectonic</div>
+<h2>▸ The Triadic Architectonic</h2>
 
-<div class="rp-thesis-triad">
-  <div class="rp-thinker">
+<div class="pta-analysis pta-fade">
+  <div class="pta-evidence pta-fade">
     <div class="rp-thinker-role">Thesis · Ontology</div>
     <div class="rp-thinker-name">Mullā Ṣadrā Shīrāzī</div>
     <div class="rp-thinker-dates">1571 – 1640 CE · Safavid Iran</div>
     <div class="rp-thinker-function">The ontology of revolution: the universe itself is a perpetual revolution against the inertia of essence. Substantial motion as cosmic statute. Imam as Active Intellect. Every fixed social identity is delegitimized by the primacy of existence over quiddity.</div>
   </div>
-  <div class="rp-thinker">
+  <div class="pta-evidence pta-fade">
     <div class="rp-thinker-role">Antithesis · Sociology</div>
     <div class="rp-thinker-name">ʿAlī Sharīʿatī</div>
     <div class="rp-thinker-dates">1933 – 1977 CE · Iran / Paris</div>
     <div class="rp-thinker-function">The sociology of counter-revolution: mapping the institutional formations that arrest cosmic motion in historical concrete. The Qābīlian system as civilizational freeze. ʿAlawī vs. Ṣafawī Shīʿism. The <em>rushanfekr</em> as prophetic inheritor.</div>
   </div>
-  <div class="rp-thinker">
+  <div class="pta-evidence pta-fade">
     <div class="rp-thinker-role">Synthesis · Praxis</div>
     <div class="rp-thinker-name">Muḥammad Iqbāl</div>
     <div class="rp-thinker-dates">1877 – 1938 CE · Punjab / Europe</div>
@@ -353,27 +114,27 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      SADRIAN ONTOLOGICAL FOUNDATIONS
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Sadrian Ontological Foundations</div>
+<h2>▸ The Sadrian Ontological Foundations</h2>
 
-<div class="rp-doctrine">
+<div class="pta-evidence pta-fade">
   <div class="rp-doctrine-term">I · Primacy of Existence</div>
   <div class="rp-doctrine-arabic">Aṣālat al-Wujūd · أصالة الوجود</div>
   <div class="rp-doctrine-def">Existence is the sole reality; essences (<em>māhiyyāt</em>) are nothing but the mental boundaries imposed upon the ceaseless flow of <em>wujūd</em>. This is not merely a technical refinement of Islamic ontology — it is a declaration of cosmic war against the tyranny of the abstract form. It delegitimizes every fixed social identity, every reified legal category, every institutional stasis that claims ultimacy by virtue of its formal structure. Authority (<em>walāya</em>) is not a function of lineage, office, or institutional ratification — it is an ontological status, the quality of one who has actualized a higher intensity of existence.</div>
 </div>
 
-<div class="rp-doctrine">
+<div class="pta-evidence pta-fade">
   <div class="rp-doctrine-term">II · Substantial Motion</div>
   <div class="rp-doctrine-arabic">Al-Ḥaraka al-Jawhariyya · الحركة الجوهرية</div>
   <div class="rp-doctrine-def">The very substance of reality — not merely its accidents of quantity, quality, or place — undergoes continuous intensification and transformation. A material body is not something that <em>has</em> motion; it <em>is</em> motion, a ceaseless exodus from potentiality to actuality. The <em>status quo</em> — every political and social arrangement that presents itself as the natural and final order — is thus revealed as the supreme disorder: a massive ontological lie, the collective crystallization of <em>ẓulm</em>. The revolutionary is not a deviant who disturbs pre-existing harmony; he aligns himself with the very current of being.</div>
 </div>
 
-<div class="rp-doctrine">
+<div class="pta-evidence pta-fade">
   <div class="rp-doctrine-term">III · Graded Unity of Being</div>
   <div class="rp-doctrine-arabic">Tashkīk al-Wujūd · تشكيك الوجود</div>
   <div class="rp-doctrine-def">All existents are not separate substances but intensified or diminished modalities of a single unbounded reality — a graded symphony of existence wherein every existent is a particular intensity of the one light. This preserves the ontological ground for revolutionary historicism: history is the actual intensification or diminution of existence in concrete forms, not the meaningless flux of an illusory shadow-play. Translated sociologically by Sharīʿatī into the principle of <em>tawḥīd</em>: a community without rigid classes, where every individual is directly linked to the whole without the mediation of an alienating hierarchy.</div>
 </div>
 
-<div class="rp-doctrine">
+<div class="pta-evidence pta-fade">
   <div class="rp-doctrine-term">IV · The Imam as Active Intellect</div>
   <div class="rp-doctrine-arabic">Al-Imām ka-l-ʿAql al-Faʿʿāl · الإمام كالعقل الفعّال</div>
   <div class="rp-doctrine-def">In <em>Sharḥ Uṣūl al-Kāfī</em>, Ṣadrā identifies the Imam as the terrestrial locus of the Active Intellect (<em>wāhib al-ṣuwar</em>) — the <em>ḥujjat Allāh ʿalā arḍihi</em> through whom the effusion of Being descends and souls ascend. This anchors <em>walāya</em> in the very structure of emanation: not a contested historical claim but an inescapable ontological necessity. Any regime that does not derive its mandate from the standard of the Perfect Human is not merely juridically deficient — it is a structure erected against the grain of existence itself, an active impediment to the soul's ascent.</div>
@@ -382,7 +143,7 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      SHARIATI'S SOCIOLOGICAL TRANSLATION
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ Sharīʿatī's Sociological Translation</div>
+<h2>▸ Sharīʿatī's Sociological Translation</h2>
 
 <p style="font-size:0.9rem;line-height:1.72;color:rgba(190,185,220,0.75);margin:0 0 14px;">
   Sharīʿatī's project was to read history <em>through</em> Ṣadrā — to transpose the key terms of Transcendental Theosophy from the ontological to the sociological plane without diluting their metaphysical force. Where Marx diagnosed the freezing of living labor into the dead objectivity of capital, Ṣadrā had already diagnosed the fundamental error of confusing the fixed essences of logical quiddities for the primacy of the perpetual flow of existence. Sharīʿatī's "Sadrian reading of history" rests on three interlocking principles: the primacy of existence as categorical imperative for social analysis; substantial motion as the foundation of a philosophy of history; and graded unity of being as the metaphysical charter for a classless community.
@@ -413,16 +174,16 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      THE QABIL-HABIL DIALECTIC
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Qābīlian-Hābīlian Dialectic</div>
+<h2>▸ The Qābīlian-Hābīlian Dialectic</h2>
 
-<div class="rp-qabil">
+<div class="pta-analysis pta-fade">
   <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(188,82,82,0.72);margin-bottom:7px;">Qābīl · The System of Cain · Ontological Freeze</div>
   <p style="font-size:0.875rem;color:rgba(215,182,182,0.82);line-height:1.68;margin:0;">
     The agricultural, sedentary, property-based order that murders to fix the distribution of resources — a primordial accumulation that freezes the fluidity of human relations into the rigidities of ownership, class, and hereditary rule. The archetypal agent of <em>shirk</em>: the usurpation of God's ontological monopoly, the insertion of a fixed form between the human being and the Absolute. Traced through history: the institution of kingship that replaced prophetic charisma; the clerical establishment that codified the prophetic impulse into dead dogma; the capitalist machine that reduces the human <em>khūdī</em> to a commodity; the Ṣafawī state that entombed the revolutionary potential of the Imamate within a state-clerical apparatus that turned martyrology into an opiate. In SCRA terms: the Ba'alist Capture Mechanism operating in every age under a new name.
   </p>
 </div>
 
-<div class="rp-habil">
+<div class="pta-analysis pta-fade">
   <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(40,142,72,0.72);margin-bottom:7px;">Hābīl · The Pastoral-Prophetic Impulse · Cosmic Motion</div>
   <p style="font-size:0.875rem;color:rgba(178,218,190,0.82);line-height:1.68;margin:0;">
     The dynamic, migration-based mode of existence — the primordial <em>tawḥīd</em> of a self in motion toward God, owning nothing, perpetually journeying. The prophetic chain in its purest form: the refusal to grant ontological consent to tyranny, a refusal that must be constantly renewed in the existential choices of every generation. The martyrs of resistance are <em>shuhadāʾ</em> in the etymological sense — those who, through the ultimate act of intensification, bear witness to the primacy of motion over stasis, becoming signatures of <em>wujūd</em> against the empire of forms. Their blood cries not for vengeance but for the restoration of the community's capacity to continue the cosmic migration toward its Lord.
@@ -432,7 +193,7 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      IQBAL'S SYNTHESIS
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ Iqbāl's Synthesis: The Khūdī and Perpetual Ijtihād</div>
+<h2>▸ Iqbāl's Synthesis: The Khūdī and Perpetual Ijtihād</h2>
 
 <p style="font-size:0.92rem;line-height:1.74;color:rgba(195,190,228,0.8);margin:0 0 14px;">
   Iqbāl inherits both the cosmic ground of Ṣadrā and the historical diagnosis of Sharīʿatī, and subsumes them into a philosophy of the self that resolves the dialectic at the level of conscious agency and collective institution. The <em>khūdī</em> (selfhood) is not a substance but an act — a tension, a point of intensification within the field of existence. Its essence is to absorb, conquer, and transform the world into a medium for its own unique perfection, thereby participating in God's attribute of creation (<em>khāliqiyyat</em>). Strengthening the <em>khūdī</em> through love (<em>ʿishq</em>), creative absorption, and ceaseless striving is the very method by which Sadrian substantial motion becomes personal praxis. The weakening of the <em>khūdī</em> — through passivity, fatalism, and slavish imitation (<em>taqlīd</em>) — is the subjective correlate of the Qābīlian freeze Sharīʿatī diagnosed in the social field.
@@ -452,7 +213,7 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      THE KHAWARIJ AS COUNTERFEIT MOTION
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Khawarij as Counterfeit Motion</div>
+<h2>▸ The Khawarij as Counterfeit Motion</h2>
 
 <p style="font-size:0.9rem;line-height:1.72;color:rgba(195,190,225,0.78);margin:0 0 12px;">
   The most insidious form of the anti-ontological freeze is not the overt tyrant but the pious literalist who wears the <em>ẓāhir</em> of motion while embodying absolute stasis. The Khawārij — with their extreme asceticism, constant Qurʾānic recitation, prayer marks, and uncompromising slogan <em>"lā ḥukma illā li-llāh"</em> (No judgement except God's) — present an exoteric intensity that mimics existential self-intensification. Yet their devotion is not a means of increasing the <em>khūdī</em>'s absorption of divine attributes; it is a technique of self-narcissistic purification that allows them to judge, condemn, and freeze everyone outside their narrow circle into a static category of eternal damnation.
@@ -465,9 +226,9 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      THE GOVERNANCE BLUEPRINT
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Post-Traditional Governance Blueprint</div>
+<h2>▸ The Post-Traditional Governance Blueprint</h2>
 
-<div class="rp-miskat">
+<div class="pta-evidence pta-fade">
   <div class="rp-miskat-title">The State as Waqf and Mishkāt</div>
   <div class="rp-miskat-text">
     The post-traditional Islamic state finds its raison d'être not in sovereign command or the arrogation of sacral authority but in radical ontological subordination to the dynamics of existential intensification. Its role is <strong>apophatic and protective</strong> — it dismantles the idols that threaten to petrify the soul's ascent. It is the <em>waqf</em> (inalienable trust) set apart for the soul's pilgrimage through the degrees of being; its revenues measured not in currency but in the intensities of being it renders accessible. It is the <em>mishkāt</em> (niche) in which the lamp of the individual's <em>khūdī</em> may be lit — a niche carved out of the resistant matter of history and politics, shaped to receive a light it does not itself generate. The moment the state seeks to become itself the source of meaning, it commits the primordial sin of idolatry (<em>shirk</em>), setting a finite institution in the place of the Infinite toward which all becoming tends.
@@ -488,9 +249,9 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      SCRA NETWORK CONNECTIONS
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ SCRA System Connections</div>
+<h2>▸ SCRA System Connections</h2>
 
-<div class="rp-scra-grid">
+<div class="pta-analysis pta-fade">
   <a href="{{ '/research/safavid-experiment/' | relative_url }}" class="rp-scra-link">
     WP-31 · Safavid Experiment<br>
     <span style="color:rgba(110,100,205,0.42);font-size:7px;">Ṣafawī capture documented in full</span>
@@ -532,56 +293,56 @@ permalink: /research/triadic-theory-dynamic-islam/
 <!-- ═══════════════════════════════════════════
      THE PRIMARY SOURCE CANON
      ═══════════════════════════════════════════ -->
-<div class="rp-section-head">▸ The Primary Source Canon</div>
+<h2>▸ The Primary Source Canon</h2>
 
-<div class="rp-subsection-head">I · Sadrian Foundation</div>
+<div >I · Sadrian Foundation</div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Al-Ḥikma al-Mutaʿāliya fī al-Asfār al-ʿAqliyya al-Arbaʿa (The Transcendent Wisdom in the Four Intellectual Journeys)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Al-Ḥikma al-Mutaʿāliya fī al-Asfār al-ʿAqliyya al-Arbaʿa (The Transcendent Wisdom in the Four Intellectual Journeys)</div>
   <div class="rp-biblio-meta">Mullā Ṣadrā Shīrāzī · 9 vols. · Dār Iḥyāʾ al-Turāth al-ʿArabī ed. · The foundational text. Four journeys mirror the soul's ascending and descending arc: from creation to the Real; from the Real through the Real; from the Real to creation with the Real; through creation with the Real. Every page enacts substantial motion. Secondary: Fazlur Rahman, <em>The Philosophy of Mullā Ṣadrā</em>; Sajjad H. Rizvi, <em>Mullā Ṣadrā Shīrāzī: His Life, Works and the Sources for Safavid Philosophy</em>.</div>
 </div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Sharḥ Uṣūl al-Kāfī (Commentary on the Sufficient Foundations)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Sharḥ Uṣūl al-Kāfī (Commentary on the Sufficient Foundations)</div>
   <div class="rp-biblio-meta">Mullā Ṣadrā Shīrāzī · The explicit bridge between metaphysics and political theology of redemption. The abstract machinery of the <em>Asfār</em> brought to bear upon al-Kulaynī's ḥadīth corpus with hermeneutical audacity. The Imam as Perfect Human (<em>al-insān al-kāmil</em>) and Active Intellect (<em>al-ʿaql al-faʿʿāl</em>) forged here. Regrettably understudied outside Shīʿa specialist circles — the most politically explosive Sadrian text.</div>
 </div>
 
-<div class="rp-subsection-head">II · Iqbālian Reformation</div>
+<div >II · Iqbālian Reformation</div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Asrār-i Khūdī (Secrets of the Self) &amp; Rumūz-i Bīkhūdī (Mysteries of Selflessness)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Asrār-i Khūdī (Secrets of the Self) &amp; Rumūz-i Bīkhūdī (Mysteries of Selflessness)</div>
   <div class="rp-biblio-meta">Muḥammad Iqbāl · Persian masnavīs · The poetry IS the philosophy's most unmediated organ — not ornament appended to a pre-existing system. The <em>Asrār</em> narrates the apotheosis of the individual <em>khūdī</em>; the <em>Rumūz</em> its consummation in the communal ego of the <em>millat</em>. Trans. R.A. Nicholson (Asrār, 1920) — reliable but Edwardian in idiom. Thematic concordance: Mustansir Mir, <em>Iqbal</em>.</div>
 </div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">The Reconstruction of Religious Thought in Islam</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">The Reconstruction of Religious Thought in Islam</div>
   <div class="rp-biblio-meta">Muḥammad Iqbāl · Seven lectures (Madras, Hyderabad, Aligarh) · Volcanic re-reading of Islam through Einsteinian relativity, Bergsonian duration, and Whiteheadian process. Apex: the final excursus on <em>ijtihād</em> as the principle of movement in the structure of Islam — the irremovable cornerstone of the political vision of Dynamic Islam.</div>
 </div>
 
-<div class="rp-subsection-head">III · Sharīʿatī's Arsenal</div>
+<div >III · Sharīʿatī's Arsenal</div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Islām'shināsī (Islamology)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Islām'shināsī (Islamology)</div>
   <div class="rp-biblio-meta">ʿAlī Sharīʿatī · The master dialectic: <em>tawḥīd</em> as socio-cosmic configuration — a unified vision of Being that rejects all forms of ontological mediation — vs. <em>shirk</em> as the fragmentation of existence that legitimizes tyranny. Sadrian graded unity recast as revolutionary manifesto against priestly and kingly castes.</div>
 </div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Tashayyuʿ-i ʿAlawī va Tashayyuʿ-i Ṣafawī (ʿAlid Shīʿism and Safavid Shīʿism)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Tashayyuʿ-i ʿAlawī va Tashayyuʿ-i Ṣafawī (ʿAlid Shīʿism and Safavid Shīʿism)</div>
   <div class="rp-biblio-meta">ʿAlī Sharīʿatī · The most ferocious internal critique of institutional religion in modern Shīʿa tradition. History not as a golden age to retrieve, but as a perennial possibility constantly betrayed and constantly reborn. Essential for understanding how Dynamic Islam conceptualizes its own structural tragedy.</div>
 </div>
 
-<div class="rp-biblio">
-  <div class="rp-biblio-title">Intiẓār, Madhhab-i Iʿtirāż (Awaiting, the Religion of Protest)</div>
+<div class="as-footnotes">
+  <div class="as-footnotes-label">Intiẓār, Madhhab-i Iʿtirāż (Awaiting, the Religion of Protest)</div>
   <div class="rp-biblio-meta">ʿAlī Sharīʿatī · Lapidary short essay. Shīʿa doctrine of the Hidden Imam purged of passive millenarianism. To wait is to protest; to believe in the Mahdī is to refuse to legitimize the existing order — to stand as an active witness (<em>shāhid</em>) whose very existence is a negation of falsehood.</div>
 </div>
 
 <!-- ═══ VERDICT ═══ -->
-<div class="rp-verdict">
+<div class="as-ruling pta-fade" style="border-left-color:rgba(90,80,185,0.75);">
   The triadic theory provides a criterion that is both profoundly radical and thoroughly Islamic — refusing to cede the terrain of jihad to the literalists while simultaneously refusing the secular-liberal reduction of jihad to an irrational pathology. The legitimate struggle is the midwife of becoming, an instrument of ontological passage. The illegitimate struggle is a machine that carves the freeze deeper into the flesh of existence, no matter how many prayers accompany it. It is, in the end, the jihad of the cosmos itself — the divine utterance "Be!" constantly shattering the idol of "It has been."
 </div>
 
 <!-- F-10 VOCABULARY NOTE -->
-<div class="rp-verdict" style="margin-top:20px;border-color:rgba(90,70,180,0.35);">
+<div class="as-ruling pta-fade" style="border-left-color:rgba(90,80,185,0.75);margin-top:20px;">
   <span style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(120,100,220,0.7);display:block;margin-bottom:0.5rem;">SCRA Framework Note — F-10: Sacred Civilization = Ummah = Millat</span>
   <p style="margin:0 0 0.7rem;font-size:0.88rem;line-height:1.75;">The three-pillar synthesis at the heart of Dynamic Islam names a single civilizational reality through three scholarly vocabularies. Shariati's <em>Umma</em> — the community defined by conscious direction toward haqq (<em>amma</em> root: to head toward, to intend consciously; the Imam as qibla of the community's motion) — and Iqbal's <em>Millat</em> — the community defined by spiritual-intellectual selfhood (<em>khudi</em>), not territory, ethnicity, or descent — are two registers for what SCRA calls Sacred Civilization: the civilizational project that chooses source-proximity-authority (walāya, the <em>w-l-y</em> root) over domination-authority (Ba'al, the <em>b'l</em> root).</p>
   <p style="margin:0;font-size:0.88rem;line-height:1.75;">Dynamic Islam's triadic theory (Sadra + Iqbal + Shariati) is the philosophical convergence that articulates Sacred Civilization's self-understanding across its three foundational scholarly vocabularies. The "Dynamic Islam" of this paper's title IS the Ummah IS the Millat — the same living civilizational reality analyzed through ontological (Sadra), constitutional-cultural (Iqbal), and sociological-revolutionary (Shariati) lenses simultaneously. The opposing civilization has era-specific names: West (Iqbal), Estekbar (Shariati), Ba'alist configuration (SCRA), Satanism (Eastern bloc theological vocabulary) — all naming the same structural reality from different historical positions.</p>
@@ -592,14 +353,11 @@ permalink: /research/triadic-theory-dynamic-islam/
   ~14,000 words &nbsp;·&nbsp; 9 chapters &nbsp;·&nbsp; Sadrian Ontology · Sharīʿatī Sociology · Iqbālian Khūdī · Post-Traditional Governance Blueprint · Legitimate Jihad Criterion &nbsp;·&nbsp; DOI pending Zenodo deposit &nbsp;·&nbsp; SCRA-2026-WP43
 </p>
 
-<!-- ═══ ARC NAVIGATION ═══ -->
-<div class="rp-nav-arc">
-  <span>Arc:</span>
-  <a href="{{ '/research/haydar-amuli/' | relative_url }}" style="color:rgba(110,100,205,0.65);text-decoration:none;">Haydar Amuli (Shia-Sufi Bridge) ↗</a>
-  <span style="color:rgba(90,80,185,0.28);">→</span>
-  <span style="color:rgba(120,110,222,0.85);font-weight:600;">WP-43 (here)</span>
-  <span style="color:rgba(90,80,185,0.28);">→</span>
-  <a href="{{ '/research/safavid-experiment/' | relative_url }}" style="color:rgba(110,100,205,0.65);text-decoration:none;">WP-31 · Safavid Experiment ↗</a>
-  <span style="color:rgba(90,80,185,0.28);">→</span>
-  <a href="{{ '/research/imam-mahdi-justice-framework/' | relative_url }}" style="color:rgba(110,100,205,0.65);text-decoration:none;">WP-37 · Ghayba Theology ↗</a>
-</div>
+
+</div><!-- /.as-thesis-body -->
+<nav class="pta-page-nav">
+  <a href="{{ '/research/' | relative_url }}" class="pta-page-nav-prev">&#8592; Research Portal</a>
+  <a href="{{ '/research/sadra-khomeini-iqbal-philosophical-chain/' | relative_url }}" class="pta-page-nav-next">WP-77: Sadra&#8209;Khomeini&#8209;Iqbal &#8594;</a>
+</nav>
+</div><!-- /.pta-content-wrap -->
+
