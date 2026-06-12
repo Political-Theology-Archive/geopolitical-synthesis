@@ -1,216 +1,37 @@
----
+﻿---
 layout: default
 title: "WP-74: The Mughal-Safavid Transmission"
+wp: "WP-74"
+layer: "VII"
+permalink: /research/mughal-safavid-transmission/
 ---
 
-<style>
-  :root {
-    --wp-primary: rgba(155,95,40,1);
-    --wp-primary-light: rgba(155,95,40,0.10);
-    --wp-primary-mid: rgba(155,95,40,0.32);
-    --wp-primary-border: rgba(155,95,40,0.48);
-    --wp-gold: rgba(210,165,55,1);
-    --wp-gold-light: rgba(210,165,55,0.15);
-  }
 
-  .wp-header {
-    border-left: 5px solid var(--wp-primary);
-    padding: 2rem 2rem 1.5rem 2rem;
-    background: var(--wp-primary-light);
-    margin-bottom: 2.5rem;
-  }
-  .wp-series-tag {
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--wp-primary);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  .wp-header h1 { font-size: 1.75rem; line-height: 1.25; margin: 0.4rem 0 0.8rem 0; }
-  .wp-header .wp-subtitle { font-size: 1.0rem; font-style: italic; opacity: 0.85; margin-bottom: 0.6rem; }
-  .wp-meta { font-size: 0.82rem; opacity: 0.7; }
 
-  .wp-thesis {
-    border: 1.5px solid var(--wp-primary-border);
-    border-radius: 4px;
-    padding: 1.4rem 1.6rem;
-    background: var(--wp-primary-light);
-    margin: 2rem 0;
-  }
-  .wp-thesis-label {
-    font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--wp-primary); font-weight: 700; margin-bottom: 0.6rem;
-  }
-  .wp-thesis p { margin: 0; font-size: 1.02rem; line-height: 1.65; }
-
-  .wp-part-header {
-    border-bottom: 2px solid var(--wp-primary);
-    padding-bottom: 0.4rem;
-    margin: 2.8rem 0 1.2rem 0;
-    color: var(--wp-primary);
-    font-size: 1.05rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .wp-emperor {
-    border: 1px solid var(--wp-primary-border);
-    border-left: 4px solid var(--wp-primary);
-    border-radius: 0 3px 3px 0;
-    padding: 1.3rem 1.5rem;
-    margin: 1.4rem 0;
-  }
-  .wp-emperor-label {
-    font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.5rem;
-  }
-
-  .wp-primary-source {
-    background: #0a1510;
-    border-left: 4px solid var(--wp-gold);
-    border-radius: 3px;
-    padding: 1.2rem 1.5rem;
-    margin: 1.2rem 0;
-  }
-  .wp-primary-source .source-label {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.5rem;
-    display: block;
-  }
-  .wp-primary-source blockquote {
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 0;
-    font-style: italic;
-    font-family: 'Crimson Text', Georgia, serif;
-    font-size: 1.05rem;
-    color: rgba(230,200,140,0.92);
-    line-height: 1.75;
-    border: none;
-  }
-  .wp-primary-source cite {
-    display: block; margin-top: 0.6rem;
-    font-size: 0.77rem; font-style: normal;
-    opacity: 0.65; letter-spacing: 0.05em;
-  }
-
-  .wp-inference {
-    background: rgba(255,200,50,0.07);
-    border-left: 3px solid rgba(255,200,50,0.45);
-    padding: 0.9rem 1.2rem;
-    margin: 1.2rem 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  .wp-inference-label {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: rgba(255,200,50,0.75); font-weight: 700; margin-bottom: 0.4rem;
-  }
-
-  .wp-table {
-    width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.87rem;
-  }
-  .wp-table th {
-    background: var(--wp-primary-mid); color: #fff;
-    padding: 0.6rem 0.8rem; text-align: left;
-    font-weight: 600; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase;
-  }
-  .wp-table td {
-    padding: 0.55rem 0.8rem;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    vertical-align: top; line-height: 1.45;
-  }
-  .wp-table tr:nth-child(even) td { background: rgba(255,255,255,0.03); }
-
-  .wp-verdict {
-    background: var(--wp-primary-light);
-    border: 1.5px solid var(--wp-primary-border);
-    border-radius: 3px;
-    padding: 1.3rem 1.5rem;
-    margin: 2rem 0;
-  }
-  .wp-verdict-label {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--wp-primary); font-weight: 700; margin-bottom: 0.5rem;
-  }
-
-  .wp-gap-note {
-    background: rgba(255,255,255,0.04);
-    border-left: 3px solid rgba(255,255,255,0.18);
-    padding: 0.65rem 1rem;
-    font-size: 0.84rem; font-style: italic; opacity: 0.75;
-    margin: 0.8rem 0;
-  }
-
-  .wp-silsila {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    line-height: 2.1;
-    padding: 1rem 1.4rem;
-    background: rgba(0,0,0,0.22);
-    border-radius: 3px;
-    margin: 1rem 0;
-    color: rgba(220,185,120,0.88);
-  }
-  .wp-silsila .node { color: var(--wp-gold); font-weight: 600; }
-  .wp-silsila .arrow { opacity: 0.45; }
-
-  .wp-painting {
-    background: var(--wp-gold-light);
-    border: 1px solid rgba(210,165,55,0.4);
-    border-radius: 3px;
-    padding: 1rem 1.3rem;
-    margin: 1.2rem 0;
-    font-size: 0.94rem;
-    line-height: 1.6;
-  }
-  .wp-painting-label {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--wp-gold); font-weight: 700; margin-bottom: 0.4rem;
-  }
-
-  .wp-nav {
-    display: flex; justify-content: space-between;
-    margin: 3rem 0 1rem 0; font-size: 0.88rem; opacity: 0.7;
-  }
-  .wp-nav a { color: var(--wp-primary); text-decoration: none; }
-  .wp-nav a:hover { text-decoration: underline; }
-
-  .wp-bib { font-size: 0.84rem; line-height: 1.65; }
-  .wp-bib h4 {
-    font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.07em;
-    color: var(--wp-primary); margin: 1.2rem 0 0.4rem 0;
-    border-bottom: 1px solid var(--wp-primary-border); padding-bottom: 0.2rem;
-  }
-  .wp-bib li { margin: 0.3rem 0; }
-</style>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
-
-<div class="wp-header">
-  <div class="wp-series-tag">SCRA Working Paper 74 · Sacred Geography Series · Sanctuary II × III × IV · Mughal Studies · Pakistan Studies · Khorasan Studies</div>
-  <h1>The Mughal-Safavid Transmission</h1>
-  <div class="wp-subtitle">How Humayun's Persian Exile, Jahangir's Spring, and Dara Shikoh's Execution Built the Sacred Infrastructure of the Khorasan-Hind Corridor</div>
-  <div class="wp-meta">2026-06-10 &nbsp;·&nbsp; Sacred Civilization Research Archive &nbsp;·&nbsp; alvidscriptorium.com</div>
+<div class="pta-page-hero">
+  <span class="as-eye">WP-74 · Sacred Geography Series · Layer VII — Present Application · Sacred Civilization Research Archive</span>
+  <h1 class="pta-page-h1">The Mughal-Safavid Transmission</h1>
+  <p class="as-standfirst">How Humayun's Persian Exile, Jahangir's Spring, and Dara Shikoh's Execution Built the Sacred Infrastructure of the Khorasan-Hind Corridor</p>
 </div>
 
-<div class="wp-thesis">
-  <div class="wp-thesis-label">Thesis</div>
+<div class="pta-content-wrap">
+<div class="as-thesis-body">
+
+<div class="pta-analysis pta-fade">
+  <div class="pta-analysis-label mono">Thesis</div>
   <p>The Mughal dynasty was the institutional transmitter of Safavid-Persian walāya Islam into the Indian subcontinent. Through Humayun's enforced adoption of Shia practice at the court of Shah Tahmasp I, through Akbar's sacred-kingship synthesis at the Khorasan-Hind crossing point, through Jahangir's personal Sufi devotionalism and documented patronage of the spring he called "Baba Hasan Abdal," and through Dara Shikoh's Qadiri walāya intellectual project — the Mughals established the sacred institutional infrastructure of the Khorasan-Hind corridor as imperial policy. When Aurangzeb executed Dara Shikoh in 1659 and elevated the Naqshbandi-Sirhindi programme to court dominance, he executed the identical theological capture that would repeat in the Ottoman 1826 Vaka-i Hayriye (WP-52) and again in the 2018–2022 Imran Khan formation (WP-58). The Pakistan Army's geographic home in Rawalpindi-Pothohar sits on the terrain that the Mughals established as the walāya-grounded threshold between Khorasan and Hind — terrain whose sacred infrastructure they built stone by stone, spring by spring, coin by coin.</p>
 </div>
 
-<div class="wp-part-header">Part I — The Theological Geography: Why Mughal History Is SCRA's Business</div>
+<h2>Part I — The Theological Geography: Why Mughal History Is SCRA's Business</h2>
 
 <p>The SCRA corpus has established a claim about the Pakistan Army's geographic position: GHQ Rawalpindi sits at the Khorasan-Hind threshold (WP-71), on the Pothohar Plateau that carries the highest concentration of Alid Sayyid genealogies and Chishti-Qadiri sacred nodes in the subcontinent (WP-64), within the eschatological preparation ground designated in the hadith corpus (WP-70). This is a claim about geography. But geography alone does not produce the density of sacred infrastructure that the Pothohar-Hassan Abdal corridor carries. Sacred infrastructure requires institutional patronage — someone had to build the gardens, establish the shrines, invest the resources, and create the conditions under which walāya transmission could take institutional form at this specific location.</p>
 
 <p>That institutional patron was the Mughal Empire. This paper documents the chain of transmission from Humayun's Persian exile to Dara Shikoh's execution — the arc within which the Mughals established, elaborated, and then nearly destroyed the walāya-grounded sacred infrastructure of the Khorasan-Hind corridor. Understanding this arc requires first understanding how Humayun's exile transformed the Mughal dynasty's theological character.</p>
 
-<div class="wp-part-header">Part II — Humayun and Shah Tahmasp I: The Safavid Initiation of the Mughal Court</div>
+<h2>Part II — Humayun and Shah Tahmasp I: The Safavid Initiation of the Mughal Court</h2>
 
-<div class="wp-emperor">
-  <div class="wp-emperor-label">Humayun (r. 1530–1540, restored 1555–1556)</div>
+<div class="pta-evidence pta-fade">
+  <div class="pta-evidence-label mono">Humayun (r. 1530–1540, restored 1555–1556)</div>
   <p>Nasir ud-Din Muhammad Humayun, second Mughal emperor. Defeated by Sher Shah Suri at Kanauj (1540 CE), driven from India, wandered through Sindh and Persia for fifteen years before returning with Safavid military support to reclaim Delhi (1555 CE). His Persian exile is the theological hinge of Mughal history.</p>
 </div>
 
@@ -244,15 +65,15 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>Beyond painting, Humayun absorbed from Persia: Safavid court protocol, Persian administrative vocabulary, charbagh garden design (the fourfold garden form that structures every Mughal royal garden), astronomical and astrological practices, and the Persian literary culture that made the Mughal court the most intellectually sophisticated Persian-language court in the world outside Persia itself.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Structural Note — The Safavid Initiation</div>
+<div class="pta-analysis pta-fade">
+  <div class="pta-analysis-label mono">SCRA Structural Note — The Safavid Initiation</div>
   Humayun's exile was an enforced Safavid initiation of the Mughal dynasty. The Safavid court was, in WP-63's analysis, Mode II — direct batin sovereignty, state theology IS walāya theology. Humayun absorbed this framework across fifteen years of immersion in its court culture, its artists, its architectural forms, and (according to historical consensus) its Shia practice. What entered India with Humayun's return in 1545 was not merely a military force and an emperor restored — it was the first penetration of Mode II's walāya-sovereignty framework into the Mughal institutional structure.
 </div>
 
-<div class="wp-part-header">Part III — Akbar and the Khorasan-Hind Infrastructure</div>
+<h2>Part III — Akbar and the Khorasan-Hind Infrastructure</h2>
 
-<div class="wp-emperor">
-  <div class="wp-emperor-label">Akbar (r. 1556–1605) — the Builder</div>
+<div class="pta-evidence pta-fade">
+  <div class="pta-evidence-label mono">Akbar (r. 1556–1605) — the Builder</div>
   <p>Jalal ud-Din Muhammad Akbar. Third Mughal emperor. Greatest administrator of the Mughal dynasty. Constructed the twin infrastructure — military (Attock Fort) and sacred (Hassan Abdal garden) — that defined the Khorasan-Hind threshold as a zone of imperial sacred geography.</p>
 </div>
 
@@ -282,12 +103,12 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>The mechanism: Muslim sovereigns modeled themselves on Sufi saints, deploying the charismatic authority of <em>wilāya</em> (sainthood) as the primary legitimating idiom for imperial power — rather than sharia compliance or jihad. At the Islamic millennium (1000 AH / 1591–92 CE), Akbar explicitly deployed messianic symbolism, styling himself as the most sacred figure of the new Islamic millennium. Moin's framework establishes this as a <strong>shared Mughal-Safavid pattern rooted in the same Timurid cultural substrate</strong> — both dynasties are variants of one political theology.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Application of Moin's Thesis</div>
+<div class="pta-analysis pta-fade">
+  <div class="pta-analysis-label mono">SCRA Application of Moin's Thesis</div>
   The Mughal construction of sacred infrastructure at the Khorasan-Hind threshold (Attock Fort + Hassan Abdal garden) was not incidental imperialism. It was the expression of a walāya-sovereignty framework in which the sacred geography of the Khorasan-Hind crossing point was understood as requiring imperial cultivation. Akbar built at Hassan Abdal because the site carried the <em>batin</em> gravity of the Khorasan-Hind axis — the same gravity that the hadith corpus (WP-70) designates, that the five-civilization sacred concentration (WP-71) embodies, and that the Pakistan Army's geographic positioning (WP-64) inherits.
 </div>
 
-<div class="wp-part-header">Part IV — The Saint Behind the Name: Baba Hasan Abdal</div>
+<h2>Part IV — The Saint Behind the Name: Baba Hasan Abdal</h2>
 
 <p>The town of Hassan Abdal takes its name from a saint. Before the Mughals built their garden and before Guru Nanak's Panja Sahib tradition was established, there was a figure whose presence at this spring gave the site its sacred character. Understanding this figure — or, more precisely, understanding the layers of tradition around him — is necessary for grasping the full sacred depth of the site.</p>
 
@@ -327,18 +148,18 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>The most significant primary source evidence for the saint's recognized status comes from the Mughal emperor himself. When Jahangir visited the site in 1607 CE and recorded it in the <em>Tuzuk-i-Jahangiri</em>, he called it:</p>
 
-<div class="wp-primary-source">
-  <span class="source-label">Primary Source — Tuzuk-i-Jahangiri (Jahangirnama)</span>
+<div class="pta-evidence pta-fade">
+  <span class="pta-evidence-label mono">Primary Source — Tuzuk-i-Jahangiri (Jahangirnama)</span>
   <blockquote>"On Wednesday the 12th the camp was at <strong>Baba Hasan Abdal</strong>."</blockquote>
   <cite>Tuzuk-i-Jahangiri. Trans. Alexander Rogers, ed. Henry Beveridge. Royal Asiatic Society, 1909–14. Internet Archive: archive.org/details/tuzukijahangirio00jahauoft</cite>
 </div>
 
 <p>The honorific <strong>"Baba"</strong> — reverently used across the Sufi devotional traditions of Punjab and Khorasan for a recognized saint and elder — establishes that by 1607 CE, the Mughal emperor himself understood this site as consecrated by and named after a saint deserving of that title. This is not a later pious tradition layered onto a secular place-name. The most important early Mughal emperor to visit the site recorded it as a saint's place.</p>
 
-<div class="wp-part-header">Part V — Jahangir at the Spring: The Tuzuk-i-Jahangiri as Primary Source</div>
+<h2>Part V — Jahangir at the Spring: The Tuzuk-i-Jahangiri as Primary Source</h2>
 
-<div class="wp-emperor">
-  <div class="wp-emperor-label">Jahangir (r. 1605–1627) — the Devotee</div>
+<div class="pta-evidence pta-fade">
+  <div class="pta-evidence-label mono">Jahangir (r. 1605–1627) — the Devotee</div>
   <p>Nur ud-Din Muhammad Salim Jahangir. Fourth Mughal emperor. The most explicitly Sufi-devotional ruler in Mughal history after Humayun. His memoir, the Tuzuk-i-Jahangiri, is a primary source of singular value for the SCRA Khorasan-Hind sacred geography because he visited, described, and invested in Hassan Abdal in person.</p>
 </div>
 
@@ -346,8 +167,8 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>Jahangir visited Hassan Abdal in 1607 CE while pursuing his rebellious son Khusrau. He stayed three days. His memoir records:</p>
 
-<div class="wp-primary-source">
-  <span class="source-label">Primary Source — Tuzuk-i-Jahangiri on Hassan Abdal Spring</span>
+<div class="pta-evidence pta-fade">
+  <span class="pta-evidence-label mono">Primary Source — Tuzuk-i-Jahangiri on Hassan Abdal Spring</span>
   <blockquote>"On Wednesday the 12th the camp was at Baba Hasan Abdal. Two miles (one kos) east of this station there was a waterfall over which the stream rushes with great force. The celebrated place at this station is <strong>a spring which flows from the foot of a little hill, exceedingly clear, sweet and nice</strong>..."</blockquote>
   <cite>Tuzuk-i-Jahangiri. Trans. Rogers/Beveridge, 1909–14.</cite>
 </div>
@@ -377,10 +198,10 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>Jahangir's three-day stay at "Baba Hasan Abdal," his pearl-adorned fish released into the saint's spring, his 9,000 rupees disbursed for the garden's elaboration — these are not incidental acts of an emperor passing through. They are the acts of a ruler who understood the Khorasan-Hind threshold as a node of sacred authority requiring imperial cultivation, performed in the mode of the walāya-sovereign that Moin's thesis documents as the Mughal-Safavid imperial type.</p>
 
-<div class="wp-part-header">Part VI — Dara Shikoh: The Safavid-Sufi Synthesis and Its Destruction</div>
+<h2>Part VI — Dara Shikoh: The Safavid-Sufi Synthesis and Its Destruction</h2>
 
-<div class="wp-emperor">
-  <div class="wp-emperor-label">Dara Shikoh (1615–1659) — the Synthesist</div>
+<div class="pta-evidence pta-fade">
+  <div class="pta-evidence-label mono">Dara Shikoh (1615–1659) — the Synthesist</div>
   <p>Muhammad Dara Shikoh. Eldest son of Shah Jahan; Mughal Crown Prince. Qadiri Sufi, philosopher, translator. Executed by his brother Aurangzeb on 30 August 1659 on charges of apostasy and heresy. His execution is the Mughal court's 1659 Naqshbandi capture moment — structurally identical to the Ottoman 1826 Vaka-i Hayriye and the 2018–2022 Imran formation.</p>
 </div>
 
@@ -458,7 +279,7 @@ title: "WP-74: The Mughal-Safavid Transmission"
   <p>In 1659, the Naqshbandi programme succeeded. In 1826, it succeeded. In 2018–2022, it did not succeed — because the Pakistan Army, unlike the Janissary corps and unlike Dara Shikoh, recognized the programme before the simultaneous blow landed and acted institutionally.</p>
 </div>
 
-<div class="wp-part-header">Part VII — The Grand Trunk Road as Imperial Sacred Infrastructure</div>
+<h2>Part VII — The Grand Trunk Road as Imperial Sacred Infrastructure</h2>
 
 <p>The Mughal <em>Badshahi Sadak</em> — formalized by Sher Shah Suri as <em>Sadak-e-Azam</em>, the Grand Trunk Road — ran from Bengal through Agra, Delhi, Lahore, across the Pothohar Plateau through Hassan Abdal and Attock Fort, across the Indus, through Peshawar, and up to Kabul through the Khyber Pass. The Mughals invested substantially in this route's infrastructure:</p>
 
@@ -471,7 +292,7 @@ title: "WP-74: The Mughal-Safavid Transmission"
 
 <p>The UNESCO Tentative World Heritage nomination for "Sites along the Uttarapath, Badshahi Sadak, Sadak-e-Azam, Grand Trunk Road" recognizes what the Mughals understood: this was not merely a road but a managed sacred corridor, and the nodes along it — Hassan Abdal most prominently at the Khorasan-Hind threshold — carried the sacred gravity of the entire civilizational transmission route.</p>
 
-<div class="wp-part-header">Part VIII — From Mughal Infrastructure to Pakistan Army: The Inheritance</div>
+<h2>Part VIII — From Mughal Infrastructure to Pakistan Army: The Inheritance</h2>
 
 <p>The question this paper has been building toward: how does the Mughal construction of the Khorasan-Hind sacred infrastructure at Hassan Abdal-Attock-Pothohar become the Pakistan Army's civilizational inheritance?</p>
 
@@ -487,12 +308,12 @@ title: "WP-74: The Mughal-Safavid Transmission"
   <tr><td>Chishti-Qadiri dargah network on the GT Road</td><td>Living dargah pilgrimage network; Bari Imam 5km from GHQ</td><td>WP-64 / WP-58</td></tr>
 </table>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Structural Synthesis — The Threefold Inheritance</div>
+<div class="pta-analysis pta-fade">
+  <div class="pta-analysis-label mono">SCRA Structural Synthesis — The Threefold Inheritance</div>
   <p>The Pakistan Army inherits the Khorasan-Hind threshold through three sequential institutional transmissions: (1) Mughal imperial construction — Akbar's Attock Fort and Hassan Abdal garden, Jahangir's documented patronage of "Baba Hasan Abdal's" spring, the entire GT Road sacred infrastructure as imperial policy; (2) British colonial positioning — Rawalpindi cantonment placed at the same strategic logic as Akbar's Attock Fort, managing the northwest frontier from the Pothohar plateau; (3) Pakistani national independence — the army inheriting the Rawalpindi-Pothohar institutional geography from the British Indian Army. What the army holds today is not merely real estate. It is the sediment of five centuries of walāya-grounded institutional construction, beginning with the Safavid-initiated Mughal dynasty's decision to establish their northwest threshold at the spring where Baba Hasan Abdal had settled a century before Akbar built his garden.</p>
 </div>
 
-<div class="wp-part-header">Bibliography</div>
+<h2>Bibliography</h2>
 
 <div class="wp-bib">
   <h4>Primary Sources</h4>
@@ -535,7 +356,9 @@ title: "WP-74: The Mughal-Safavid Transmission"
   <a href="{{ '/research/imran-1826-naqshbandi/' | relative_url }}">WP-58 — The 1826 Moment That Failed</a>
 </p>
 
-<div class="wp-nav">
-  <a href="{{ '/research/pakpattan-absorption/' | relative_url }}">← WP-73: The Pakpattan Absorption</a>
-  <a href="{{ '/research/' | relative_url }}">↑ Research Archive</a>
-</div>
+</div><!-- /.as-thesis-body -->
+<nav class="pta-page-nav">
+  <a href="{{ '/research/pakpattan-absorption/' | relative_url }}" class="pta-page-nav-prev">← WP-73: The Pakpattan Absorption</a>
+  <a href="{{ '/research/' | relative_url }}" class="pta-page-nav-next">Research Archive →</a>
+</nav>
+</div><!-- /.pta-content-wrap -->
