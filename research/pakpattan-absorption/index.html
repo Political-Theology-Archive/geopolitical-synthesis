@@ -1,319 +1,75 @@
 ---
 layout: default
-title: "WP-73: The Pakpattan Absorption"
+title: "The Pakpattan Absorption — T-73"
+description: "Baba Farid al-Din Ganj-i-Shakar, the Chishti Silsila, and the Structural Capture of the Khorasan Transmission Into the Sikh Canon. Three-phase analysis: the Absorption (1604), the Institutionalization (1699), and the Sealing (1873–1909)."
+wp: "WP-73"
+layer: "IV"
 ---
 
 <style>
-  :root {
-    --wp-primary: rgba(185,130,25,1);
-    --wp-primary-light: rgba(185,130,25,0.12);
-    --wp-primary-mid: rgba(185,130,25,0.35);
-    --wp-primary-border: rgba(185,130,25,0.5);
-  }
-
-  .wp-header {
-    border-left: 5px solid var(--wp-primary);
-    padding: 2rem 2rem 1.5rem 2rem;
-    background: var(--wp-primary-light);
-    margin-bottom: 2.5rem;
-  }
-
-  .wp-series-tag {
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--wp-primary);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .wp-header h1 {
-    font-size: 1.75rem;
-    line-height: 1.25;
-    margin: 0.4rem 0 0.8rem 0;
-  }
-
-  .wp-header .wp-subtitle {
-    font-size: 1.0rem;
-    font-style: italic;
-    opacity: 0.85;
-    margin-bottom: 0.6rem;
-  }
-
-  .wp-meta {
-    font-size: 0.82rem;
-    opacity: 0.7;
-  }
-
-  .wp-thesis {
-    border: 1.5px solid var(--wp-primary-border);
-    border-radius: 4px;
-    padding: 1.4rem 1.6rem;
-    background: var(--wp-primary-light);
-    margin: 2rem 0;
-  }
-
-  .wp-thesis-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--wp-primary);
-    font-weight: 700;
-    margin-bottom: 0.6rem;
-  }
-
-  .wp-thesis p {
-    margin: 0;
-    font-size: 1.02rem;
-    line-height: 1.65;
-  }
-
-  .wp-part-header {
-    border-bottom: 2px solid var(--wp-primary);
-    padding-bottom: 0.4rem;
-    margin: 2.8rem 0 1.2rem 0;
-    color: var(--wp-primary);
-    font-size: 1.05rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .wp-hadith {
-    background: #0a1a20;
-    border-left: 4px solid var(--wp-primary);
-    border-radius: 3px;
-    padding: 1.2rem 1.5rem;
-    margin: 1.2rem 0;
-  }
-
-  .wp-hadith .arabic {
-    font-family: 'Amiri', 'Traditional Arabic', serif;
-    font-size: 1.45rem;
+  .as-arabic {
+    font-family: 'Amiri', 'Traditional Arabic', Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 2.1;
+    text-align: right;
     direction: rtl;
-    text-align: right;
-    line-height: 2.0;
-    color: #e8d5a0;
-    display: block;
-    margin-bottom: 0.6rem;
-  }
-
-  .wp-hadith .transliteration {
-    font-style: italic;
-    font-size: 0.92rem;
-    opacity: 0.8;
-    display: block;
-    margin-bottom: 0.4rem;
-  }
-
-  .wp-hadith .translation {
-    font-size: 0.96rem;
-    line-height: 1.55;
-    display: block;
-  }
-
-  .wp-source-label {
-    font-size: 0.75rem;
-    opacity: 0.6;
-    text-align: right;
-    margin-top: 0.4rem;
-  }
-
-  .wp-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.2rem 0;
-    font-size: 0.88rem;
-  }
-
-  .wp-table th {
-    background: var(--wp-primary-mid);
-    color: #fff;
-    padding: 0.6rem 0.8rem;
-    text-align: left;
-    font-weight: 600;
-    font-size: 0.82rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .wp-table td {
-    padding: 0.55rem 0.8rem;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    vertical-align: top;
-    line-height: 1.45;
-  }
-
-  .wp-table tr:nth-child(even) td {
-    background: rgba(255,255,255,0.03);
-  }
-
-  .wp-inference {
-    background: rgba(255,200,50,0.08);
-    border-left: 3px solid rgba(255,200,50,0.5);
-    padding: 0.9rem 1.2rem;
-    margin: 1.2rem 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .wp-inference-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: rgba(255,200,50,0.8);
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-  }
-
-  .wp-verdict {
-    background: var(--wp-primary-light);
-    border: 1.5px solid var(--wp-primary-border);
-    border-radius: 3px;
-    padding: 1.1rem 1.4rem;
-    margin: 1.5rem 0;
-    font-size: 0.96rem;
-    line-height: 1.6;
-  }
-
-  .wp-verdict-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--wp-primary);
-    font-weight: 700;
     margin-bottom: 0.5rem;
+    display: block;
   }
-
-  .wp-gap-note {
-    background: rgba(255,255,255,0.04);
-    border-left: 3px solid rgba(255,255,255,0.2);
-    padding: 0.7rem 1.1rem;
-    margin: 1rem 0;
-    font-size: 0.86rem;
-    font-style: italic;
-    opacity: 0.8;
-  }
-
-  .wp-capture-phase {
-    border: 1px solid var(--wp-primary-border);
-    border-radius: 4px;
-    padding: 1.2rem 1.4rem;
-    margin: 1.2rem 0;
-  }
-
-  .wp-capture-phase-label {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--wp-primary);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .wp-locked {
-    background: rgba(185,130,25,0.18);
-    border: 1.5px solid var(--wp-primary);
-    border-radius: 3px;
-    padding: 1rem 1.3rem;
-    margin: 1.2rem 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .wp-locked-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--wp-primary);
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-  }
-
-  .wp-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 3rem 0 1rem 0;
-    font-size: 0.88rem;
-    opacity: 0.7;
-  }
-
-  .wp-nav a {
-    color: var(--wp-primary);
-    text-decoration: none;
-  }
-
-  .wp-nav a:hover {
-    text-decoration: underline;
-  }
-
-  .wp-bib {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .wp-bib h4 {
+  .as-chain-block {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
     font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: var(--wp-primary);
-    margin: 1.2rem 0 0.4rem 0;
-    border-bottom: 1px solid var(--wp-primary-border);
-    padding-bottom: 0.2rem;
+    line-height: 1.9;
+    white-space: pre;
+    overflow-x: auto;
+    letter-spacing: 0.04em;
   }
-
-  .wp-bib li {
-    margin: 0.35rem 0;
-  }
-
-  .silsila-chain {
-    font-family: monospace;
-    font-size: 0.9rem;
-    line-height: 2.0;
-    padding: 1rem 1.4rem;
-    background: rgba(0,0,0,0.25);
-    border-radius: 3px;
-    margin: 1rem 0;
-  }
-
-  .silsila-node {
-    color: var(--wp-primary);
-    font-weight: 600;
-  }
-
-  .silsila-arrow {
-    opacity: 0.5;
-  }
-
 </style>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "The Pakpattan Absorption",
+  "description": "Baba Farid al-Din Ganj-i-Shakar, the Chishti Silsila, and the Structural Capture of the Khorasan Transmission Into the Sikh Canon.",
+  "author": {"@type": "Person", "name": "S.K. Bosal"},
+  "publisher": {"@type": "Organization", "name": "Alvid Scriptorium", "url": "https://alvidscriptorium.com"},
+  "isPartOf": {"@type": "CreativeWorkSeries", "name": "Alvid Scriptorium Theses"},
+  "keywords": "Pakpattan, Baba Farid, Chishti, Guru Nanak, Guru Granth Sahib, Ba'alist Capture, walāya, Karbala, Singh Sabha, silsila"
+}
+</script>
 
-<div class="wp-header">
-  <div class="wp-series-tag">SCRA Working Paper 73 · Ba'alist Capture Applied · Sanctuary II × III · Punjab Studies · Pakistan Studies</div>
-  <h1>The Pakpattan Absorption</h1>
-  <div class="wp-subtitle">Baba Farid al-Din Ganj-i-Shakar, the Chishti Silsila, and the Structural Capture of the Khorasan Transmission Into the Sikh Canon</div>
-  <div class="wp-meta">2026-06-10 &nbsp;·&nbsp; Sacred Civilization Research Archive &nbsp;·&nbsp; alvidscriptorium.com</div>
+<div class="pta-content-wrap">
+
+<div class="pta-page-hero">
+  <span class="as-eye" style="color:rgba(185,130,25,0.8);">T-73 &nbsp;·&nbsp; Ba'alist Capture Applied &nbsp;·&nbsp; Sanctuary II × III &nbsp;·&nbsp; Punjab Studies &nbsp;·&nbsp; Pakistan Studies</span>
+  <h1 class="pta-page-h1">The Pakpattan Absorption</h1>
+  <p class="as-standfirst">Baba Farid al-Din Ganj-i-Shakar, the Chishti Silsila, and the Structural Capture of the Khorasan Transmission Into the Sikh Canon</p>
 </div>
 
-<div class="wp-thesis">
-  <div class="wp-thesis-label">Thesis</div>
+<div class="as-thesis-body">
+
+<div class="as-ruling">
+  <p><strong>Thesis:</strong></p>
   <p>Baba Farid al-Din Ganj-i-Shakar (1179–1265 CE), fourth master of the Chishti silsila in South Asia, was a saint whose devotional orientation centered on Imam Hussain ibn Ali as his spiritual master, whose shrine maintained 40-day black-cloth Muharram mourning, and whose poetry constituted the vernacular expression of a living Karbala-grounded walāya transmission in Punjab. When Guru Nanak — operating from a Vaishnava bhakti base — received these compositions at Pakpattan from Farid's successor in the early 16th century, and when Guru Arjan Dev incorporated them into the Guru Granth Sahib (1604 CE), a structural event occurred: the <em>zahir</em> of the Chishti transmission (the poetry, the vocabulary of faqr and ishq, the langar institution, the sacred geography) crossed a doctrinal boundary into a framework that cannot sustain its <em>batin</em> grounding. The silsila chain, the walāya to the Ahl al-Bayt, the Karbala orientation — none of these categories exist within the Vaishnava devotional framework. They died at the doctrinal threshold. The Singh Sabha movement (1873–1909), supported by the British administration, then sealed this structural severance by institutionally defeating those Sanatan Sikhs who had maintained the zahir residue of Islamic practice, and by reframing Baba Farid from Chishti Islamic master to a generic "Bhagat" saint who happened to transcend all religions. This paper documents the three-phase capture: the Absorption (1604), the Institutionalization (1699), and the Sealing (1873–1909).</p>
 </div>
 
-<div class="wp-part-header">Part I — The Zahir/Batin Framework of the Capture</div>
+
+<!-- ═══ PART I ═══ -->
+<h2>Part I · The Zahir/Batin Framework of the Capture</h2>
 
 <p>The SCRA Ba'alist Capture model identifies a recurring structural pattern in which the <em>zahir</em> (outer, visible, transmissible) forms of a walāya tradition are absorbed into a competing institutional formation while the <em>batin</em> (inner, metaphysical, chain-dependent) grounding of those forms is severed. The zahir is portable: poetry, institutional practices, sacred geography, vocabulary, iconography. The batin is not portable without the living chain: the silsila of spiritual transmission, the walāya to the Ahl al-Bayt, the Karbala orientation that situates all devotional practice within the event-horizon of the 10th of Muharram 61 AH.</p>
 
-<p>Previous SCRA papers have analyzed Ba'alist Capture through the <strong>Secular-Liberal</strong>, <strong>Military-Establishment</strong>, and <strong>Pseudo-Islamic</strong> vectors (WP-69). WP-73 documents a fourth structural mechanism: <strong>capture through doctrinal boundary crossing</strong>. The Chishti transmission did not enter the Sikh canon through hostility or deliberate erasure. It entered through absorption — and the doctrinal distance between the receiving framework (Vaishnava bhakti) and the source framework (Chishti-Islamic walāya) ensured that what arrived was the form without the content, the vessel without the water.</p>
+<p>Previous SCRA papers have analyzed Ba'alist Capture through the <strong>Secular-Liberal</strong>, <strong>Military-Establishment</strong>, and <strong>Pseudo-Islamic</strong> vectors (T-69). T-73 documents a fourth structural mechanism: <strong>capture through doctrinal boundary crossing</strong>. The Chishti transmission did not enter the Sikh canon through hostility or deliberate erasure. It entered through absorption — and the doctrinal distance between the receiving framework (Vaishnava bhakti) and the source framework (Chishti-Islamic walāya) ensured that what arrived was the form without the content, the vessel without the water.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Structural Note</div>
-  The capture does not require any individual to have intended it. Ba'alist Capture is structural, not conspiratorial. Guru Nanak is not implicated as a deliberate actor. Guru Arjan Dev is not accused of bad faith. The mechanism is the doctrinal boundary itself. What cannot survive a crossing between incompatible theological frameworks does not survive — regardless of intention.
+<div class="pta-evidence">
+  <span class="pta-evidence-label">SCRA Structural Note</span>
+  <blockquote>The capture does not require any individual to have intended it. Ba'alist Capture is structural, not conspiratorial. Guru Nanak is not implicated as a deliberate actor. Guru Arjan Dev is not accused of bad faith. The mechanism is the doctrinal boundary itself. What cannot survive a crossing between incompatible theological frameworks does not survive — regardless of intention.</blockquote>
 </div>
 
-<div class="wp-part-header">Part II — The Chishti Foundation: Who Was Baba Farid</div>
+
+<!-- ═══ PART II ═══ -->
+<h2>Part II · The Chishti Foundation: Who Was Baba Farid</h2>
 
 <h3>II.1 — Biography</h3>
 
@@ -323,31 +79,36 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>The Chishti silsila traces its spiritual genealogy directly to the Ahl al-Bayt through Imam Ali ibn Abi Talib:</p>
 
-<div class="silsila-chain">
-  <span class="silsila-node">Prophet Muhammad (S.A.W.A.)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Imam Ali ibn Abi Talib (A.S.)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;... early Khorasani ascetic chain ...</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Abu Ishaq Shami (d. 940 CE, village of Chisht, Khorasan)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;... chain of Chishti masters ...</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Khwaja Mu'in al-Dīn Ḥasan Chishtī (d. 1236, Ajmer)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Qutb al-Dīn Bakhtiyār Kākī (d. 1235, Delhi)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Farīd al-Dīn Ganj-i-Shakar (1179–1265, Pakpattan)</span><br>
-  <span class="silsila-arrow">&nbsp;&nbsp;&darr;</span><br>
-  <span class="silsila-node">Nizām al-Dīn Awliyā' (1238–1325, Delhi)</span>
+<div class="pta-evidence">
+  <span class="pta-evidence-label">Chishti Silsila — Chain of Transmission to Baba Farid and Nizam al-Din Awliya'</span>
+  <blockquote>
+    <div class="as-chain-block">Prophet Muhammad (S.A.W.A.)
+  ↓
+Imam Ali ibn Abi Talib (A.S.)
+  ↓
+  ... early Khorasani ascetic chain ...
+  ↓
+Abu Ishaq Shami (d. 940 CE, village of Chisht, Khorasan)
+  ↓
+  ... chain of Chishti masters ...
+  ↓
+Khwaja Mu'in al-Din Hasan Chishti (d. 1236 CE, Ajmer)
+  ↓
+Qutb al-Din Bakhtiyr Kaki (d. 1235 CE, Delhi)
+  ↓
+Farid al-Din Ganj-i-Shakar (1179–1265 CE, Pakpattan)
+  ↓
+Nizam al-Din Awliya' (1238–1325 CE, Delhi)</div>
+  </blockquote>
 </div>
 
 <p>This chain is not genealogical ornamentation. In the Sufi understanding of walāya, the silsila is the living transmission vehicle — the channel through which baraka flows from the Prophet through the Imams into the present. Severing the chain severs the transmission. <strong>The first node of the Chishti silsila is Imam Ali ibn Abi Talib.</strong> Everything Baba Farid taught, every word of poetry he composed, was understood — within his own theological framework — as flowing from that origin point.</p>
 
-<div class="wp-part-header">Part III — The Karbala Batin: What the Shrine Practiced</div>
 
-<p>This section documents the most analytically significant evidence for WP-73: the Karbala orientation of the Pakpattan transmission, as it existed during and after Guru Nanak's lifetime.</p>
+<!-- ═══ PART III ═══ -->
+<h2>Part III · The Karbala Batin: What the Shrine Practiced</h2>
+
+<p>This section documents the most analytically significant evidence for T-73: the Karbala orientation of the Pakpattan transmission, as it existed during and after Guru Nanak's lifetime.</p>
 
 <h3>III.1 — The 40-Day Muharram Closure</h3>
 
@@ -357,9 +118,9 @@ title: "WP-73: The Pakpattan Absorption"
 
 <h3>III.2 — Baba Farid's Attributed Saying on Imam Hussain</h3>
 
-<div class="wp-hadith">
-  <span class="translation">Baba Farid al-Din Ganj-i-Shakar is attributed with saying that he "goes to Karbala to seek alms from his master Imam Hussain."</span>
-  <div class="wp-source-label">Documented in shrine hagiographic tradition; Pakpattan devotional literature</div>
+<div class="pta-evidence">
+  <span class="pta-evidence-label">Attributed Statement · Baba Farid al-Din Ganj-i-Shakar · Shrine Hagiographic Tradition · Pakpattan Devotional Literature</span>
+  <blockquote>Baba Farid al-Din Ganj-i-Shakar is attributed with saying that he "goes to Karbala to seek alms from his master Imam Hussain."</blockquote>
 </div>
 
 <p>This formulation positions <strong>Imam Hussain ibn Ali as Baba Farid's spiritual master</strong> — the ultimate source of his baraka and authorization — even though his formal silsila ran through Kaki and Moin al-Din. The relationship is: the formal silsila provides the institutional chain; the walāya to Imam Hussain provides the metaphysical ground from which the entire chain draws its validity. This is the classical Chishti understanding: the silsila is the means; the Ahl al-Bayt walāya is the source.</p>
@@ -368,16 +129,18 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>The annual Urs (death anniversary) celebration of Baba Farid begins in the opening days of Muharram — the same month as Ashura and Karbala commemoration. The death of the saint is calendrically embedded in the Karbala mourning framework. The theology of fana (annihilation in the divine) and the theology of Karbala (annihilation in resistance to tyranny) are given identical devotional timing.</p>
 
-<div class="wp-verdict">
-  <div class="wp-verdict-label">Documentary Foundation</div>
-  <p style="margin:0">The shrine from which Guru Nanak received Baba Farid's compositions in the early 16th century was, at that time and continuously thereafter, practicing: (1) 40-day black-cloth Muharram mourning for the martyrs of Karbala; (2) theological positioning of Imam Hussain ibn Ali as the saint's ultimate spiritual master; (3) restriction of its most sacred portal to the Muharram calendar window. This was the <em>batin</em> context of the compositions Guru Nanak received. When these compositions entered the Guru Granth Sahib (1604), none of this batin context entered with them.</p>
+<div class="as-ruling">
+  <p><strong>Documentary Foundation:</strong></p>
+  <p>The shrine from which Guru Nanak received Baba Farid's compositions in the early 16th century was, at that time and continuously thereafter, practicing: (1) 40-day black-cloth Muharram mourning for the martyrs of Karbala; (2) theological positioning of Imam Hussain ibn Ali as the saint's ultimate spiritual master; (3) restriction of its most sacred portal to the Muharram calendar window. This was the <em>batin</em> context of the compositions Guru Nanak received. When these compositions entered the Guru Granth Sahib (1604), none of this batin context entered with them.</p>
 </div>
 
-<div class="wp-part-header">Part IV — Guru Nanak: The Vaishnava Bhakti Base</div>
 
-<div class="wp-locked">
-  <div class="wp-locked-label">SCRA Locked Analytical Position</div>
-  Guru Nanak operated from a <strong>Vaishnava bhakti</strong> foundation, using Sufi vocabulary as part of the regional devotional economy of 15th–16th century Punjab. This is the Sanatan Sikh position — the tradition's oldest self-understanding. SCRA adopts this framing as analytically correct and analytically strongest. It is the most intellectually honest account of the encounter between Guru Nanak and the Chishti transmission.
+<!-- ═══ PART IV ═══ -->
+<h2>Part IV · Guru Nanak: The Vaishnava Bhakti Base</h2>
+
+<div class="as-ruling">
+  <p><strong>SCRA Locked Analytical Position:</strong></p>
+  <p>Guru Nanak operated from a <strong>Vaishnava bhakti</strong> foundation, using Sufi vocabulary as part of the regional devotional economy of 15th–16th century Punjab. This is the Sanatan Sikh position — the tradition's oldest self-understanding. SCRA adopts this framing as analytically correct and analytically strongest. It is the most intellectually honest account of the encounter between Guru Nanak and the Chishti transmission.</p>
 </div>
 
 <h3>IV.1 — Documented Biographical Framework</h3>
@@ -386,14 +149,18 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>His documented biography before the hagiographic Janam-sakhis (composed approximately one century after his death, c. 1600–1640 CE) contains the following verifiable facts:</p>
 
-<table class="wp-table">
-  <tr><th>Fact</th><th>Status</th></tr>
-  <tr><td>Born 1469 CE, Rai Bhoi di Talvandi; father Kalu Bedi (Khatri patwari)</td><td>Established</td></tr>
-  <tr><td>Employed ~14 years as accountant (<em>modikhana</em>) for Daulat Khan Lodi, Muslim governor of Sultanpur Lodhi</td><td>Established</td></tr>
-  <tr><td>Principal companion: Mardana — a Muslim <em>mirasi</em> (hereditary musician) who played the <em>rabab</em></td><td>Established</td></tr>
-  <tr><td>Settled at Kartarpur, Ravi River, c. 1521 CE; founded community, farmed</td><td>Established</td></tr>
-  <tr><td>Died 1539 CE; selected Bhai Lehna (Guru Angad) as successor</td><td>Established</td></tr>
-  <tr><td>Two visits to Pakpattan; met Shaykh Ibrahim (Farid Sani), 10th successor of Baba Farid</td><td>Broadly accepted</td></tr>
+<table>
+  <thead>
+    <tr><th>Fact</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Born 1469 CE, Rai Bhoi di Talvandi; father Kalu Bedi (Khatri patwari)</td><td>Established</td></tr>
+    <tr><td>Employed ~14 years as accountant (<em>modikhana</em>) for Daulat Khan Lodi, Muslim governor of Sultanpur Lodhi</td><td>Established</td></tr>
+    <tr><td>Principal companion: Mardana — a Muslim <em>mirasi</em> (hereditary musician) who played the <em>rabab</em></td><td>Established</td></tr>
+    <tr><td>Settled at Kartarpur, Ravi River, c. 1521 CE; founded community, farmed</td><td>Established</td></tr>
+    <tr><td>Died 1539 CE; selected Bhai Lehna (Guru Angad) as successor</td><td>Established</td></tr>
+    <tr><td>Two visits to Pakpattan; met Shaykh Ibrahim (Farid Sani), 10th successor of Baba Farid</td><td>Broadly accepted</td></tr>
+  </tbody>
 </table>
 
 <p>Fourteen years working under a Muslim governor. Decades of constant companionship with a Muslim musician playing a specifically Islamic instrument. Two documented visits to the dominant Chishti sacred node of Punjab. Guru Nanak operated in total immersion in the Islamic devotional economy of his region — while his own theological base remained Vaishnava bhakti.</p>
@@ -402,29 +169,35 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>GGS compositions attributed to Guru Nanak contain direct use of Islamic divine names and Sufi theological vocabulary:</p>
 
-<table class="wp-table">
-  <tr><th>Term in GGS</th><th>Origin</th><th>Context</th></tr>
-  <tr><td><strong>Allah</strong></td><td>Arabic, Quranic</td><td>Used directly in Rag Tilang and other compositions</td></tr>
-  <tr><td><strong>Rab</strong></td><td>Arabic <em>Rabb</em> (Lord/Sustainer)</td><td>Common Quranic divine name</td></tr>
-  <tr><td><strong>Rahman</strong></td><td>Arabic, 99 Names (Most Gracious)</td><td>Quranic divine attribute</td></tr>
-  <tr><td><strong>Rahim</strong></td><td>Arabic, 99 Names (Most Merciful)</td><td>Quranic divine attribute</td></tr>
-  <tr><td><strong>Karim</strong></td><td>Arabic, 99 Names (Most Generous)</td><td>Quranic divine attribute</td></tr>
-  <tr><td><strong>Sahib</strong></td><td>Arabic (Master/Lord)</td><td>Standard devotional usage</td></tr>
-  <tr><td><strong>Faqr</strong></td><td>Sufi technical term (Q.47:38)</td><td>Sufi <em>maqamat</em> vocabulary</td></tr>
+<table>
+  <thead>
+    <tr><th>Term in GGS</th><th>Origin</th><th>Context</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Allah</strong></td><td>Arabic, Quranic</td><td>Used directly in Rag Tilang and other compositions</td></tr>
+    <tr><td><strong>Rab</strong></td><td>Arabic <em>Rabb</em> (Lord/Sustainer)</td><td>Common Quranic divine name</td></tr>
+    <tr><td><strong>Rahman</strong></td><td>Arabic, 99 Names (Most Gracious)</td><td>Quranic divine attribute</td></tr>
+    <tr><td><strong>Rahim</strong></td><td>Arabic, 99 Names (Most Merciful)</td><td>Quranic divine attribute</td></tr>
+    <tr><td><strong>Karim</strong></td><td>Arabic, 99 Names (Most Generous)</td><td>Quranic divine attribute</td></tr>
+    <tr><td><strong>Sahib</strong></td><td>Arabic (Master/Lord)</td><td>Standard devotional usage</td></tr>
+    <tr><td><strong>Faqr</strong></td><td>Sufi technical term (Q.47:38)</td><td>Sufi <em>maqamat</em> vocabulary</td></tr>
+  </tbody>
 </table>
 
 <p>The Mool Mantar — Guru Nanak's foundational theological statement that opens the Guru Granth Sahib — centers on <em>Satnamu</em>: "Truth is His Name." <em>Sat</em> (Sanskrit: Truth/Real) is functionally parallel to Arabic <em>al-Haqq</em> (The Truth/The Real) — the supreme Sufi divine attribute through which the entire mystical tradition theorizes the divine reality. Al-Hallaj was executed 922 CE for declaring "Ana al-Haqq" (I am the Truth/Real). The Chishti order's Punjab dhikr used "Haq" as a constant invocation. Guru Nanak reached the same theological register through a Sanskrit-Punjabi linguistic route.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Analytical Inference</div>
-  Guru Nanak used Islamic divine names not because he was operating within Islamic walāya — but because the devotional vocabulary of 15th-century Punjab had been shaped by 300 years of Chishti transmission. The vocabulary was, by his lifetime, the regional devotional commons. Using it does not make him Sufi; it documents the depth of Chishti cultural penetration of Punjab's devotional economy.
+<div class="pta-evidence">
+  <span class="pta-evidence-label">SCRA Analytical Inference — Not Documented Fact</span>
+  <blockquote>Guru Nanak used Islamic divine names not because he was operating within Islamic walāya — but because the devotional vocabulary of 15th-century Punjab had been shaped by 300 years of Chishti transmission. The vocabulary was, by his lifetime, the regional devotional commons. Using it does not make him Sufi; it documents the depth of Chishti cultural penetration of Punjab's devotional economy.</blockquote>
 </div>
 
 <h3>IV.3 — The "No Hindu, No Muslim" Statement — Critical Analysis</h3>
 
 <p>The attributed saying: <em>"Na koi Hindu, na koi Musalman"</em> — "There is no Hindu, there is no Muslim" — is structurally identical to advanced Sufi doctrine. The Chishti masters routinely described the fully realized saint as transcending outward religious forms while the inner truth (batin) remains one. This was the highest Sufi self-description: one who has dissolved the zahir boundaries in the experience of divine unity. Guru Nanak's formulation — whatever its doctrinal register for him — is formally identical to that Sufi position. This is not evidence that he was Sufi; it is evidence of how thoroughly the Sufi conceptual vocabulary had entered the Punjab devotional commons that even a Vaishnava bhakti master reached for it to articulate transcendence.</p>
 
-<div class="wp-part-header">Part V — The Transfer: Two Farids, Two Visits, One Crossing</div>
+
+<!-- ═══ PART V ═══ -->
+<h2>Part V · The Transfer: Two Farids, Two Visits, One Crossing</h2>
 
 <h3>V.1 — The Impossible Meeting and Its Resolution</h3>
 
@@ -432,22 +205,26 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>McLeod's critical scholarship resolves this: Guru Nanak met <strong>Shaykh Ibrahim</strong>, also known as Farid Sani ("the Second Farid") — the tenth holder of the Pakpattan sajjada nashin seat, descended in the Chishti succession from Baba Farid. Shaykh Ibrahim/Farid Sani was a contemporary of Guru Nanak. The two met at Pakpattan on two documented occasions. Guru Nanak received from Shaykh Ibrahim the manuscript compositions preserved at the Pakpattan khanqah — a collection attributed to Baba Farid Ganj-i-Shakar and to subsequent holders of his seat who composed under the same pen name.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Analytical Inference</div>
-  The Janam-sakhi tradition's elevation of the encounter from "Guru Nanak met Farid Sani, the 10th successor" to "Guru Nanak met the original Farid Ganj-i-Shakar" is hagiographically intelligible: it establishes a founding encounter between Guru Nanak and the greatest Chishti master of Punjab, positioning them as peers across time. The zahir of the meeting (two great saints recognize each other) is preserved; the batin context (Guru Nanak received compositions from a living Chishti sajjada nashin whose shrine was at that moment draped in black for Muharram) is not carried forward.
+<div class="pta-evidence">
+  <span class="pta-evidence-label">SCRA Analytical Inference — Not Documented Fact</span>
+  <blockquote>The Janam-sakhi tradition's elevation of the encounter from "Guru Nanak met Farid Sani, the 10th successor" to "Guru Nanak met the original Farid Ganj-i-Shakar" is hagiographically intelligible: it establishes a founding encounter between Guru Nanak and the greatest Chishti master of Punjab, positioning them as peers across time. The zahir of the meeting (two great saints recognize each other) is preserved; the batin context (Guru Nanak received compositions from a living Chishti sajjada nashin whose shrine was at that moment draped in black for Muharram) is not carried forward.</blockquote>
 </div>
 
 <h3>V.2 — What Crossed the Doctrinal Boundary</h3>
 
-<table class="wp-table">
-  <tr><th>Element</th><th>Chishti Origin</th><th>What Crossed to Sikh Tradition</th><th>What Did Not Cross</th></tr>
-  <tr><td>Baba Farid's Punjabi poetry</td><td>Karbala-grounded walāya expression</td><td>The poetry — reframed as "Bhagat Farid"</td><td>The Karbala batin of its devotional register</td></tr>
-  <tr><td>Faqr / Ishq / Dard vocabulary</td><td>Sufi <em>maqamat</em> (Q.47:38; Islamic moral system)</td><td>The words and their emotional register</td><td>The Islamic theological framework of <em>maqamat</em></td></tr>
-  <tr><td>Langar institution</td><td>Sufi khanqah hospitality; Baba Farid's practice</td><td>Free communal kitchen as core Sikh practice</td><td>The khanqah silsila context of the institution</td></tr>
-  <tr><td>Sacred geography</td><td>Pakpattan devotional economy; Hassan Abdal spring</td><td>Sikh pilgrimage map; Panja Sahib</td><td>The Chishti/Alid-walāya grounding of the sites</td></tr>
-  <tr><td>The silsila chain itself</td><td>Living transmission: murshid → murid → Ahl al-Bayt</td><td>—</td><td>ENTIRELY ABSENT — text (GGS) becomes the Guru, not living chain</td></tr>
-  <tr><td>Walāya to Ahl al-Bayt</td><td>Foundational metaphysical grounding of Chishti baraka</td><td>—</td><td>ENTIRELY ABSENT — no category for it in Vaishnava framework</td></tr>
-  <tr><td>Karbala orientation</td><td>40-day Muharram closure; Hussain as spiritual master</td><td>—</td><td>ENTIRELY ABSENT from Sikh engagement with Farid material</td></tr>
+<table>
+  <thead>
+    <tr><th>Element</th><th>Chishti Origin</th><th>What Crossed to Sikh Tradition</th><th>What Did Not Cross</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Baba Farid's Punjabi poetry</td><td>Karbala-grounded walāya expression</td><td>The poetry — reframed as "Bhagat Farid"</td><td>The Karbala batin of its devotional register</td></tr>
+    <tr><td>Faqr / Ishq / Dard vocabulary</td><td>Sufi <em>maqamat</em> (Q.47:38; Islamic moral system)</td><td>The words and their emotional register</td><td>The Islamic theological framework of <em>maqamat</em></td></tr>
+    <tr><td>Langar institution</td><td>Sufi khanqah hospitality; Baba Farid's practice</td><td>Free communal kitchen as core Sikh practice</td><td>The khanqah silsila context of the institution</td></tr>
+    <tr><td>Sacred geography</td><td>Pakpattan devotional economy; Hassan Abdal spring</td><td>Sikh pilgrimage map; Panja Sahib</td><td>The Chishti/Alid-walāya grounding of the sites</td></tr>
+    <tr><td>The silsila chain itself</td><td>Living transmission: murshid → murid → Ahl al-Bayt</td><td>—</td><td>ENTIRELY ABSENT — text (GGS) becomes the Guru, not living chain</td></tr>
+    <tr><td>Walāya to Ahl al-Bayt</td><td>Foundational metaphysical grounding of Chishti baraka</td><td>—</td><td>ENTIRELY ABSENT — no category for it in Vaishnava framework</td></tr>
+    <tr><td>Karbala orientation</td><td>40-day Muharram closure; Hussain as spiritual master</td><td>—</td><td>ENTIRELY ABSENT from Sikh engagement with Farid material</td></tr>
+  </tbody>
 </table>
 
 <h3>V.3 — The Structural Reason: Doctrinal Incompatibility</h3>
@@ -456,7 +233,9 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>This is not the result of hostility. It is the result of structural incompatibility. The most generous reception possible — and the reception at Pakpattan was apparently warm — cannot keep alive what the receiving framework cannot hold.</p>
 
-<div class="wp-part-header">Part VI — The GGS Compilation: The Capturing Institution Controls the Only Copy</div>
+
+<!-- ═══ PART VI ═══ -->
+<h2>Part VI · The GGS Compilation: The Capturing Institution Controls the Only Copy</h2>
 
 <h3>VI.1 — Textual Monopoly</h3>
 
@@ -464,16 +243,18 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>The GGS (compiled 1604 CE under Guru Arjan Dev) is the <strong>only surviving source for Baba Farid's Punjabi poetry</strong>. No independent manuscript of his verse predating the GGS is known to survive. The Pakpattan khanqah, which held the original manuscripts, does not possess a text tradition independent of the GGS compilation. The capturing institution controls the only copy of the captured text.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Analytical Inference</div>
-  Any selective framing or contextual reorientation at the 1604 CE compilation — whether deliberate or structural — would be undetectable from the surviving record. The Chishti scholarly community has no independent textual baseline against which to measure what was included, excluded, or contextually reframed. The Pakpattan sajjada nashins' perspective on the transfer of their founding master's compositions into another tradition's canon is not documented in the surviving record.
+<div class="pta-evidence">
+  <span class="pta-evidence-label">SCRA Analytical Inference — Not Documented Fact</span>
+  <blockquote>Any selective framing or contextual reorientation at the 1604 CE compilation — whether deliberate or structural — would be undetectable from the surviving record. The Chishti scholarly community has no independent textual baseline against which to measure what was included, excluded, or contextually reframed. The Pakpattan sajjada nashins' perspective on the transfer of their founding master's compositions into another tradition's canon is not documented in the surviving record.</blockquote>
 </div>
 
 <h3>VI.2 — The Gurpurb Reframing</h3>
 
 <p>Within the GGS and Sikh theological interpretation, Baba Farid is classified as a <em>Bhagat</em> — a saint who attained divine truth through devotion, whose compositions are included in the GGS because the truth he expressed was universally valid regardless of his Islamic identity. In this framing, his Chishti silsila, his walāya to the Ahl al-Bayt, and his Karbala orientation are not merely unimportant — they are theologically irrelevant. The Bhagat framework absorbs the saint while evacuating his tradition. The individual is honored; the living chain he represented is terminated.</p>
 
-<div class="wp-part-header">Part VII — The Sealing: Singh Sabha, British Raj, and the De-Islamicization of Sikh Identity</div>
+
+<!-- ═══ PART VII ═══ -->
+<h2>Part VII · The Sealing: Singh Sabha, British Raj, and the De-Islamicization of Sikh Identity</h2>
 
 <h3>VII.1 — What Sanatan Sikhs Maintained</h3>
 
@@ -496,7 +277,7 @@ title: "WP-73: The Pakpattan Absorption"
   <li>Defeating Sanatan Sikhs institutionally through control of gurdwara committees and British-backed administrative structures</li>
 </ul>
 
-<p>Harjot Oberoi's documentation of this construction remains the foundational scholarly work. His thesis: bounded Sikh identity was not recovered — it was constructed, through a specific 19th-century institutional project, in a specific power alignment with the British administration. (<em>The Construction of Religious Boundaries</em>, University of Chicago Press, 1994. WorldCat: <a href="https://www.worldcat.org/isbn/9780226615929">9780226615929</a>)</p>
+<p>Harjot Oberoi's documentation of this construction remains the foundational scholarly work. His thesis: bounded Sikh identity was not recovered — it was constructed, through a specific 19th-century institutional project, in a specific power alignment with the British administration. (<em>The Construction of Religious Boundaries</em>, University of Chicago Press, 1994.)</p>
 
 <h3>VII.3 — The Colonial Production of Canonical Sikhism</h3>
 
@@ -508,84 +289,77 @@ title: "WP-73: The Pakpattan Absorption"
 
 <p>Following the 1857 Uprising — in which Sikh soldiers fought alongside British forces against the largely Muslim and Hindu high-caste sepoy uprising — Sikhs were elevated to premier "martial race" status. By 1929, Punjab contributed approximately 86,000 of 139,200 recruits across all of British India (approximately 62% of the total army from one province). Sikhs constituted a dramatically disproportionate share of infantry relative to their sub-2% share of the subcontinent's population.</p>
 
-<div class="wp-inference">
-  <div class="wp-inference-label">SCRA Structural Inference</div>
-  The British-Sikh military alliance created a structural incentive alignment: the sharper the institutional boundary between "Sikh" and "Muslim," the more reliable the Sikh soldier as a counter-insurgency resource against Muslim populations in Punjab, the North-West Frontier Province, and beyond. The Tat Khalsa's identity-construction project and British military utility were mutually reinforcing. The de-Islamicization of Sikh institutional identity served British administrative purposes — and British administrative support, in turn, determined which Sikh faction controlled gurdwara committees, educational institutions, and eventually the canonical apparatus.
+<div class="pta-evidence">
+  <span class="pta-evidence-label">SCRA Structural Inference — Not Documented Fact</span>
+  <blockquote>The British-Sikh military alliance created a structural incentive alignment: the sharper the institutional boundary between "Sikh" and "Muslim," the more reliable the Sikh soldier as a counter-insurgency resource against Muslim populations in Punjab, the North-West Frontier Province, and beyond. The Tat Khalsa's identity-construction project and British military utility were mutually reinforcing. The de-Islamicization of Sikh institutional identity served British administrative purposes — and British administrative support, in turn, determined which Sikh faction controlled gurdwara committees, educational institutions, and eventually the canonical apparatus.</blockquote>
 </div>
 
-<div class="wp-part-header">Part VIII — Three-Phase Capture: Assembled Structure</div>
 
-<div class="wp-capture-phase">
-  <div class="wp-capture-phase-label">Phase 1 — The Absorption (c. 1504–1604 CE)</div>
-  <p>Guru Nanak visits Pakpattan twice in the early 16th century and receives Baba Farid's compositions from Shaykh Ibrahim (Farid Sani), 10th sajjada nashin — the living representative of a shrine that is, at that moment, practicing 40-day Muharram black-cloth mourning and venerating Imam Hussain as the founding master's spiritual authority. These compositions enter the Guru tradition's manuscript corpus. When Guru Arjan Dev compiles the Adi Granth (1604 CE), the compositions are incorporated as the Saloks of Sheikh Farid. The <em>zahir</em> (the poetry, the faqr vocabulary, the dard of divine longing, the ishq metaphysics) crosses into the GGS. The <em>batin</em> — the Chishti silsila, the walāya to Imam Hussain, the Karbala calendar, the murshid-murid living chain — cannot cross the doctrinal boundary. The GGS simultaneously becomes the only surviving source for this poetry: the capturing institution holds the only copy.</p>
+<!-- ═══ PART VIII ═══ -->
+<h2>Part VIII · Three-Phase Capture: Assembled Structure</h2>
+
+<div class="pta-evidence">
+  <span class="pta-evidence-label">Phase 1 — The Absorption (c. 1504–1604 CE)</span>
+  <blockquote>Guru Nanak visits Pakpattan twice in the early 16th century and receives Baba Farid's compositions from Shaykh Ibrahim (Farid Sani), 10th sajjada nashin — the living representative of a shrine that is, at that moment, practicing 40-day Muharram black-cloth mourning and venerating Imam Hussain as the founding master's spiritual authority. These compositions enter the Guru tradition's manuscript corpus. When Guru Arjan Dev compiles the Adi Granth (1604 CE), the compositions are incorporated as the Saloks of Sheikh Farid. The <em>zahir</em> (the poetry, the faqr vocabulary, the dard of divine longing, the ishq metaphysics) crosses into the GGS. The <em>batin</em> — the Chishti silsila, the walāya to Imam Hussain, the Karbala calendar, the murshid-murid living chain — cannot cross the doctrinal boundary. The GGS simultaneously becomes the only surviving source for this poetry: the capturing institution holds the only copy.</blockquote>
 </div>
 
-<div class="wp-capture-phase">
-  <div class="wp-capture-phase-label">Phase 2 — The Institutionalization (1699 CE)</div>
-  <p>Guru Gobind Singh founds the Khalsa at Baisakhi 1699 CE. The Five Ks provide a sharply identifiable zahir formation — an institutional identity for what had been a more fluid devotional community. The Khalsa founding simultaneously organizes the absorbed Chishti devotional population of Punjab under a non-Islamic institutional authority, and provides the British with an identifiable "martial race" formation whose utility is maximized when its identity is sharply distinguished from Muslim identity. The founding battle-cry — "Waheguru Ji Ki Fateh" (<em>Fateh</em> = Arabic Victory/Opening, same root as <em>al-Fatiha</em>) — carries Arabic Islamic vocabulary into the Khalsa's foundational gesture. The zahir of Islamic vocabulary persists in the institutional founding even as the batin chain that generated it is absent.</p>
+<div class="pta-evidence">
+  <span class="pta-evidence-label">Phase 2 — The Institutionalization (1699 CE)</span>
+  <blockquote>Guru Gobind Singh founds the Khalsa at Baisakhi 1699 CE. The Five Ks provide a sharply identifiable zahir formation — an institutional identity for what had been a more fluid devotional community. The Khalsa founding simultaneously organizes the absorbed Chishti devotional population of Punjab under a non-Islamic institutional authority, and provides the British with an identifiable "martial race" formation whose utility is maximized when its identity is sharply distinguished from Muslim identity. The founding battle-cry — "Waheguru Ji Ki Fateh" (<em>Fateh</em> = Arabic Victory/Opening, same root as <em>al-Fatiha</em>) — carries Arabic Islamic vocabulary into the Khalsa's foundational gesture. The zahir of Islamic vocabulary persists in the institutional founding even as the batin chain that generated it is absent.</blockquote>
 </div>
 
-<div class="wp-capture-phase">
-  <div class="wp-capture-phase-label">Phase 3 — The Sealing (1873–1909 CE)</div>
-  <p>The Singh Sabha movement, with British administrative structural support, defeats the Sanatan Sikhs institutionally. Those Sanatan Sikhs who had maintained Muharram participation, Sufi shrine visitation, and fluid engagement with the Islamic devotional commons — preserving at least the zahir residue of what had crossed the doctrinal boundary in 1604 — are removed from positions of institutional authority. Baba Farid is reframed from Chishti Islamic master to a generic "Bhagat" who transcended religion. The Karbala/Ahl al-Bayt orientation of the Pakpattan tradition is erased from canonical Sikh self-understanding. Macauliffe's 6-volume English presentation (1909), produced with Kahan Singh Nabha, seals this reframing for Western and colonial audiences. The three-phase capture is complete.</p>
+<div class="pta-evidence">
+  <span class="pta-evidence-label">Phase 3 — The Sealing (1873–1909 CE)</span>
+  <blockquote>The Singh Sabha movement, with British administrative structural support, defeats the Sanatan Sikhs institutionally. Those Sanatan Sikhs who had maintained Muharram participation, Sufi shrine visitation, and fluid engagement with the Islamic devotional commons — preserving at least the zahir residue of what had crossed the doctrinal boundary in 1604 — are removed from positions of institutional authority. Baba Farid is reframed from Chishti Islamic master to a generic "Bhagat" who transcended religion. The Karbala/Ahl al-Bayt orientation of the Pakpattan tradition is erased from canonical Sikh self-understanding. Macauliffe's 6-volume English presentation (1909), produced with Kahan Singh Nabha, seals this reframing for Western and colonial audiences. The three-phase capture is complete.</blockquote>
 </div>
 
-<div class="wp-thesis" style="margin-top:2rem">
-  <div class="wp-thesis-label">The Full Structure of the Capture</div>
+<div class="as-ruling">
+  <p><strong>The Full Structure of the Capture:</strong></p>
   <p><strong>ZAHIR of the Chishti-Khorasan transmission, now resident in Sikh canon:</strong> Baba Farid's Punjabi poetry; faqr/ishq/dard vocabulary; langar institution; sacred geography of Pakpattan and Hassan Abdal; hagiographic conventions of the wandering Sufi faqir.</p>
-  <p style="margin-top:0.8rem"><strong>BATIN severed at the doctrinal threshold:</strong> The silsila chain (Prophet → Ali → Khorasani masters → Chishti succession); the walāya to the Ahl al-Bayt as metaphysical grounding; the Karbala orientation (Imam Hussain as Baba Farid's spiritual master; 40-day Muharram mourning); the living murshid-murid transmission requirement; the Islamic theological framework within which faqr is a virtue and the Sufi <em>maqamat</em> are stages.</p>
-  <p style="margin-top:0.8rem"><strong>Mechanism of severance:</strong> Doctrinal boundary crossing. Vaishnava bhakti framework has no category for any element of the batin. The severance was structural — not conspiratorial, not hostile, not deliberate. It was the result of moving a living transmission across a boundary it cannot survive.</p>
+  <p><strong>BATIN severed at the doctrinal threshold:</strong> The silsila chain (Prophet → Ali → Khorasani masters → Chishti succession); the walāya to the Ahl al-Bayt as metaphysical grounding; the Karbala orientation (Imam Hussain as Baba Farid's spiritual master; 40-day Muharram mourning); the living murshid-murid transmission requirement; the Islamic theological framework within which faqr is a virtue and the Sufi <em>maqamat</em> are stages.</p>
+  <p><strong>Mechanism of severance:</strong> Doctrinal boundary crossing. Vaishnava bhakti framework has no category for any element of the batin. The severance was structural — not conspiratorial, not hostile, not deliberate. It was the result of moving a living transmission across a boundary it cannot survive.</p>
 </div>
 
-<div class="wp-verdict" style="margin-top:2rem;">
-  <div class="wp-verdict-label">SCRA Framework Note — F-01: The Locked Formula</div>
+<div class="as-ruling">
+  <p><strong>SCRA Framework Note — F-01: The Locked Formula Applied:</strong></p>
   <p>The three-phase capture analyzed above is the precise instantiation, at the scale of a civilizational silsila, of the Ba'alist formula: <em>"Your māhiyya — the socially legible shape of your existence — continues intact. Your iḍāfa ishrāqiyya — your live relation to the wujūd-source, the continuous flow through which your existence is real rather than merely formal — is severed."</em></p>
   <p>The Chishti transmission's māhiyya crossed the doctrinal boundary in 1604 and survived completely: the poetry (Baba Farid's Punjabi), the faqr vocabulary, the devotional affect, the sacred geography of Pakpattan and Hassan Abdal, the hagiographic conventions. The iḍāfa — the living connection to the silsila chain (Prophet → Ali → Khorasani masters → Chishti succession), the walāya to Imam Hussain as metaphysical ground, the Karbala orientation, the murshid-murid transmission requirement — could not cross. The Vaishnava bhakti framework has no ontological category for it. The severance was not conspiratorial; it was structural. The doctrinal boundary IS the mechanism of severance. And the māhiyya, resident in the Guru Granth Sahib, is now the world's most widely printed and venerated version of Baba Farid's words — while the iḍāfa that generated those words is absent from every institutional structure that venerates them.</p>
   <p>Two signs that the iḍāfa was genuinely severed, not merely relocated: (1) <strong>Creative sterility</strong> — the Chishti compositional tradition did not continue through the Sikh canon; no new compositions in the Farid tradition were produced within Sikhism after the three-phase capture. The genre froze. (2) <strong>Institutional brittleness</strong> — the Singh Sabha's Tat Khalsa project enforced identity boundaries violently against the Sanatan Sikhs who preserved the zahir residue of batin connection (Muharram participation, shrine visitation). The iḍāfa had stopped flowing; what remained could only be defended by policing the māhiyya forms that referenced it.</p>
 </div>
 
-<div class="wp-part-header">Bibliography</div>
+</div><!-- /.as-thesis-body -->
 
-<div class="wp-bib">
-  <h4>Primary Sources</h4>
-  <ul>
-    <li>Guru Granth Sahib. Compiled 1604 CE (Guru Arjan Dev). Standard reference: Gurbani.org pagination. Salok Sheikh Farid Ke: pp. 1377–1384.</li>
-    <li>Sijzi, Amir Hasan. <em>Fawa'id al-Fu'ad</em> (Morals/Benefits of the Heart). Compiled 1308–1322 CE. English trans. Ziya-ul-Hasan Faruqi. New Delhi: D.K. Printworld, 1996. WorldCat: <a href="https://www.worldcat.org/isbn/9788124600429">9788124600429</a></li>
-    <li>Kahan Singh Nabha. <em>Ham Hindu Nahin</em> (We Are Not Hindus). 1898. archive.org: <a href="https://archive.org/details/hum-hindu-nahin-bhai-kahn-singh-nabha">archive.org/details/hum-hindu-nahin-bhai-kahn-singh-nabha</a></li>
-    <li>Macauliffe, Max Arthur. <em>The Sikh Religion: Its Gurus, Sacred Writings and Authors</em>. 6 vols. Oxford: Clarendon Press, 1909.</li>
-  </ul>
-  <h4>Critical Scholarship — Sikh Studies</h4>
-  <ul>
-    <li>McLeod, W.H. <em>Guru Nanak and the Sikh Religion</em>. Oxford: Clarendon Press, 1968. WorldCat: <a href="https://www.worldcat.org/isbn/9780198265214">9780198265214</a></li>
-    <li>McLeod, W.H. <em>Early Sikh Tradition: A Study of the Janam-sakhis</em>. Oxford: Clarendon Press, 1980. archive.org: <a href="https://archive.org/details/EarlySikhTraditionAStudyOfTheJanamSakhis">archive.org/details/EarlySikhTraditionAStudyOfTheJanamSakhis</a></li>
-    <li>McLeod, W.H. <em>The Evolution of the Sikh Community: Five Essays</em>. Oxford, 1976. archive.org: <a href="https://archive.org/details/evolutionofsikhc0000mcle">archive.org/details/evolutionofsikhc0000mcle</a></li>
-    <li>Oberoi, Harjot. <em>The Construction of Religious Boundaries: Culture, Identity, and Diversity in the Sikh Tradition</em>. University of Chicago Press, 1994. WorldCat: <a href="https://www.worldcat.org/isbn/9780226615929">9780226615929</a></li>
-  </ul>
-  <h4>Chishti / Sufi Studies</h4>
-  <ul>
-    <li>Schimmel, Annemarie. <em>Mystical Dimensions of Islam</em>. University of North Carolina Press, 1975. WorldCat: <a href="https://www.worldcat.org/isbn/9780807812648">9780807812648</a></li>
-    <li>Ernst, Carl W. and Lawrence, Bruce B. <em>Sufi Martyrs of Love: The Chishti Order in South Asia and Beyond</em>. Palgrave Macmillan, 2002. WorldCat: <a href="https://www.worldcat.org/isbn/9781403960443">9781403960443</a></li>
-    <li>Nizami, Khaliq Ahmad. <em>The Life and Times of Shaikh Farid-ud-Din Ganj-i-Shakar</em>. Idarah-i Adabiyat-i Delli, 1955.</li>
-  </ul>
-  <h4>Partition and Punjab History</h4>
-  <ul>
-    <li>Ahmed, Ishtiaq. <em>The Punjab: Bloodied, Partitioned and Cleansed</em>. Oxford University Press, 2012. WorldCat: <a href="https://www.worldcat.org/isbn/9780199406593">9780199406593</a></li>
-    <li>Khosla, Gopal Das. <em>Stern Reckoning</em>. 1949. archive.org: <a href="https://archive.org/details/stern-reckoning">archive.org/details/stern-reckoning</a></li>
-  </ul>
+
+<!-- ═══ FOOTNOTES ═══ -->
+<div class="as-footnotes">
+  <span class="as-footnotes-label">Sources &amp; Citations</span>
+
+  <div class="as-fn" id="fn1">
+    <strong>[1] Primary Sources:</strong> Guru Granth Sahib. Compiled 1604 CE (Guru Arjan Dev). Standard reference: Gurbani.org pagination. Salok Sheikh Farid Ke: pp. 1377–1384. · Sijzi, Amir Hasan. <em>Fawa'id al-Fu'ad</em> (Morals/Benefits of the Heart). Compiled 1308–1322 CE. English trans. Ziya-ul-Hasan Faruqi. New Delhi: D.K. Printworld, 1996. WorldCat: 9788124600429. · Kahan Singh Nabha. <em>Ham Hindu Nahin</em> (We Are Not Hindus). 1898. archive.org/details/hum-hindu-nahin-bhai-kahn-singh-nabha. · Macauliffe, Max Arthur. <em>The Sikh Religion: Its Gurus, Sacred Writings and Authors</em>. 6 vols. Oxford: Clarendon Press, 1909.
+  </div>
+
+  <div class="as-fn" id="fn2">
+    <strong>[2] Critical Scholarship — Sikh Studies:</strong> McLeod, W.H. <em>Guru Nanak and the Sikh Religion</em>. Oxford: Clarendon Press, 1968. WorldCat: 9780198265214. · McLeod, W.H. <em>Early Sikh Tradition: A Study of the Janam-sakhis</em>. Oxford: Clarendon Press, 1980. archive.org/details/EarlySikhTraditionAStudyOfTheJanamSakhis. · McLeod, W.H. <em>The Evolution of the Sikh Community: Five Essays</em>. Oxford, 1976. archive.org/details/evolutionofsikhc0000mcle. · Oberoi, Harjot. <em>The Construction of Religious Boundaries: Culture, Identity, and Diversity in the Sikh Tradition</em>. University of Chicago Press, 1994. WorldCat: 9780226615929. Foundational documentation of Singh Sabha identity construction and Sanatan Sikh defeat.
+  </div>
+
+  <div class="as-fn" id="fn3">
+    <strong>[3] Chishti / Sufi Studies:</strong> Schimmel, Annemarie. <em>Mystical Dimensions of Islam</em>. University of North Carolina Press, 1975. WorldCat: 9780807812648. · Ernst, Carl W. and Lawrence, Bruce B. <em>Sufi Martyrs of Love: The Chishti Order in South Asia and Beyond</em>. Palgrave Macmillan, 2002. WorldCat: 9781403960443. · Nizami, Khaliq Ahmad. <em>The Life and Times of Shaikh Farid-ud-Din Ganj-i-Shakar</em>. Idarah-i Adabiyat-i Delli, 1955.
+  </div>
+
+  <div class="as-fn" id="fn4">
+    <strong>[4] Partition and Punjab History:</strong> Ahmed, Ishtiaq. <em>The Punjab: Bloodied, Partitioned and Cleansed</em>. Oxford University Press, 2012. WorldCat: 9780199406593. · Khosla, Gopal Das. <em>Stern Reckoning</em>. 1949. archive.org/details/stern-reckoning.
+  </div>
+
+  <div class="as-fn" id="fn5">
+    <strong>[5] Cross-references — SCRA Corpus:</strong> T-64 (Pothohar-Khorasan Axis) · T-69 (From Madrassa to Mazar — Ba'alist Capture vectors) · T-70 (Khorasan-Hind Preparation Ground) · T-71 (Hassan Abdal — five-civilization crossing point; Panja Sahib sacred geography) · T-72 (The Balkh Inversion — western terminal of the Khorasan transmission).
+  </div>
 </div>
 
-<hr style="border-color: var(--wp-primary-border); margin: 2.5rem 0;">
 
-<p style="font-size:0.85rem; opacity:0.65; line-height:1.6">
-  <strong>Cross-references:</strong>
-  <a href="{{ '/research/pothohar-khorasan-axis/' | relative_url }}">WP-64 — Pothohar-Khorasan Axis</a> ·
-  <a href="{{ '/research/cia-deobandi-pipeline/' | relative_url }}">WP-69 — From Madrassa to Mazar</a> ·
-  <a href="{{ '/research/khorasan-hind-preparation-ground/' | relative_url }}">WP-70 — Khorasan-Hind Preparation Ground</a> ·
-  <a href="{{ '/research/hassan-abdal-crossing-point/' | relative_url }}">WP-71 — Hassan Abdal</a> ·
-  <a href="{{ '/research/balkh-inversion/' | relative_url }}">WP-72 — The Balkh Inversion</a>
-</p>
+<!-- ═══ PAGE NAV ═══ -->
+<nav class="pta-page-nav">
+  <a href="/research/balkh-inversion/" class="pta-page-nav-prev">← T-72: The Balkh Inversion</a>
+  <a href="/research/" class="pta-page-nav-next">↑ The Corpus</a>
+</nav>
 
-<div class="wp-nav">
-  <a href="{{ '/research/balkh-inversion/' | relative_url }}">← WP-72: The Balkh Inversion</a>
-  <a href="{{ '/research/' | relative_url }}">↑ Research Archive</a>
-</div>
+</div><!-- /.pta-content-wrap -->
