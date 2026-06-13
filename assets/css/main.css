@@ -345,6 +345,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
 }
 
+/* 12-pointed star geometric ground — Safavid tilework / Imami sacred geometry */
+/* 12 points = 12 Imams. Very low opacity: structural presence, not decoration. */
+.pta-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Cpath d='M55,11 L59.8,37 L77,16.9 L68.2,41.8 L93.1,31.9 L73,50 L93.1,68.1 L68.2,68.2 L77,93.1 L59.8,73 L55,99 L50.2,73 L33,93.1 L41.8,68.2 L16.9,68.1 L37,50 L16.9,31.9 L41.8,41.8 L33,16.9 L50.2,37 Z' fill='none' stroke='%23c89040' stroke-width='0.5' stroke-opacity='0.08'/%3E%3C/svg%3E");
+  background-size: 110px 110px;
+  background-repeat: repeat;
+}
+
 .pta-hero-label {
   margin-bottom: 24px;
 }
